@@ -1,0 +1,9 @@
+# Archivos pesados: viven fuera del repo (ver products/*/fuentes/README.md)
+*.zip
+*.pdf
+*.mp4
+*.mov
+node_modules/
+.env
+.DS_Store
+Thumbs.db

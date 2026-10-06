@@ -1,0 +1,4 @@
+id,producto,inicio,fin,hipotesis,variable,control,variante,metrica_principal,resultado_control,resultado_variante,muestra,decision,aprendizaje
+EXP-001,reto-cintura-28,,,"El precio de impulso de 9,90 deja más neto por visita que 14,90",precio del principal,9.90,14.90,neto por visita,,,,pendiente,
+EXP-002,reto-cintura-28,,,"La pagina con quiz corto convierte mas que sin quiz",quiz en pagina,sin quiz,con quiz (despues de beneficios),compras por visita,,,,pendiente,
+EXP-003,reto-cintura-28,,,"El combo de extras a 6 deja mas neto que 3 + 5 por separado",combo de extras,extras separados,combo US$ 6,neto medio por compra,,,,pendiente,
