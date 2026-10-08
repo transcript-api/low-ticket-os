@@ -6,6 +6,23 @@
 - **Próximo paso:** rehacer con el plan de abajo. **Antes de construir**: proponer 2 direcciones visuales y esperar el OK de Santiago.
 - **Config:** `landing-config.json` controla `checkoutUrl`, `price`, `priceNote`, `priceLabel`, `metaPixelId`, `utmifyScript`, `soporte`, `soporteTexto`. Mientras `checkoutUrl` esté vacío, los botones bajan a la sección de precio.
 
+## Qué hay hoy en la página publicable (revisado el 2026-10-08)
+
+Estructura del `index.html` actual, en orden: hero ("28 días para afinar tu cintura", precio visible) → 4 pilares (Mover, Comer, Sostener, Día 28) → "Si te pasa esto, este reto es para vos" (dolor) → reencuadre ("No es falta de ganas. Es que te dieron planes imposibles") y tabla "Lo de siempre / Reto Cintura 28" → "No es solo un PDF. Es tu app" (5 tarjetas) → "Mirá la guía por dentro" (páginas reales) → "Así son tus 28 días y la semana de regalo" → "Así es un día por dentro" (Día 12) → comparadores de platos tocables (milanesa, fideos, desayuno, merienda) → "¿Es para vos?" → 3 pasos → "Todo lo que recibís" → precio (con garantía de 7 días) → preguntas frecuentes → cierre. Hay un comentario para sumar testimonios reales con permiso por escrito.
+
+**Lo que está bien:** el producto por dentro con capturas reales, el reencuadre de la culpa, los comparadores de platos, "es para vos / no es para vos", la garantía visible, el aviso de que no se promete un número, el comentario que prohíbe testimonios inventados.
+
+**Lo que corregiría (a validar con Santiago):**
+1. **Precio:** `landing-config.json` dice US$ 9,90 y "Precio de lanzamiento". Vigente: US$ 15,90. Mantener "de lanzamiento" solo con fecha real de suba.
+2. **Edad y cuerpo dirigidos a quien mira:** "Sentís que después de los chicos, o de los 40, el cuerpo ya no responde" y "La ropa te aprieta en la cintura". Pasar a conducta o tercera persona (ver [10-decisiones.md](10-decisiones.md)).
+3. **No hay quiz ni hero con el titular del socio** ("Transformá tu cintura en 28 días desde tu casa"): es el cambio de estructura propuesto abajo.
+4. **No aparece el extra** (Menú Acelerador) ni el encuadre "completá tu reto": se ofrece en el checkout; la página puede anticiparlo sin vender dos cosas.
+5. La página dice "después de los 40, ¿sirve?" en el FAQ: está bien como pregunta de quien lee.
+
+## Cambios que quiere Santiago
+
+(pendiente: Santiago tiene una lista; se completa acá antes de construir)
+
 ## Estructura propuesta (con aportes del socio)
 
 | # | Sección | Contenido |

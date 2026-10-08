@@ -39,6 +39,10 @@ Fricciones típicas y su extra:
 | "Quiero resultados más rápido" | Método acelerado |
 | "¿Y después?" | Seguimiento de continuidad |
 
+### Nombres de extras
+
+El nombre no puede prometer más que el contenido. "Acelerador", "rápido", "express" o "resultados en X días" prometen velocidad: solo se usan si el contenido la entrega y se puede explicar cómo. Un menú se llama menú.
+
 ## 3. Garantía
 
 - Real, por plataforma (Hotmart: 7, 15, 21 o 30 días), explicada sin letra chica.
@@ -62,6 +66,18 @@ Solo precio de lanzamiento con **fecha real que se cumple**. Si no se sube el pr
 | Garantía | 7 días contra 30 días | Mayor neto por visita incluyendo reembolsos |
 
 Cada variante corre 7 días o hasta 50 ventas.
+
+## 7. Sincronización cuando cambia el precio o la oferta
+
+Antes de gastar un dólar con una oferta nueva, buscar el precio viejo en:
+
+- [ ] Creativos: texto principal, titular **y texto dentro de la imagen** (preferir imágenes sin precio)
+- [ ] Página: `landing-config.json`, hero, oferta, barra de compra, FAQ
+- [ ] Checkout y descripciones de Hotmart; página de gracias
+- [ ] Emails de compradoras
+- [ ] Reglas de corte y escala (se recalculan con `tools/unit-economics.mjs`)
+- [ ] Documentos de estrategia y tableros
+- [ ] Afiliados: kit de materiales
 
 ## Entregable: `02-oferta.md`
 

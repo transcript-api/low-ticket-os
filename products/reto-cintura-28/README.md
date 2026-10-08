@@ -2,10 +2,10 @@
 
 ## Estado
 
-- **Fase del flujo:** 03 Oferta (rediseño) y 05 Página (rediseño pendiente de OK). Producto, creativos y videos ya producidos. Todavía no hay ventas ni gasto en anuncios.
-- **Último cambio:** 2026-10-06. Se organizó la estrategia del chat entre Santiago y su socio, se hizo la crítica y se armó este repo.
+- **Fase del flujo:** 03 Oferta (vigente definida por Santiago el 2026-10-08) y 05 Página (cambios pendientes: Santiago tiene una lista). Producto, creativos y videos ya producidos. Todavía no hay ventas ni gasto en anuncios (dato de Santiago; **no verificado en Hotmart**, no hubo acceso).
+- **Último cambio:** 2026-10-08. Se incorporó el material completo (sitio, creativos, guía, hojas, menú, portadas y banners), los datos vigentes de oferta y una revisión crítica. Detalle en [10-decisiones.md](10-decisiones.md).
 - **Test activo:** ninguno.
-- **Siguiente paso:** decidir precio de arranque (US$ 9,90 o 14,90) y aprobar el plan de página. Ver [11-pendientes.md](11-pendientes.md).
+- **Siguiente paso:** sincronizar precio en creativos y página, verificar el estado de Hotmart y definir los cambios de la página. Ver [11-pendientes.md](11-pendientes.md).
 
 ## En una línea
 
@@ -15,11 +15,11 @@ Plan de 28 días para afinar la cintura desde casa, en 20-30 minutos, sin gimnas
 
 | Dato | Valor |
 |---|---|
-| Precio principal | US$ 9,90 (control del centro de mando) o US$ 15 (propuesta del chat). A definir por test |
-| Extras | Kit Antiexcusas US$ 3, Meal & Shopping Kit US$ 5 (chat). Hoy existe: Menú armado de 28 días + listas, US$ 4,90 |
+| **Oferta vigente (Santiago, 2026-10-08)** | **US$ 15,90** · order bump **Menú Acelerador US$ 4,90** · afiliados **37 %** · garantía **7 días** |
+| Antecedentes | US$ 9,90 en el centro de mando y la página; US$ 15 en el chat |
+| Extras del chat (a producir) | Kit Antiexcusas US$ 3, Meal & Shopping Kit US$ 5 |
 | Venta siguiente | Seguimiento de 60 días (US$ 5 en el chat) o upsell de 8 semanas (US$ 17-27 en el centro de mando) |
-| Garantía | 7 días (Hotmart) |
-| CPA de equilibrio | US$ 9,23 con oferta A; US$ 14,40 con US$ 15 + extras (ver [02-oferta.md](02-oferta.md)) |
+| CPA de equilibrio | **US$ 14,26** con la oferta vigente (25 % toma el bump); US$ 9,23 con la anterior. Ver [02-oferta.md](02-oferta.md) |
 | Tablero de Miro | Mapa de flujo: https://miro.com/app/board/uXjVEd4QLlE=/ (la versión vertical anterior queda en https://miro.com/app/board/uXjVEd4QDE0=/) |
 | Dominio / Hotmart | Pendiente de publicar |
 

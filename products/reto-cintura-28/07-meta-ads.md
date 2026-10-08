@@ -6,6 +6,7 @@ Método general: `playbook/08-meta-ads.md`. Acá, los números de este producto.
 
 | Oferta | CPA equilibrio | CPA objetivo (escalar) | Apagar sin ventas desde |
 |---|---|---|---|
+| **VIGENTE: 15,90 + Menú Acelerador 4,90 (25 %)** | **US$ 14,26** | **US$ 9,27** | **US$ 21,38** |
 | A: 9,90 + menú 4,90 | US$ 9,23 | US$ 6,00 | US$ 13,84 (el centro de mando usa 13,50) |
 | B: 15 + 3 + 5 | US$ 14,40 | US$ 9,36 | US$ 21,60 |
 | C1: 14,90 + 3 + 5 | US$ 14,32 | US$ 9,31 | US$ 21,48 |

@@ -16,6 +16,27 @@ Los aprendizajes de un solo producto van en su `10-decisiones.md`, no acá.
 
 ## Registro
 
+### 2026-10-08 — Un cambio de precio desfasa creativos, página, reglas y emails
+- Qué pasó: Reto Cintura 28 pasó de US$ 9,90 a US$ 15,90 y quedaron con el precio viejo tres creativos (dos con el precio dentro de la imagen), la configuración de la página, el centro de mando y las reglas de corte.
+- Evidencia: revisión del 2026-10-08 sobre el CSV de creativos, `landing-config.json` y los PDF.
+- Aprendizaje: el precio aparece en muchos lugares y un anuncio con precio distinto al de la página viola la regla de coherencia de Meta. Además, **todas las reglas de corte dependen del CPA de equilibrio de la oferta vigente**.
+- Cambio en el método: `playbook/03-oferta.md` (checklist de sincronización de precio) y `compliance/checklist-previa.md`. Preferir creativos sin precio dentro de la imagen.
+
+### 2026-10-08 — Las versiones de un documento pueden perder las reglas de honestidad
+- Qué pasó: una versión nueva del centro de mando eliminó de los guiones de video las reglas "sin antes/después, sin testimonios, personaje no clienta".
+- Aprendizaje: las reglas no deben vivir solo en los documentos de trabajo, que se regeneran. Viven en el repo y se verifican contra cada documento nuevo.
+- Cambio en el método: `AGENTS.md` (verificar reglas al incorporar material) y `docs/01-principios.md`.
+
+### 2026-10-08 — El nombre de un extra no puede prometer más que su contenido
+- Qué pasó: un menú de 28 días se llamó "Acelerador".
+- Aprendizaje: "acelerador", "rápido" o "express" prometen velocidad de resultados. Si el contenido no la entrega, aumenta reembolsos y riesgo de políticas.
+- Cambio en el método: `playbook/03-oferta.md`, sección de extras.
+
+### 2026-10-08 — Abrir afiliados exige reglas escritas antes, no después
+- Qué pasó: se definió 37 % de comisión de afiliados.
+- Aprendizaje: el afiliado paga su propio tráfico y habla con sus palabras. Sin reglas y kit aprobados, una promesa falsa de un afiliado daña al producto.
+- Cambio en el método: nuevo `compliance/afiliados.md` y `playbook/09-medicion-y-escala.md` (fase de afiliados).
+
 ### 2026-10-06 — La página vende el sistema, no la cantidad de contenido
 - Qué pasó: en el chat de estrategia de Reto Cintura 28 se vio que una guía de 128 páginas funciona como argumento de valor para el producto, pero en low ticket asusta ("¿tengo que leer todo eso?") y no es la oferta.
 - Evidencia: conversación entre Santiago y su socio; sin datos de test todavía.

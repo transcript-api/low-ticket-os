@@ -1,5 +1,7 @@
 # 05 · Creativos estáticos
 
+> **Desfasados con el precio vigente (US$ 15,90):** C01 (texto), C13 y C18 (texto, titular e imagen). Ver [11-pendientes.md](11-pendientes.md). No usar hasta corregirlos.
+
 31 creativos ya producidos (centro de mando, "creativos v2"). Las imágenes y el CSV con los textos para Meta viven fuera del repo (ver [fuentes/README.md](fuentes/README.md)).
 
 Niveles de consciencia: 1 inconsciente, 2 del problema, 3 de la solución, 4 del producto, 5 muy consciente. Frío = niveles 1 y 2; retargeting = 4 y 5.

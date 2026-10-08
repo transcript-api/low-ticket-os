@@ -28,7 +28,7 @@ El objetivo: que cualquier agente pueda **crear un producto nuevo más rápido, 
 | Entender el flujo completo | `playbook/00-flujo-completo.md` |
 | Crear un producto nuevo | `playbook/01` → `playbook/10`, y copiá `templates/producto/` a `products/<nombre>/` |
 | Calcular márgenes y CPA | `playbook/formulas.md` y `tools/unit-economics.mjs` |
-| Saber qué NO se puede hacer | `docs/01-principios.md` y `compliance/` |
+| Saber qué NO se puede hacer | `docs/01-principios.md` y `compliance/` (incluye `afiliados.md`) |
 | Retomar un producto existente | `products/<nombre>/README.md` (estado), luego `11-pendientes.md` y `10-decisiones.md` |
 | Retomar en otra PC o sesión | `docs/retomar-en-casa.md` |
 | Registrar un test | `metrics/experimentos.csv` y `products/<nombre>/09-metricas.md` |
@@ -45,6 +45,10 @@ Resumen. El detalle y el porqué están en `docs/01-principios.md`.
 5. **Los números mandan, no la intuición.** Toda decisión de precio, oferta o escala sale de `playbook/formulas.md` con datos reales. Si no hay datos, se marca como **hipótesis**.
 6. **Lo que ya funcionó se documenta; lo que falló también.** Un test sin registrar no existió.
 7. **La página dice lo mismo que el anuncio.** Si no, Meta lo rechaza y la persona se va.
+
+### Al incorporar material nuevo (documentos, estrategias, creativos)
+
+Santiago pasa material de varias sesiones y versiones. **No se sigue al 100 %.** Antes de incorporarlo: (a) compará con la versión anterior y buscá qué cambió, (b) verificá que sigan las reglas del punto 4 (las versiones regeneradas pueden perderlas), (c) buscá datos desfasados (precio, cantidad de recetas, páginas), (d) registrá las diferencias en `10-decisiones.md` y `fuentes/README.md`.
 
 ## 5. Flujo de trabajo estándar
 

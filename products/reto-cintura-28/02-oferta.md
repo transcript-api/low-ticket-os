@@ -1,5 +1,32 @@
 # 02 · Oferta
 
+## Oferta vigente (datos de Santiago, 2026-10-08)
+
+| Pieza | Valor | Verificado |
+|---|---|---|
+| Principal: Reto Cintura 28 | **US$ 15,90** | No (sin acceso a Hotmart) |
+| Order bump: Menú Acelerador (28 días) | **US$ 4,90** | No |
+| Afiliados | **37 %** de comisión | No |
+| Garantía | 7 días | No |
+
+Cálculo con `node tools/unit-economics.mjs --price 15.9 --bump 4.9:<tasa>` (comisión 9,9 % + US$ 0,10, reembolsos 7 %):
+
+| Toma del bump | Neto medio | CPA equilibrio | CPA objetivo (−35 %) | Apagar sin ventas desde |
+|---|---|---|---|---|
+| 15 % | US$ 14,89 | US$ 13,85 | US$ 9,00 | US$ 20,77 |
+| 25 % | US$ 15,33 | US$ 14,26 | US$ 9,27 | US$ 21,38 |
+| 35 % | US$ 15,77 | US$ 14,67 | US$ 9,53 | US$ 22,00 |
+| Sin bump | US$ 14,23 | US$ 13,23 | US$ 8,60 | US$ 19,85 |
+
+**Lectura crítica:**
+- Pasar de US$ 9,90 a US$ 15,90 sube el CPA de equilibrio de US$ 9,23 a ~US$ 14,26. Con US$ 15,90 las reglas de corte del centro de mando (apagar a US$ 13,50, escalar a US$ 6) **ya no sirven**: usar la tabla de arriba.
+- El precio más alto exige mejor conversión de la página; no hay dato todavía. Se testea (EXP-001): US$ 15,90 contra una variante más baja (9,90 a 11,90), una variable por vez.
+- **Afiliados al 37 %:** en una venta de afiliado el productor retiene ~US$ 8,3 de US$ 15,90 y ~US$ 10,9 con el bump (estimación; Hotmart define la base exacta). Es rentable porque el afiliado paga su propio tráfico, pero abre un riesgo de marca: ver [`compliance/afiliados.md`](../../compliance/afiliados.md). No se abre hasta tener ventas propias, reembolsos medidos y kit de afiliado.
+- **Nombre "Menú Acelerador":** el archivo es un menú de 28 días con listas de compra, sin método de aceleración. "Acelerador" insinúa resultados más rápidos y puede generar reembolsos y observaciones de políticas. Recomendación: llamarlo "Menú armado de 28 días + listas de compras" (como en el PDF), o describir exactamente qué acelera si es otra cosa. Decide Santiago.
+- Con un solo bump (4,90) se pierde el potencial de los dos extras del chat. Se pueden sumar después: Hotmart admite hasta 9 por checkout (ayuda oficial).
+
+## Fuentes de oferta anteriores
+
 Hay tres fuentes de oferta: el **centro de mando** (ofertas A, B, C), el **chat** de Santiago y su socio (principal más extras) y la **recomendación** de la crítica. Todas se pueden testear; no se mezclan.
 
 ## Ofertas sobre la mesa
@@ -51,7 +78,7 @@ Pendiente de verificar en la cuenta de Hotmart: si la comisión de 9,9 % + US$ 0
 ## Opinión
 
 - Del chat entra lo que mejora la oferta: principal completo, extras que atacan fricciones, nombres de "extra opcional" y la presentación en el checkout.
-- **Precio de arranque recomendado: US$ 9,90 como control**, con los extras del chat. A los 7 días y con datos, testear US$ 14,90 en la misma página cambiando solo el precio. Motivo: con tráfico frío el precio de impulso baja la barrera; el US$ 15 puede ganar en neto por visita, pero no hay dato para asumirlo.
+- **Precio:** Santiago fijó US$ 15,90 (2026-10-08). Mi recomendación original era arrancar a US$ 9,90 porque con tráfico frío el precio de impulso baja la barrera. No hay datos para decir que 15,90 sea peor: **se respeta la decisión y se la testea** con una variante más baja en la misma página (EXP-001), cambiando solo el precio. Lo que sí es obligatorio: sincronizar creativos y página con el precio vigente antes de gastar.
 - El **neto por visita** decide, no la conversión sola: ver `playbook/formulas.md`.
 
 ## Urgencia
@@ -70,6 +97,6 @@ Precio de lanzamiento con **fecha real** (ej. 14 días después de lanzar), anun
 
 | Test | Variable | Control | Variante | Gana si | Registro |
 |---|---|---|---|---|---|
-| EXP-001 | Precio del principal | US$ 9,90 | US$ 14,90 | Mayor neto por visita | `metrics/experimentos.csv` |
-| EXP-003 | Combo de extras | Extras separados | Combo US$ 6 | Mayor neto medio por compra | idem |
+| EXP-001 | Precio del principal | US$ 15,90 (vigente) | US$ 9,90 a 11,90 | Mayor neto por visita | `metrics/experimentos.csv` |
+| EXP-003 | Extras de checkout | Solo Menú 4,90 | Menú + Kit Antiexcusas 3 + Meal Kit 5 (o combo 6) | Mayor neto medio sin bajar conversión del checkout | idem |
 | (futuro) | Garantía | 7 días | 30 días con US$ 12,90 | Mayor neto por visita con reembolsos | idem |

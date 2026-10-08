@@ -4,9 +4,22 @@
 
 | Tarea | Quién |
 |---|---|
-| Aprobar o ajustar la crítica y la oferta recomendada | Santiago |
-| Decidir precio de arranque (9,90 o 14,90) | Santiago y socio |
+| Pasar la lista de cambios que quiere en la página | Santiago |
+| **Verificar el estado de Hotmart** (producto, precio, bump, garantía, afiliación, píxel, página de gracias): sin acceso, pedir capturas o iniciar sesión en una ventana que Claude pueda usar | Santiago / Claude |
+| Elegir el nombre del bump ("Menú Acelerador" o "Menú armado de 28 días") | Santiago |
 | Subir este repo a GitHub (privado) | Santiago |
+
+## Desfasajes de precio a corregir (US$ 9,90 → US$ 15,90)
+
+| Dónde | Qué dice hoy | Acción |
+|---|---|---|
+| C01 (texto principal) | "Empezá hoy por US$ 9,90" | Sacar el precio del texto o poner el vigente |
+| C13 (texto, titular e **imagen**) | "28 días por US$ 9,90"; la comparación con la pizza | Rehacer; revisar si la pizza sigue siendo una buena comparación a US$ 15,90 |
+| C18 (titular e **imagen**) | "Todo por US$ 9,90" | Rehacer |
+| `landing-config.json` | `price`: US$ 9,90; `priceLabel`: "Precio de lanzamiento" | Actualizar; dejar "Precio de lanzamiento" solo si hay fecha real de suba |
+| Página de ventas | Precio en hero, oferta y barra | Se toma de `landing-config.json`; revisar el texto fijo |
+| Reglas de corte de Meta | Apagar a US$ 13,50, escalar a US$ 6 | Usar [07-meta-ads.md](07-meta-ads.md) con la oferta vigente |
+| Centro de mando y emails | US$ 9,90 | Actualizar al regenerar |
 
 ## Esta semana
 

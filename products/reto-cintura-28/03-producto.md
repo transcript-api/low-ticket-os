@@ -13,11 +13,20 @@
 | Guías extra | Eventos y comidas afuera, hinchazón, sueño | App y guía |
 | Medición | Cintura el Día 0, 14 y 29, más test de fuerza de 3 minutos | App |
 
-## Extra existente
+## Extra existente (order bump vigente)
 
 | Extra | Contenido | Archivo |
 |---|---|---|
-| Menú armado de 28 días + listas de compras | 4 semanas con desayuno, almuerzo, merienda y cena + lista de compras de cada semana | `menu-28-dias.pdf` (11 páginas) |
+| Menú armado de 28 días + listas de compras (en Hotmart: "Menú Acelerador") | 4 semanas con desayuno, almuerzo, merienda y cena; lista de compras por semana; marcas "Rinde 2", "Sobra", "Del freezer"; reglas de cambio sin culpa; aviso de consulta profesional | PDF de 11 páginas (ver [fuentes/README.md](fuentes/README.md)) |
+
+El contenido es un **menú**, no un método acelerado. Ver la observación sobre el nombre en [10-decisiones.md](10-decisiones.md).
+
+## Imágenes de marca y checkout
+
+- Portada elegida: `reto-cintura-28-portada-4k.jpg` (fondo oscuro, "Cintura 28", app + guía, "Semana 5 de regalo", 20-30 min, 32 recetas).
+- Banner de checkout elegido: `reto-cintura-28-banner-checkout.jpg` ("Tu Día 1 empieza hoy", 7 días de garantía, acceso inmediato, pago seguro).
+- Hay 4 portadas y 3 banners alternativos. Ver [fuentes/README.md](fuentes/README.md).
+- Revisión: coherentes con el producto (128 págs., 32 recetas, Semana 5) y con la regla de no prometer kilos. El banner dice "Te devolvemos el 100 % de tu dinero" y "7 días de garantía": coincide con la garantía vigente.
 
 ## Extras propuestos en el chat (a producir)
 

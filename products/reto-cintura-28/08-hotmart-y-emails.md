@@ -9,8 +9,10 @@ Método: `playbook/07-hotmart-checkout.md` y `compliance/hotmart.md`. Las rutas 
 | Formato | eBook (se sube el PDF de la guía) |
 | Categoría | Salud y deportes |
 | Idioma | Español |
-| Precio | US$ 9,90 (moneda USD; Hotmart lo muestra en moneda local). A definir contra US$ 14,90 |
+| Precio | **US$ 15,90** (vigente según Santiago, 2026-10-08; moneda USD, Hotmart lo muestra en moneda local). La descripción de abajo es de la versión con US$ 9,90 |
 | Garantía | 7 días |
+| Afiliados | 37 % (vigente según Santiago). Reglas: [`compliance/afiliados.md`](../../compliance/afiliados.md) |
+| Estado en Hotmart | **Sin verificar**: no hubo acceso a la cuenta |
 | Página de ventas | `https://TUDOMINIO/` |
 | Página de agradecimiento | `{URL_GRACIAS}` (privada) |
 | Archivos | `reto-cintura-28.pdf` y `reto-cintura-28-imprimibles.pdf` |
@@ -41,7 +43,7 @@ Método: `playbook/07-hotmart-checkout.md` y `compliance/hotmart.md`. Las rutas 
 
 | Producto | Formato | Precio | Garantía | Estado |
 |---|---|---|---|---|
-| Menú armado de 28 días + listas de compras (existente) | eBook PDF, 11 páginas | US$ 4,90 | 7 días | Listo. Base del Meal & Shopping Kit |
+| Menú armado de 28 días + listas de compras (en Hotmart "Menú Acelerador") | eBook PDF, 11 páginas | US$ 4,90 | 7 días | Vigente como order bump. Base del Meal & Shopping Kit |
 | Kit Antiexcusas | eBook PDF | US$ 3 | 7 días | A producir |
 | Meal & Shopping Kit | eBook PDF | US$ 5 | 7 días | A producir desde el menú |
 

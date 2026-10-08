@@ -9,6 +9,9 @@ Marcá cada punto con evidencia (link, captura, archivo). Si algo no pasa, no se
 - [ ] Garantía real configurada en Hotmart y explicada sin letra chica.
 - [ ] Aviso de salud visible en página, guía y app.
 - [ ] Precio, extras y garantía son los mismos en la página y en el checkout.
+- [ ] Ningún creativo (texto ni imagen) tiene un precio distinto al vigente.
+- [ ] Los nombres de los extras no prometen más que su contenido.
+- [ ] Si hay afiliados: reglas y kit aprobados (`compliance/afiliados.md`).
 
 ## Honestidad
 
