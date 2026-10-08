@@ -8,6 +8,7 @@ Estas reglas ganan sobre cualquier idea, urgencia o consejo. Vienen de dos fuent
 - Sin "antes y después" ni videos de "clientas" generados o actuados. Las personas de IA son personajes que presentan el producto, nunca clientas.
 - Prueba social solo si es **real y con permiso por escrito**. Cómo conseguirla: ver `playbook/10-post-compra.md`.
 - Urgencia y escasez solo con fechas o cupos que se cumplen de verdad.
+- **Precios de referencia solo reales.** Un precio "antes" o un "X % de descuento" requiere que ese precio se haya cobrado de verdad o exista en la fecha anunciada. Ver `compliance/precios-y-descuentos.md`.
 - El entregable tiene que valer lo que se promete. Un producto flojo con buena página se paga en reembolsos y chargebacks.
 
 **Por qué:** es ilegal o sancionable en la mayoría de los países de LATAM (publicidad engañosa), Hotmart suspende productos con promesas falsas, y Meta cierra cuentas. Además el primer reembolso masivo borra el margen del test.

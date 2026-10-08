@@ -8,10 +8,11 @@ Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su soc
 - Alcance: solo el nombre del producto principal. Otros textos del material (portada, página) ya decían "Reto Cintura 28".
 - Estado: Adoptada y aplicada.
 
-### 2026-10-08 — Hotmart muestra 99,38 US$ de precio base
-- Observación: contradice el precio vigente de US$ 15,90 y hay ventas activas. Posible error de carga o de moneda. No se pudo confirmar la causa.
-- Decisión: **no cambiado**; lo confirma o lo corrige Santiago.
-- Estado: A revisar con urgencia.
+### 2026-10-08 — Esquema de precio: base US$ 99,38 con cupón "84" (84 % de descuento)
+- Decisión (de Santiago): el producto tiene un precio base de US$ 99,38 y el tráfico pago usa el cupón `84`, que lo deja en ~US$ 15,90. Se aplicó también al order bump. Planea mostrar el descuento en la página "para que la persona sienta que paga poco por un producto caro".
+- Corrección: Claude lo marcó antes como posible error de precio; no lo era.
+- Riesgo señalado por Claude: si US$ 99,38 nunca fue un precio real de venta, presentarlo como precio "normal" con 84 % de descuento es un precio de referencia inventado (publicidad engañosa). Alternativas en [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md).
+- Estado: **A revisar antes de escribir el descuento en anuncios o página.** El esquema técnico en Hotmart no se toca.
 
 ### 2026-10-08 — Oferta vigente: US$ 15,90 + Menú Acelerador US$ 4,90, afiliados 37 %, garantía 7 días
 - Decisión (de Santiago): esos son los datos actuales. Reemplazan al US$ 9,90 del centro de mando y la página.

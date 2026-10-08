@@ -15,7 +15,7 @@ Plan de 28 días para afinar la cintura desde casa, en 20-30 minutos, sin gimnas
 
 | Dato | Valor |
 |---|---|
-| **Oferta vigente (Santiago, 2026-10-08)** (Hotmart muestra 99,38 US$ de precio base: ver pendientes) | **US$ 15,90** · order bump **Menú Acelerador US$ 4,90** · afiliados **37 %** · garantía **7 días** |
+| **Oferta vigente (Santiago, 2026-10-08)** (precio base 99,38 US$ con cupón "84" = 15,90; ver [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md)) | **US$ 15,90** · order bump **Menú Acelerador US$ 4,90** · afiliados **37 %** · garantía **7 días** |
 | Antecedentes | US$ 9,90 en el centro de mando y la página; US$ 15 en el chat |
 | Extras del chat (a producir) | Kit Antiexcusas US$ 3, Meal & Shopping Kit US$ 5 |
 | Venta siguiente | Seguimiento de 60 días (US$ 5 en el chat) o upsell de 8 semanas (US$ 17-27 en el centro de mando) |

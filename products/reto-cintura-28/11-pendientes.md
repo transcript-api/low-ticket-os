@@ -4,7 +4,8 @@
 
 | Tarea | Quién |
 |---|---|
-| **URGENTE: el precio base en Hotmart figura como 99,38 US$** (debería ser 15,90). Confirmar si es un error y corregirlo, o decir si es intencional | Santiago |
+| **Decidir cómo se muestra el precio** (hay un precio base de US$ 99,38 con cupón "84" que deja US$ 15,90): leer [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md) antes de escribir "84 % de descuento" en anuncios o página | Santiago |
+| Decirme el precio base del order bump (se aplicó el mismo cupón) y si el cupón tiene límite de usos o fecha | Santiago |
 | Revisar en Hotmart lo que falta: order bump, apariencia del checkout, píxel, página de gracias, área de miembros | Claude (con OK) / Santiago |
 | Activar recuperador de carritos o cupón de recuperación | Santiago |
 | Configurar materiales y reglas de afiliados antes de aprobar a nadie (el programa ya está activo) | Santiago |

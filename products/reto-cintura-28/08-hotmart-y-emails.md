@@ -6,7 +6,7 @@
 |---|---|---|
 | Producto | ID 8680694, eBook, "Salud y Deportes", español, país principal Uruguay, **ventas activas** | |
 | Nombre | **"Reto Cintura 28"** (era "Reto Cintura 28cm"; cambiado el 2026-10-08 a pedido de Santiago) | "28cm" sonaba a promesa de 28 cm menos de cintura |
-| Precio base | **99,38 US$** | **Contradice el precio vigente (US$ 15,90). Verificar y corregir urgente**: con ventas activas, cualquiera ve ese precio |
+| Precio base | **99,38 US$** | **Intencional** (aclarado por Santiago): precio base con un **cupón de 84 %** (código `84`) que deja el precio efectivo en ~US$ 15,90. También se aplicó al order bump. El tráfico pago entra con el cupón. Riesgos y alternativas: [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md) |
 | Ofertas | 1 oferta ("Precio base", código `eucnkmyz`, pago al contado) | Recuperador automático de carritos: **no disponible** |
 | Reembolso | 7 días | OK |
 | Archivos del producto | 2: guía (11,81 MB) y hojas para imprimir (188 KB) | OK; el menú va como bump, producto aparte |
@@ -14,7 +14,7 @@
 | Descripción | Coincide con el producto (36 jornadas, 22 ejercicios, 32 recetas, 128 págs.) y trae aviso médico | Dice "Mujeres de 25 a 50": aceptable en Hotmart, no en anuncios |
 | No revisado | Order bump, apariencia del checkout, píxel, página de gracias, área de miembros, emails | Pendiente |
 
-Hotmart bloqueó (a nivel del entorno de Claude) la acción de abrir la edición del precio base, por no estar pedida de forma explícita. El precio lo tiene que confirmar o corregir Santiago.
+Nota: Claude marcó primero el 99,38 como posible error; era el precio base del esquema con cupón. Corregido el 2026-10-08.
 
 Método: `playbook/07-hotmart-checkout.md` y `compliance/hotmart.md`. Las rutas privadas de la app y de gracias **no se escriben acá** (están en `LEEME-PUBLICAR.txt` del ZIP del sitio). En los textos aparecen como `{URL_APP}` y `{URL_GRACIAS}`.
 
