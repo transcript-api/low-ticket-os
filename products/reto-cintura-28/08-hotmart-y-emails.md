@@ -16,6 +16,36 @@
 
 Nota: Claude marcó primero el 99,38 como posible error; era el precio base del esquema con cupón. Corregido el 2026-10-08.
 
+## Checkout: revisión del 2026-10-08 (solo lectura, abierto como comprador, sin comprar)
+
+Links de la oferta (públicos):
+- Página de pago: `https://pay.hotmart.com/B107932749E`
+- Página de pago personalizada (la que tiene banner, contador y bump): `https://pay.hotmart.com/B107932749E?checkoutMode=10`
+- Página de ventas de Hotmart (no se usa): `https://go.hotmart.com/B107932749E`
+
+**Link correcto para los anuncios y para `checkoutUrl` en `landing-config.json`:**
+
+```
+https://pay.hotmart.com/B107932749E?checkoutMode=10&offDiscount=LANZAMIENTO84
+```
+
+Con `?coupon=LANZAMIENTO84` el cupón **no se aplica** y el comprador ve el precio base (R$ 547 ≈ US$ 99). Con `offDiscount=` sí: "Desconto (84 %)", total R$ 87,52 ≈ US$ 15,90.
+
+| Qué se ve | Estado | Acción recomendada |
+|---|---|---|
+| Precio con cupón | Funciona con `offDiscount=` | Usar ese link; probar que Utmify conserve los parámetros |
+| El comprador ve el precio base y "Desconto (84 %)" | Lo muestra Hotmart, aunque la página no lo diga | Ver [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md): el precio base tiene que ser real o el cupón terminar |
+| Contador regresivo "ÚLTIMA OPORTUNIDAD · Tu precio de lanzamiento está reservado por tiempo limitado" (~1 h 15 min) | Se mantiene entre cargas | **Verificar qué pasa al llegar a cero y con un visitante nuevo.** Si se reinicia, es urgencia falsa: quitarlo o atarlo a la fecha de fin real del cupón |
+| Texto "Lorem ipsum dolor" sobre el formulario | **Texto de relleno visible** | Borrar |
+| Banner | Foto de una mujer con un teléfono que muestra "Calorías 960 kcal" y "Pasos 4.532", con el texto "Tu Día 1 empieza hoy" | La app real no cuenta calorías (la promesa es "sin contar calorías"), y una persona de IA con una app inventada parece una clienta. Usar `reto-cintura-28-banner-checkout.jpg` (teléfono con la app real, sin persona) |
+| Order bump | "SÍ, quiero agregar el Menú Acelerador: comidas listas para seguir el reto sin pensar qué cocinar **y ver resultados más rápido**. Se agrega ahora por solo US$4,90. Esta oferta solo aparece en esta compra." (R$ 27,00) | Sacar "y ver resultados más rápido" (promesa que el menú no entrega); renombrar a "Menú armado de 28 días"; "extra opcional" |
+| Moneda e idioma | Depende del país de quien compra (visto desde Brasil: reales, portugués) | Normal en Hotmart; revisar cómo se ve desde Uruguay y México |
+| Recuperador de carritos | No disponible | Activar cuando se pueda |
+
+Texto propuesto para el bump:
+
+> **Sí, sumá el Menú armado de 28 días por US$ 4,90.** Cada día resuelto: desayuno, almuerzo, merienda y cena con las recetas del reto, más la lista de compras de cada semana. Extra opcional.
+
 Método: `playbook/07-hotmart-checkout.md` y `compliance/hotmart.md`. Las rutas privadas de la app y de gracias **no se escriben acá** (están en `LEEME-PUBLICAR.txt` del ZIP del sitio). En los textos aparecen como `{URL_APP}` y `{URL_GRACIAS}`.
 
 ## Producto 1: Reto Cintura 28
