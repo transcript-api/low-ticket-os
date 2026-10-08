@@ -5,7 +5,8 @@
 | Tarea | Quién |
 |---|---|
 | **Decidir cómo se muestra el precio** (hay un precio base de US$ 99,38 con cupón "84" que deja US$ 15,90): leer [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md) antes de escribir "84 % de descuento" en anuncios o página | Santiago |
-| Decirme el precio base del order bump (se aplicó el mismo cupón) y si el cupón tiene límite de usos o fecha | Santiago |
+| Ponerle al cupón `84` fecha de fin o tope de usos en Hotmart, y decidir qué precio real se cobra después del lanzamiento (el bump estaba a US$ 40 y hoy cuesta 4,90) | Santiago |
+| Pasar el link del checkout con cupón para ver qué precio ve la persona | Santiago |
 | Revisar en Hotmart lo que falta: order bump, apariencia del checkout, píxel, página de gracias, área de miembros | Claude (con OK) / Santiago |
 | Activar recuperador de carritos o cupón de recuperación | Santiago |
 | Configurar materiales y reglas de afiliados antes de aprobar a nadie (el programa ya está activo) | Santiago |

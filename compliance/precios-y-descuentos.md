@@ -32,6 +32,20 @@ Esto no es asesoría legal: ante la duda, consultar a un profesional del país d
 
 **Recomendación:** opciones 1 + 5 y, si querés fuerza de valor, la 3. Es lo más cercano a lo que querés y se sostiene ante Meta, Hotmart y un reclamo.
 
+## Cupón de lanzamiento honesto (aclaración del 2026-10-08)
+
+"Hago algunas ventas con el cupón al principio y listo" **no** convierte el precio base en real: lo que importa es si el precio de lista se cobra de verdad y si el cupón termina.
+
+| Situación | ¿Honesto? |
+|---|---|
+| Cupón con fecha de fin o tope de usos, y después el precio sube de verdad | Sí |
+| Cupón permanente y el precio de lista nunca se cobra, pero se muestra "84 % off" o "antes US$ 99,38" | No |
+| Cupón permanente y solo se muestra el precio final | Sí (el cupón es un mecanismo técnico) |
+
+**Order bump:** de US$ 40 a US$ 4,90 solo es un descuento real si US$ 40 va a ser su precio después del lanzamiento. Si queda siempre en 4,90, no se muestra "antes US$ 40".
+
+**Ojo con el checkout:** Hotmart puede mostrar el precio original tachado al aplicar el cupón. Verlo en el checkout real y decidir si se ajusta el precio base.
+
 ## Detalles técnicos que conviene revisar
 
 - **Cupón `84`:** es corto y fácil de adivinar. Revisar límite de usos, fecha de vencimiento y a qué ofertas aplica.
