@@ -4,6 +4,10 @@
 
 | Tarea | Quién |
 |---|---|
+| **URGENTE: el precio base en Hotmart figura como 99,38 US$** (debería ser 15,90). Confirmar si es un error y corregirlo, o decir si es intencional | Santiago |
+| Revisar en Hotmart lo que falta: order bump, apariencia del checkout, píxel, página de gracias, área de miembros | Claude (con OK) / Santiago |
+| Activar recuperador de carritos o cupón de recuperación | Santiago |
+| Configurar materiales y reglas de afiliados antes de aprobar a nadie (el programa ya está activo) | Santiago |
 | Pasar la lista de cambios que quiere en la página | Santiago |
 | **Verificar el estado de Hotmart** (producto, precio, bump, garantía, afiliación, píxel, página de gracias): sin acceso, pedir capturas o iniciar sesión en una ventana que Claude pueda usar | Santiago / Claude |
 | Elegir el nombre del bump ("Menú Acelerador" o "Menú armado de 28 días") | Santiago |

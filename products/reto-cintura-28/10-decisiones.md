@@ -2,6 +2,17 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-08 — Nombre del producto en Hotmart: "Reto Cintura 28" (sin "cm")
+- Decisión (de Santiago): quitar "cm" del nombre. Hecho en Hotmart y verificado recargando la página.
+- Motivo: "28cm" se lee como promesa de 28 cm de cintura, contra la regla de no prometer números. El nombre de marca es "Reto Cintura 28".
+- Alcance: solo el nombre del producto principal. Otros textos del material (portada, página) ya decían "Reto Cintura 28".
+- Estado: Adoptada y aplicada.
+
+### 2026-10-08 — Hotmart muestra 99,38 US$ de precio base
+- Observación: contradice el precio vigente de US$ 15,90 y hay ventas activas. Posible error de carga o de moneda. No se pudo confirmar la causa.
+- Decisión: **no cambiado**; lo confirma o lo corrige Santiago.
+- Estado: A revisar con urgencia.
+
 ### 2026-10-08 — Oferta vigente: US$ 15,90 + Menú Acelerador US$ 4,90, afiliados 37 %, garantía 7 días
 - Decisión (de Santiago): esos son los datos actuales. Reemplazan al US$ 9,90 del centro de mando y la página.
 - Motivo / dato: cálculo en [02-oferta.md](02-oferta.md). CPA de equilibrio ~US$ 14,26 con 25 % de toma del bump.
