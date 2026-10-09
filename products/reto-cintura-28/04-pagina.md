@@ -19,9 +19,32 @@ Estructura del `index.html` actual, en orden: hero ("28 días para afinar tu cin
 4. **No aparece el extra** (Menú Acelerador) ni el encuadre "completá tu reto": se ofrece en el checkout; la página puede anticiparlo sin vender dos cosas.
 5. La página dice "después de los 40, ¿sirve?" en el FAQ: está bien como pregunta de quien lee.
 
-## Cambios que quiere Santiago
+## Cambios que quiere Santiago (2026-10-09)
 
-(pendiente: Santiago tiene una lista; se completa acá antes de construir)
+- **Objetivo:** mejorar la conversión; que quien llega al final toque el checkout "sin pensar". Dice que el diseño está muy lindo pero hay "algo que falla": **pendiente que Santiago pase su lista de lo que cree que frena la conversión**.
+- **Quiz:** sí, testearlo en la página (propuesta del socio: "¿El Reto Cintura 28 es para vos?"), con preguntas persuasivas basadas en cómo funcionan los quiz que más convierten. Investigación: [`docs/investigacion-quiz-funnels.md`](../../docs/investigacion-quiz-funnels.md). Reutilizar el diseño del quiz de la app.
+- **Visual:** probar dos direcciones (oscuro premium / claro editorial) con sensación de urgencia y la misma prolijidad actual.
+- **Precio:** Santiago pidió mostrar US$ 99,38 tachado y 84 % de descuento. Condición del repo: solo si ese precio se cobra de verdad (fecha real de fin del cupón y precio que sube). Si no, se muestra el precio final. Pendiente de confirmar. Ver [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md).
+- **Urgencia:** solo con un fin real. El contador del checkout hoy no lo cumple.
+
+## Quiz de ventas: propuesta (pendiente de OK)
+
+Nombre: **"¿El Reto Cintura 28 es para vos?"** Test de 1 minuto, 6 preguntas, una por pantalla, avanza al tocar. Sin email ni datos corporales. Ningún dato va al píxel.
+
+| # | Pregunta | Opciones (en sus palabras) |
+|---|---|---|
+| 1 | ¿Qué te pasó las otras veces? | Empecé con todo y a la semana abandoné · Me quedé sin tiempo · Las dietas eran muy estrictas · Me aburrí · No veía resultados · Nunca empecé en serio |
+| 2 | ¿Cuánto tiempo real tenés en un día normal? | 10 a 15 min · 20 a 30 min · Depende del día |
+| 3 | ¿Qué describe mejor tu día a día? | Poco tiempo y mucho para hacer · Trabajo muchas horas · Cuido a otros · Otra situación |
+| 4 | ¿Qué te gustaría que sea distinto esta vez? | Que alguien me diga qué hacer cada día · Un plan para los días que no puedo · Comer normal, sin prohibidos · Ver mi avance |
+| 5 | ¿Qué querés sentir el Día 28? | Que la ropa me quede cómoda · Más energía · Terminar algo por primera vez · Sentirme más fuerte |
+| 6 | Si hoy tuvieras el plan armado día por día, ¿cuándo empezarías? | Hoy · Mañana · Esta semana |
+
+**Resultado:** "Por lo que respondiste, no necesitás otro plan complicado." Repite sus respuestas ("Me contaste que…"), muestra la parte del producto que responde a su motivo (tiempo → Plan B de 8 min; dietas → plato armado y 32 recetas; abandono → plan día por día y protocolo de regreso; aburrimiento → cada semana cambia el ritmo; resultados → centímetros, ropa y fuerza), y cierra con precio, garantía de 7 días y un solo botón al checkout.
+
+Sin "tengo más de 40" ni preguntas de peso o cuerpo.
+
+**Dos versiones para el test (EXP-002):** A = página directa; B = página con el quiz después de los beneficios.
 
 ## Estructura propuesta (con aportes del socio)
 
