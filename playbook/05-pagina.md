@@ -57,3 +57,14 @@ Estructura elegida, copy de cada sección, especificación del quiz, variantes y
 ## Criterio de salida
 
 Página publicada, con eventos verificados, compra de prueba pasando por ella, y coherencia revisada contra los creativos del lote 1.
+
+## Estándar de toda página de ventas (decidido el 2026-10-09)
+
+1. **Microsoft Clarity siempre instalado** (`clarityId` en `landing-config.json`). Mapas de calor y grabaciones son la fuente de la lista de "qué frena la conversión". Todo bloque que muestre respuestas de quiz o datos de salud va con `data-clarity-mask="True"`.
+2. **Píxel de Meta** en la página y también en Hotmart (Herramientas → Píxel) para que Meta vea ViewContent, InitiateCheckout y Purchase. Eventos sin datos personales: QuizStart, QuizComplete, Scroll50, Scroll90.
+3. **Utmify** activo y probado con compra de prueba.
+4. **Apertura de una sola pantalla**: nada de scroll largo antes del primer argumento. Un botón principal, un link directo al precio y precio visible.
+5. **Precio tachado y cuenta regresiva solo con fecha real** (`listPrice` + `launchEndsAt` iguales al fin del cupón en Hotmart). Sin fecha real quedan apagados.
+6. **Sin cifras de contenido como argumento** ("128 páginas" asusta). Se vende la transformación y la facilidad de empezar; los bonus van en letra chica dentro de la tarjeta de precio.
+7. Botones que bajan directo al precio para quien ya quiere comprar.
+8. Código de la página guardado en `products/<producto>/pagina/` y publicado con `vercel deploy --prod`.

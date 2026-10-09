@@ -144,7 +144,7 @@ html.qz-lock, html.qz-lock body { overflow: hidden; }
   .ap-h1 { font-size: clamp(2.6rem, 12.4vw, 3.7rem); }
   .ap-cta { margin-top: 22px; width: 100%; }
   .ap-btn { width: 100%; }
-  .ap-more { display: none; }
+  .ap-more { margin-top: 12px; }
   .ap-visual { width: min(76vw, 300px); margin-top: 30px; margin-bottom: -150px; }
   .ap-float.f1 { left: -12%; } .ap-float.f2 { right: -10%; } .ap-float.f3 { display: none; }
   .ap-chips { margin-top: 14px !important; }
@@ -156,3 +156,11 @@ html.qz-lock, html.qz-lock body { overflow: hidden; }
 .r28-sticky small[data-deadline]:not([hidden]) + small { display: none; }
 .qz-h:focus-visible { outline: none; }
 .r28-sticky span, .r28-sticky b, .r28-sticky s { white-space: nowrap; }
+
+/* Bonus dentro de la tarjeta de precio */
+.r28-price .pb:not(.is-launch) .pb-note { display: none; }
+.r28-bonuses { border-top: 1px solid rgba(255, 255, 255, .14); padding-top: 14px; }
+.r28-bonuses p { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .55); margin-bottom: 9px; }
+.r28-bonuses ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
+.r28-bonuses li { display: grid; grid-template-columns: 18px 1fr; gap: 9px; align-items: start; font-size: .84rem; line-height: 1.4; color: rgba(255, 255, 255, .8); }
+.r28-bonuses li::before { content: "✓"; width: 18px; height: 18px; margin-top: 1px; border-radius: 50%; background: rgba(207, 245, 106, .14); color: #CFF56A; font-size: 10px; font-weight: 800; display: grid; place-items: center; }

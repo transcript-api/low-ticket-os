@@ -20,7 +20,15 @@ El agente tiene que saber, sin que se lo expliques de nuevo:
 - Qué se decidió y qué se descartó, con motivo (`10-decisiones.md`).
 - Por qué no se hacen ciertas cosas (`docs/01-principios.md`).
 
-## 3. Pendiente que más destraba
+## 2b. Leer primero
+
+1. `AGENTS.md` (reglas y bitácora obligatoria).
+2. `docs/bitacora.md` (recorrido completo, desacuerdos y opiniones).
+3. `products/reto-cintura-28/11-pendientes.md`.
+
+Página publicada: https://reto-cintura-28.vercel.app. Para republicar: `cd products/reto-cintura-28/pagina && vercel deploy --prod --yes` (requiere `npm i -g vercel` y `vercel login`).
+
+## 3. Pendiente que más destraba (quedó viejo: ver 11-pendientes.md)
 
 1. Decidir el precio de arranque (9,90 o 14,90): `products/reto-cintura-28/02-oferta.md`.
 2. Aprobar el plan de página y las 2 direcciones visuales: `04-pagina.md`.

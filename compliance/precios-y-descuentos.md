@@ -60,3 +60,7 @@ Esto no es asesoría legal: ante la duda, consultar a un profesional del país d
 - [ ] La fecha de fin es real y se cumple.
 - [ ] Anuncio, página y checkout muestran el mismo precio.
 - [ ] El cupón está limitado en usos o fecha si se promete escasez.
+
+## Actualización 2026-10-09: de "84 % sobre 99,38" a "65 % sobre 45,43"
+
+Santiago eligió mostrar **65 % de descuento** manteniendo US$ 15,90: precio de lista = 15,90 / (1 − 0,65) = **US$ 45,43**. Para que sea coherente hay que cambiar en Hotmart el precio base a US$ 45,43 y el cupón a 65 %; mientras el checkout muestre 99,38 / 84 %, la página no debe mostrar el tachado. La página lo tiene cargado y apagado (`listPrice`, `discountLabel`, `launchEndsAt` vacío). Se enciende solo con fecha real de fin del cupón. Contador falso: no se implementa (ver `docs/bitacora.md`).

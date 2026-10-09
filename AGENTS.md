@@ -86,6 +86,16 @@ Una tarea está terminada cuando: (a) cumple las reglas del punto 4, (b) está r
 
 Este repo tiene que mejorar solo con el uso. Si encontrás un error repetido, un paso que sobra o una regla que falta: corregí el `playbook/` o este archivo y dejalo anotado en `docs/aprendizajes.md`. No dejes la mejora solo en tu cabeza.
 
-## 10. Herramientas externas del dueño
+## 10. Bitácora y memoria (obligatorio)
 
-Hotmart (venta y entrega), Meta Ads (tráfico), Utmify (medición), Cloudflare Pages (hosting recomendado, con dominio propio), Higgsfield (imágenes y video IA), Miro (tableros de estrategia). Tableros de Miro de cada producto se enlazan en el `README.md` del producto.
+Santiago trabaja desde varias PC y quiere que cada agente nuevo sienta que estuvo en todas las sesiones anteriores. Por eso:
+
+1. **Al terminar cada tramo de trabajo, escribí una entrada en `docs/bitacora.md`** (hecho, decisiones, desacuerdos, tu opinión, qué falta) y actualizá `10-decisiones.md` y `11-pendientes.md` del producto.
+2. Registrá también tus opiniones y advertencias, y si Santiago decidió algo distinto, dejalo anotado con su motivo. Así no se repite la discusión.
+3. **Subí los cambios a GitHub** al cerrar cada tramo (commit + push), para retomar desde otra PC.
+4. **Siempre proponé una mejora**: cada vez que termines algo, anotá qué se puede mejorar y por qué.
+5. Toda página de ventas cumple el estándar de `playbook/05-pagina.md` (sección "Estándar de toda página"): Clarity, píxel, Utmify, urgencia solo real.
+
+## 11. Herramientas externas del dueño
+
+Hotmart (venta y entrega), Meta Ads (tráfico), Utmify (medición), Microsoft Clarity (mapas de calor y grabaciones), Vercel (hosting actual de la página; Cloudflare Pages también sirve), Higgsfield (imágenes y video IA), Miro (tableros de estrategia). Tableros de Miro de cada producto se enlazan en el `README.md` del producto.

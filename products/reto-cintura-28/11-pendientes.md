@@ -2,6 +2,16 @@
 
 ## Hoy
 
+| Tarea (agregado el 2026-10-09) | Quién |
+|---|---|
+| Crear el proyecto en clarity.microsoft.com y pasar el ID → `clarityId` en `landing-config.json` y republicar | Santiago + Claude |
+| Pasar el ID del píxel de Meta (`metaPixelId`) y cargarlo también en Hotmart (Herramientas → Píxel) para que Meta vea checkout y compra | Santiago + Claude |
+| Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |
+| Decidir fecha real de fin del lanzamiento; cambiar en Hotmart precio base a US$ 45,43, cupón a 65 % y fin del cupón; recién ahí cargar `launchEndsAt` | Santiago (+ Claude con OK) |
+| Checkout: contador, banner, texto del bump | Claude con OK |
+| Reemplazar `app-hoy.webp` (dice "12 de 31") | Claude |
+| Videos e imágenes del reto presencial con permiso | Santiago |
+
 | Tarea | Quién |
 |---|---|
 | **Decidir cómo se muestra el precio** (hay un precio base de US$ 99,38 con cupón "84" que deja US$ 15,90): leer [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md) antes de escribir "84 % de descuento" en anuncios o página | Santiago |

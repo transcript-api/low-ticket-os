@@ -16,6 +16,21 @@ Los aprendizajes de un solo producto van en su `10-decisiones.md`, no acá.
 
 ## Registro
 
+### 2026-10-09 — Un hero con scroll largo esconde la propuesta
+- Qué pasó: la página tenía 5 escenas con scroll y 14 MB de videos antes del primer argumento; Santiago notó que la gente se iba antes de llegar.
+- Aprendizaje: la primera pantalla tiene que vender sola: promesa, prueba visual del producto, un botón y el precio. Lo vistoso no puede costar scroll.
+- Cambio en el método: `playbook/05-pagina.md`, "Estándar de toda página".
+
+### 2026-10-09 — Medir antes de optimizar
+- Qué pasó: se discutió qué recortar de la página sin datos. La página estaba publicada sin píxel ni Clarity.
+- Aprendizaje: instalar medición (Clarity + píxel + Utmify) antes de seguir cambiando. Las opiniones se validan con mapas de calor y embudo.
+- Cambio en el método: estándar de página; la lista de bloqueos se arma con datos.
+
+### 2026-10-09 — La urgencia falsa es un desacuerdo recurrente: dejar la alternativa lista
+- Qué pasó: el dueño prefiere un contador inventado; el repo lo prohíbe.
+- Aprendizaje: ofrecer la versión real con el mismo efecto (fecha de fin real del cupón, que baja segundo a segundo) y dejarla lista para activar con una línea de config.
+- Cambio en el método: `compliance/precios-y-descuentos.md`.
+
 ### 2026-10-08 — Un cambio de precio desfasa creativos, página, reglas y emails
 - Qué pasó: Reto Cintura 28 pasó de US$ 9,90 a US$ 15,90 y quedaron con el precio viejo tres creativos (dos con el precio dentro de la imagen), la configuración de la página, el centro de mando y las reglas de corte.
 - Evidencia: revisión del 2026-10-08 sobre el CSV de creativos, `landing-config.json` y los PDF.

@@ -2,6 +2,12 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-09 — Página v3 publicada en Vercel; precio 65 % sobre US$ 45,43; contador solo real
+- Decisiones de Santiago: apertura de una pantalla + quiz; publicar ya en Vercel y medir; instalar Clarity en todas las páginas; sacar "128 páginas" y lo repetido; bonus en letra chica dentro de la tarjeta de precio; botones directos al precio; pasar el descuento a 65 % (lista US$ 45,43, final US$ 15,90).
+- Desacuerdo registrado: Santiago pidió un contador que baje aunque no sea el tiempo real. Claude no lo implementó (engaña a quien compra y arriesga anuncios y cuenta). Alternativa lista: poner `launchEndsAt` real y coincidente con el fin del cupón.
+- Bump: Santiago quiere "acelerá tus resultados con el menú"; Claude sugiere "acelerá tu reto" (ver bitácora). Decide Santiago.
+- Estado: página online en https://reto-cintura-28.vercel.app; tachado y contador apagados hasta tener fecha real.
+
 ### 2026-10-08 — Nombre del producto en Hotmart: "Reto Cintura 28" (sin "cm")
 - Decisión (de Santiago): quitar "cm" del nombre. Hecho en Hotmart y verificado recargando la página.
 - Motivo: "28cm" se lee como promesa de 28 cm de cintura, contra la regla de no prometer números. El nombre de marca es "Reto Cintura 28".

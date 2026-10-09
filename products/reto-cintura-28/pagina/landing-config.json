@@ -3,13 +3,14 @@
   "price": "US$ 15,90",
   "priceNote": "Pago único. Acceso inmediato.",
   "priceLabel": "Pago único",
-  "listPrice": "",
+  "listPrice": "US$ 45,43",
   "launchEndsAt": "",
   "launchLabel": "Precio de lanzamiento",
-  "discountLabel": "84 % OFF",
+  "discountLabel": "65 % OFF",
   "tema": "noche",
   "metaPixelId": "",
   "utmifyScript": false,
   "soporte": "",
-  "soporteTexto": ""
+  "soporteTexto": "",
+  "clarityId": ""
 }

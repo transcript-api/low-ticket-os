@@ -5,7 +5,7 @@
 (function () {
   'use strict';
   var W = window, D = document;
-  var DEF = { checkoutUrl: '', price: 'US$ 15,90', priceNote: 'Pago único. Acceso inmediato.', priceLabel: 'Pago único', listPrice: '', launchEndsAt: '', launchLabel: 'Precio de lanzamiento', discountLabel: '', tema: 'noche', metaPixelId: '', utmifyScript: false, soporte: '', soporteTexto: '' };
+  var DEF = { clarityId: '', checkoutUrl: '', price: 'US$ 15,90', priceNote: 'Pago único. Acceso inmediato.', priceLabel: 'Pago único', listPrice: '', launchEndsAt: '', launchLabel: 'Precio de lanzamiento', discountLabel: '', tema: 'noche', metaPixelId: '', utmifyScript: false, soporte: '', soporteTexto: '' };
   var reduce = W.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function all(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }
   function clamp(v, a, b) { a = a === undefined ? 0 : a; b = b === undefined ? 1 : b; return Math.min(b, Math.max(a, v)); }
@@ -21,6 +21,13 @@
     D.head.appendChild(s);
     W.fbq('init', id); W.fbq('track', 'PageView');
   }
+  /* Microsoft Clarity: mapas de calor y grabaciones. El quiz va enmascarado (data-clarity-mask) para no grabar respuestas. */
+  function clarity(id) {
+    if (W.clarity) return;
+    W.clarity = function () { (W.clarity.q = W.clarity.q || []).push(arguments); };
+    var s = D.createElement('script'); s.async = true; s.src = 'https://www.clarity.ms/tag/' + encodeURIComponent(id);
+    D.head.appendChild(s);
+  }
   function apply(cfg) {
     W.R28CFG = cfg;
     if (cfg.checkoutUrl) all('a[data-buy]').forEach(function (a) { a.href = cfg.checkoutUrl; });
@@ -30,6 +37,7 @@
       if (p) { var a = p.querySelector('a'); a.href = cfg.soporte; a.textContent = cfg.soporteTexto || cfg.soporte; p.hidden = false; }
     }
     if (cfg.metaPixelId) pixel(String(cfg.metaPixelId).trim());
+    if (cfg.clarityId) clarity(String(cfg.clarityId).trim());
     if (cfg.utmifyScript && !D.querySelector('script[data-utmify]')) {
       var u = D.createElement('script'); u.src = 'https://cdn.utmify.com.br/scripts/utms/latest.js'; u.async = true; u.defer = true;
       u.setAttribute('data-utmify', ''); u.setAttribute('data-utmify-prevent-subids', '');
@@ -43,7 +51,10 @@
     .catch(function () { apply(DEF); });
   D.addEventListener('click', function (e) {
     var t = e.target.closest && e.target.closest('[data-buy]');
-    if (t && W.fbq && t.getAttribute('href') !== '#precio') W.fbq('track', 'InitiateCheckout');
+    if (t && t.getAttribute('href') !== '#precio') {
+      if (W.fbq) W.fbq('track', 'InitiateCheckout');
+      if (W.clarity) W.clarity('event', 'ir_al_checkout');
+    }
   });
   var precio = D.getElementById('precio');
   if (precio && 'IntersectionObserver' in W) {

@@ -1,6 +1,6 @@
 # Página de ventas · versión v3 (apertura de una pantalla + quiz)
 
-Código estático listo para Cloudflare Pages. Falta `assets/` (imágenes de la app y la guía), que viene del ZIP del sitio y no se versiona acá. Se arma así: ZIP del sitio + estos 6 archivos encima, y se borra `assets/world/` (14 MB de videos del film viejo, ya no se usan).
+Código estático listo para Cloudflare Pages. Incluye `assets/landing` (imágenes). **No** incluye la app de miembros ni la página de gracias (rutas privadas) ni los PDF del producto: viven en el ZIP del sitio en la PC de Santiago. Para publicar: `vercel deploy --prod --yes` desde la carpeta del sitio (el sitio publicado además lleva esas dos carpetas privadas, copiadas del ZIP).
 
 ## Qué cambió respecto de la v2
 - Se eliminó el film con scroll (5 escenas, ~6 pantallas de scroll antes del primer argumento).

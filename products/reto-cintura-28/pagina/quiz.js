@@ -10,7 +10,7 @@
 
   function all(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-  function track(name) { try { if (W.fbq) W.fbq('trackCustom', name); } catch (e) {} }
+  function track(name) { try { if (W.fbq) W.fbq('trackCustom', name); if (W.clarity) W.clarity('event', name); } catch (e) {} }
 
   /* ---------- Preguntas ---------- */
   var QS = [
@@ -78,7 +78,7 @@
     return isNaN(t) ? 0 : t;
   }
   function demo() { return params.get('demo') === 'lanzamiento'; }
-  function listPrice() { return (CFG && CFG.listPrice) || (demo() ? 'US$ 99,38' : ''); }
+  function listPrice() { return (CFG && CFG.listPrice) || (demo() ? 'US$ 45,43' : ''); }
   function launchOn() { return !!(CFG && listPrice() && endsAt() > Date.now()); }
   function two(n) { return (n < 10 ? '0' : '') + n; }
   function remaining() {
@@ -99,7 +99,7 @@
     var demo = params.get('demo') === 'lanzamiento' ? '<span class="pb-demo">Vista previa</span>' : '';
     return '<div class="pb pb-' + size + ' is-launch">' + demo +
       '<div class="pb-row"><s class="pb-list">' + esc(listPrice()) + '</s><b class="pb-now">' + price + '</b>' +
-      (CFG.discountLabel || demo() ? '<span class="pb-off">' + esc(CFG.discountLabel || '84 % OFF') + '</span>' : '') + '</div>' +
+      (CFG.discountLabel || demo() ? '<span class="pb-off">' + esc(CFG.discountLabel || '65 % OFF') + '</span>' : '') + '</div>' +
       '<span class="pb-note">' + esc(CFG.launchLabel || 'Precio de lanzamiento') + ' hasta el ' + fmtDate() + ' · quedan <b data-countdown>' + remaining() + '</b></span></div>';
   }
   function paintPrices() {
@@ -127,7 +127,7 @@
   function build() {
     if (root) return;
     root = D.createElement('div');
-    root.className = 'qz'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', 'Test: ¿es para vos?'); root.hidden = true;
+    root.className = 'qz'; root.setAttribute('data-clarity-mask', 'True'); root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', 'Test: ¿es para vos?'); root.hidden = true;
     root.innerHTML = '<div class="qz-in"><header class="qz-top"><button type="button" class="qz-back" data-qz="back" aria-label="Volver">‹</button>' +
       '<div class="qz-bar" aria-hidden="true"><i></i></div><button type="button" class="qz-x" data-qz="close" aria-label="Cerrar">×</button></header>' +
       '<div class="qz-body" aria-live="polite"></div></div>';
@@ -187,7 +187,7 @@
       '<div class="qz-card"><b>Lo que te pasó antes</b><p>' + esc(POR_QUE[key('pasado')]) + '</p></div>' +
       '<div class="qz-card"><b>Lo que más te va a servir</b><p>' + esc(SERVIRA[key('distinto')]) + '</p></div>' +
       '<div class="qz-card"><b>Tu tiempo</b><p>' + esc(TIEMPO[key('tiempo')]) + '</p></div>' +
-      '<ul class="qz-inc"><li>App de 36 días con timer guiado</li><li>Guía de 128 páginas en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semana 5 de regalo</li></ul>' +
+      '<ul class="qz-inc"><li>App de 36 días con timer guiado</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semana 5 de regalo</li></ul>' +
       '<div class="qz-offer"><div data-price-block="l"></div>' +
       '<a class="qz-buy" data-buy href="' + esc(buy) + '">Quiero empezar mi reto</a>' +
       '<p class="qz-close">' + esc(CIERRE[key('cuando')]) + '</p>' +
@@ -231,6 +231,13 @@
     new IntersectionObserver(function (es) { D.documentElement.classList.toggle('ap-past', !es[0].isIntersecting); }, { threshold: 0.05 }).observe(h);
   }
   heroWatch();
+  (function () {
+    var hit = {};
+    W.addEventListener('scroll', function () {
+      var h = D.documentElement, p = (W.scrollY + W.innerHeight) / Math.max(h.scrollHeight, 1);
+      [[0.5, 'Scroll50'], [0.9, 'Scroll90']].forEach(function (x) { if (p >= x[0] && !hit[x[1]]) { hit[x[1]] = 1; track(x[1]); } });
+    }, { passive: true });
+  })();
   previewSwitch();
   if (W.R28CFG) init(W.R28CFG); else D.addEventListener('r28:config', function (e) { init(e.detail); });
 })();
