@@ -20,3 +20,6 @@ El quiz no envía respuestas a ninguna herramienta. Solo dos eventos sin datos: 
 - Testimonios del reto presencial: hay una plantilla comentada en `index.html` (antes de las preguntas frecuentes). Solo con permiso escrito.
 - Cargar `listPrice`/`launchEndsAt` cuando Santiago confirme el precio real posterior y la fecha de fin del cupón.
 - Actualizar la captura `app-hoy.webp` ("12 de 31") a "12 de 28".
+
+## Publicación
+Online en Vercel (cuenta de Santiago, proyecto `reto-cintura-28`): https://reto-cintura-28.vercel.app . Se sube con `vercel deploy --prod` desde la carpeta del sitio (sin `assets/world`, con `vercel.json`). Cada cambio de la página se republica así.
