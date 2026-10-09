@@ -54,3 +54,8 @@ Los aprendizajes de un solo producto van en su `10-decisiones.md`, no acá.
 - Evidencia: conversación; sin test todavía.
 - Aprendizaje: el orden recomendado es hero, 2 o 3 beneficios, quiz corto, resultado personalizado, oferta. Se testea contra la página sin quiz.
 - Cambio en el método: `playbook/05-pagina.md`, sección quiz.
+
+### 2026-10-09 — Un contador del checkout que vence sin consecuencias es urgencia falsa
+- Qué pasó: el checkout de Reto Cintura 28 tiene un contador "última oportunidad, tu precio de lanzamiento está reservado". Al llegar a cero muestra "el tiempo de tu precio de lanzamiento finalizó", pero el cupón sigue aplicado y el precio no cambia.
+- Aprendizaje: un temporizador por visitante que no cambia nada es el patrón de urgencia falsa que el método prohíbe. Si hay urgencia, debe corresponder a un fin real (fecha o tope de usos del cupón).
+- Cambio en el método: `compliance/precios-y-descuentos.md` (antes de publicar un descuento) y `docs/01-principios.md`.
