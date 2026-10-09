@@ -11,6 +11,7 @@
 | Activar recuperador de carritos o cupón de recuperación | Santiago |
 | Configurar materiales y reglas de afiliados antes de aprobar a nadie (el programa ya está activo) | Santiago |
 | Pasar la lista de cambios que quiere en la página | Santiago |
+| **Página v3 (ver [pagina/README.md](pagina/README.md)):** elegir tema (noche u hueso), aprobar las 6 preguntas del quiz, confirmar fecha real de fin del cupón y precio posterior para activar el tachado US$ 99,38 y la cuenta regresiva; pasar videos e imágenes del reto presencial con permiso escrito | Santiago |
 | **Verificar el estado de Hotmart** (producto, precio, bump, garantía, afiliación, píxel, página de gracias): sin acceso, pedir capturas o iniciar sesión en una ventana que Claude pueda usar | Santiago / Claude |
 | Elegir el nombre del bump ("Menú Acelerador" o "Menú armado de 28 días") | Santiago |
 | Subir este repo a GitHub (privado) | Santiago |

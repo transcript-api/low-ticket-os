@@ -2,6 +2,8 @@
 
 ## Estado
 
+- **2026-10-09 · Versión v3 construida** (código en [`pagina/`](pagina/README.md)): se reemplazó el film con scroll por una apertura de una pantalla + quiz de 6 preguntas con resultado y botón directo al checkout, en dos temas (noche / hueso). Precio final US$ 15,90; el tachado US$ 99,38 y la cuenta regresiva quedan **apagados** hasta que `landing-config.json` tenga una fecha real de fin. Sin publicar. Falta: lista de bloqueos de Santiago, fecha real del cupón, OK de las 6 preguntas, testimonios del reto presencial.
+
 - **Versión actual (publicable, sin publicar):** página del centro de mando, con estructura de 10 secciones. Contenido bueno, diseño que Santiago considera feo.
 - **Próximo paso:** rehacer con el plan de abajo. **Antes de construir**: proponer 2 direcciones visuales y esperar el OK de Santiago.
 - **Config:** `landing-config.json` controla `checkoutUrl`, `price`, `priceNote`, `priceLabel`, `metaPixelId`, `utmifyScript`, `soporte`, `soporteTexto`. Mientras `checkoutUrl` esté vacío, los botones bajan a la sección de precio.
