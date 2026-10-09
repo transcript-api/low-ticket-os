@@ -2,3 +2,5 @@ id,producto,inicio,fin,hipotesis,variable,control,variante,metrica_principal,res
 EXP-001,reto-cintura-28,,,"Un precio mas bajo deja mas neto por visita que US$ 15,90 con trafico frio",precio del principal,15.90,"9.90 o 11.90 (a definir)",neto por visita,,,,pendiente,
 EXP-002,reto-cintura-28,,,"La pagina con quiz corto convierte mas que sin quiz",quiz en pagina,sin quiz,con quiz (despues de beneficios),compras por visita,,,,pendiente,
 EXP-003,reto-cintura-28,,,"Sumar Kit Antiexcusas y kit de comidas como bumps deja mas neto medio que solo el Menu",extras de checkout,"solo Menu Acelerador 4.90","Menu + Kit Antiexcusas 3 + Meal Kit 5 (o combo 6)",neto medio por compra sin bajar la conversion del checkout,,,,pendiente,
+EXP-004,reto-cintura-28,,,"Un titular emocional convierte mas que el actual (sin asumir atributo personal)",titular del hero,"Afina tu cintura en 28 dias","Sentite comoda con tu cintura en 28 dias",compras por visita,,,,pendiente,
+EXP-005,reto-cintura-28,,,"Con el quiz como boton principal se compra mas que con compra directa como principal",CTA principal del hero,"compra directa","quiz (actual)",compras por visita y neto por visita,,,,pendiente,

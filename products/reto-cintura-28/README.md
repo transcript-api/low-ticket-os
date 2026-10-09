@@ -4,6 +4,7 @@
 
 - **Fase del flujo:** 03 Oferta (vigente definida por Santiago el 2026-10-08) y 05 Página (cambios pendientes: Santiago tiene una lista). Producto, creativos y videos ya producidos. Todavía no hay ventas ni gasto en anuncios (dato de Santiago; **no verificado en Hotmart**, no hubo acceso).
 - **Último cambio:** 2026-10-08. Se incorporó el material completo (sitio, creativos, guía, hojas, menú, portadas y banners), los datos vigentes de oferta y una revisión crítica. Detalle en [10-decisiones.md](10-decisiones.md).
+- **Actualización 2026-10-09:** página v3 online (https://reto-cintura-28.vercel.app). Lo vigente y lo que falta: [INFORME.md](INFORME.md) (empezar por "Dónde paramos").
 - **Test activo:** ninguno.
 - **Siguiente paso:** sincronizar precio en creativos y página, verificar el estado de Hotmart y definir los cambios de la página. Ver [11-pendientes.md](11-pendientes.md).
 

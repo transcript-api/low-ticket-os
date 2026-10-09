@@ -20,6 +20,10 @@ El agente tiene que saber, sin que se lo expliques de nuevo:
 - Qué se decidió y qué se descartó, con motivo (`10-decisiones.md`).
 - Por qué no se hacen ciertas cosas (`docs/01-principios.md`).
 
+## 2a. Dónde paramos
+
+Leé `products/reto-cintura-28/INFORME.md`, sección "Dónde paramos". En una línea: la página v3 está online y medida con Clarity; falta el descuento real (Hotmart + fecha), semanas 6 y 7, píxel de Meta, Utmify, correcciones del checkout y prueba social.
+
 ## 2b. Leer primero
 
 1. `AGENTS.md` (reglas y bitácora obligatoria).

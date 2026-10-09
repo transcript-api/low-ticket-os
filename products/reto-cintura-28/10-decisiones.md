@@ -2,6 +2,12 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-09 (noche) — Feedback del socio: quiz como CTA principal, "¿Es para vos?" vuelve, app en beneficios
+- Fuente: [fuentes/chat-santi-amigo-2.md](fuentes/chat-santi-amigo-2.md). Análisis punto por punto: [12-mejoras-pagina.md](12-mejoras-pagina.md).
+- Hecho: quiz como botón principal (hero, mitad, cierre) con "Ir directo al precio" secundario; sección de app reescrita en beneficios; "¿Es para vos?" restituida (Santiago y Claude la habían sacado; el socio y la lógica de confianza decían que se quede); páginas más cortas.
+- No aplicado (a testear): titular "Volvé a sentirte cómoda…" por riesgo de asumir un atributo personal; alternativa "Sentite cómoda…" (EXP-004).
+- Santiago insiste en ver el descuento en la página. Sigue apagado hasta tener fin real del cupón (ver bitácora).
+
 ### 2026-10-09 — Página v3 publicada en Vercel; precio 65 % sobre US$ 45,43; contador solo real
 - Decisiones de Santiago: apertura de una pantalla + quiz; publicar ya en Vercel y medir; instalar Clarity en todas las páginas; sacar "128 páginas" y lo repetido; bonus en letra chica dentro de la tarjeta de precio; botones directos al precio; pasar el descuento a 65 % (lista US$ 45,43, final US$ 15,90).
 - Desacuerdo registrado: Santiago pidió un contador que baje aunque no sea el tiempo real. Claude no lo implementó (engaña a quien compra y arriesga anuncios y cuenta). Alternativa lista: poner `launchEndsAt` real y coincidente con el fin del cupón.

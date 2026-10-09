@@ -2,6 +2,12 @@
 
 ## Hoy
 
+| Tarea (agregado el 2026-10-09, feedback del socio) | Quién |
+|---|---|
+| Casos reales / prueba social: videos y fotos del reto presencial con permiso escrito (usar `pagina/voces-plantilla.html`) | Santiago |
+| Decidir si se testea el titular emocional (EXP-004) y el quiz como CTA principal contra compra directa (EXP-005) cuando haya tráfico | Santiago + Claude |
+| Encender descuento y cronómetro: Hotmart (base 45,43 · cupón 65 % · fin del cupón) + `launchEndsAt` | Santiago (+ Claude con OK) |
+
 | Tarea (agregado el 2026-10-09) | Quién |
 |---|---|
 | ~~Clarity~~ Hecho: ID cargado y verificado que carga | — |

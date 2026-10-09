@@ -2,6 +2,15 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-09 (cierre de la noche) · Feedback del socio, Miro al repo, dónde paramos
+
+- Santiago pasó 8 capturas con la revisión del socio (7/10: mucha explicación, poco deseo y prueba). Se transcribió a `products/reto-cintura-28/fuentes/chat-santi-amigo-2.md` y se analizó en `12-mejoras-pagina.md`.
+- Página publicada de nuevo: el quiz es el botón principal (hero, mitad y cierre) y queda "Ir directo al precio" como secundario; app en beneficios; "¿Es para vos?" restituida (error mío haberla sacado); menos repetición.
+- Se leyeron los dos tableros de Miro y se organizó su contenido y banco de ideas en `docs/miro-ideas.md`. Aviso: sus cifras de equilibrio son de cuando el precio era US$ 9,90.
+- Experimentos nuevos: EXP-004 (titular) y EXP-005 (quiz como CTA principal vs compra directa).
+- **Pendiente que Santiago volvió a señalar:** que el descuento aparezca en la página. Sigue apagado a propósito; falta que Hotmart tenga precio base US$ 45,43, cupón 65 % y fin real, y cargar `launchEndsAt`. Es lo primero a resolver cuando vuelva.
+- **Dónde paramos y qué sigue:** ver "Dónde paramos" en `products/reto-cintura-28/INFORME.md`.
+
 ## 2026-10-09 (noche) · Ajustes, Clarity activo, GitHub
 
 - Clarity activo (ID en `landing-config.json`). Se sacó "Pago seguro con Hotmart" (Santiago: no genera confianza). Hero con la pregunta del socio: "¿Querés saber si el Reto Cintura 28 es para vos?" + botón "Hacer el test".
