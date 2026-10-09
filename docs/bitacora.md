@@ -2,6 +2,13 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-09 (noche) · Ajustes, Clarity activo, GitHub
+
+- Clarity activo (ID en `landing-config.json`). Se sacó "Pago seguro con Hotmart" (Santiago: no genera confianza). Hero con la pregunta del socio: "¿Querés saber si el Reto Cintura 28 es para vos?" + botón "Hacer el test".
+- **Semanas 5, 6 y 7 de regalo** nombradas en la página, con el mensaje de que la rutina se repite y se sube de nivel cuando quiera. **Las semanas 6 y 7 las agrega Santiago el 2026-10-10: no lanzar anuncios hasta que existan.**
+- Santiago pidió borrar la fecha y dejar "tiempo limitado" con cronómetro. Se hizo la parte visual (sin fecha, "por tiempo limitado · quedan …") pero el cronómetro y el tachado **siguen apagados** hasta que haya un fin real del cupón (`launchEndsAt`). Claude mantiene la opinión de la entrada de abajo.
+- Repo subido a GitHub privado: github.com/transcript-api/low-ticket-os.
+
 ## 2026-10-09 · Página v3 publicada, quiz, Clarity, precio, bonus
 
 **Hecho**

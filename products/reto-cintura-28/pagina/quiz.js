@@ -100,7 +100,7 @@
     return '<div class="pb pb-' + size + ' is-launch">' + demo +
       '<div class="pb-row"><s class="pb-list">' + esc(listPrice()) + '</s><b class="pb-now">' + price + '</b>' +
       (CFG.discountLabel || demo() ? '<span class="pb-off">' + esc(CFG.discountLabel || '65 % OFF') + '</span>' : '') + '</div>' +
-      '<span class="pb-note">' + esc(CFG.launchLabel || 'Precio de lanzamiento') + ' hasta el ' + fmtDate() + ' · quedan <b data-countdown>' + remaining() + '</b></span></div>';
+      '<span class="pb-note">' + esc(CFG.launchLabel || 'Precio de lanzamiento') + (CFG.mostrarFecha ? ' hasta el ' + fmtDate() : ' por tiempo limitado') + ' · quedan <b data-countdown>' + remaining() + '</b></span></div>';
   }
   function paintPrices() {
     if (!CFG) return;
@@ -111,7 +111,7 @@
       if (launchOn()) { el.textContent = listPrice(); el.hidden = false; } else { el.hidden = true; }
     });
     all('[data-deadline]').forEach(function (el) {
-      if (launchOn()) { el.innerHTML = el.getAttribute('data-deadline') === 'short' ? 'Quedan <b data-countdown>' + remaining() + '</b>' : 'Hasta el ' + fmtDate() + ' · quedan <b data-countdown>' + remaining() + '</b>'; el.hidden = false; } else { el.hidden = true; }
+      if (launchOn()) { el.innerHTML = el.getAttribute('data-deadline') === 'short' ? 'Quedan <b data-countdown>' + remaining() + '</b>' : (CFG.mostrarFecha ? 'Hasta el ' + fmtDate() : 'Tiempo limitado') + ' · quedan <b data-countdown>' + remaining() + '</b>'; el.hidden = false; } else { el.hidden = true; }
     });
   }
   function tick() {
@@ -187,12 +187,12 @@
       '<div class="qz-card"><b>Lo que te pasó antes</b><p>' + esc(POR_QUE[key('pasado')]) + '</p></div>' +
       '<div class="qz-card"><b>Lo que más te va a servir</b><p>' + esc(SERVIRA[key('distinto')]) + '</p></div>' +
       '<div class="qz-card"><b>Tu tiempo</b><p>' + esc(TIEMPO[key('tiempo')]) + '</p></div>' +
-      '<ul class="qz-inc"><li>App de 36 días con timer guiado</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semana 5 de regalo</li></ul>' +
+      '<ul class="qz-inc"><li>App con timer guiado</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semanas 5, 6 y 7 de regalo</li></ul>' +
       '<div class="qz-offer"><div data-price-block="l"></div>' +
       '<a class="qz-buy" data-buy href="' + esc(buy) + '">Quiero empezar mi reto</a>' +
       '<p class="qz-close">' + esc(CIERRE[key('cuando')]) + '</p>' +
       '<button type="button" class="qz-info" data-qz="info">Ver todo lo que incluye ↓</button></div>' +
-      '<p class="qz-g"><b>Garantía de 7 días.</b> Si sentís que no es para vos, pedís el reembolso por Hotmart y te devolvemos el 100 %.</p>' +
+      '<p class="qz-g"><b>Garantía de 7 días.</b> Si sentís que no es para vos, pedís el reembolso y te devolvemos el 100 %.</p>' +
       '<p class="qz-s">Programa de hábitos y actividad física para personas adultas sanas. Si estás embarazada, tenés una lesión o una condición médica, consultá antes de empezar. Tus respuestas no se guardan ni se envían.</p>' +
       '<button type="button" class="qz-redo" data-qz="redo">Volver a hacer el test</button>' +
       '<div class="qz-fix is-off"><a class="qz-buy" data-buy href="' + esc(buy) + '">Empezar · <span data-cfg="price"></span></a></div></div>';

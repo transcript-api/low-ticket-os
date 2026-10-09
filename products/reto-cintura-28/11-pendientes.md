@@ -4,7 +4,8 @@
 
 | Tarea (agregado el 2026-10-09) | Quién |
 |---|---|
-| Crear el proyecto en clarity.microsoft.com y pasar el ID → `clarityId` en `landing-config.json` y republicar | Santiago + Claude |
+| ~~Clarity~~ Hecho: ID cargado y verificado que carga | — |
+| **Semanas 6 y 7 de regalo en la app (Santiago, 2026-10-10)**: la página ya las nombra; no lanzar anuncios antes | Santiago |
 | Pasar el ID del píxel de Meta (`metaPixelId`) y cargarlo también en Hotmart (Herramientas → Píxel) para que Meta vea checkout y compra | Santiago + Claude |
 | Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |
 | Decidir fecha real de fin del lanzamiento; cambiar en Hotmart precio base a US$ 45,43, cupón a 65 % y fin del cupón; recién ahí cargar `launchEndsAt` | Santiago (+ Claude con OK) |

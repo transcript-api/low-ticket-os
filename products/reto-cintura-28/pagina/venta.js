@@ -5,7 +5,7 @@
 (function () {
   'use strict';
   var W = window, D = document;
-  var DEF = { clarityId: '', checkoutUrl: '', price: 'US$ 15,90', priceNote: 'Pago único. Acceso inmediato.', priceLabel: 'Pago único', listPrice: '', launchEndsAt: '', launchLabel: 'Precio de lanzamiento', discountLabel: '', tema: 'noche', metaPixelId: '', utmifyScript: false, soporte: '', soporteTexto: '' };
+  var DEF = { clarityId: '', checkoutUrl: '', price: 'US$ 15,90', priceNote: 'Pago único. Acceso inmediato.', priceLabel: 'Pago único', listPrice: '', launchEndsAt: '', launchLabel: 'Precio de lanzamiento', mostrarFecha: false, discountLabel: '', tema: 'noche', metaPixelId: '', utmifyScript: false, soporte: '', soporteTexto: '' };
   var reduce = W.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function all(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }
   function clamp(v, a, b) { a = a === undefined ? 0 : a; b = b === undefined ? 1 : b; return Math.min(b, Math.max(a, v)); }
