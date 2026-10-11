@@ -2,6 +2,14 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-10 — Descuento encendido: base US$ 45,43 + cupón `LANZAMIENTO65` por dos semanas
+- Decisión (de Santiago): mostrar el 65 % al lado del precio, cupón `LANZAMIENTO65` por dos semanas, sin decir en la página cuánto dura; solo "Precio de lanzamiento por tiempo limitado" en rojo chico en el hero, debajo del botón al checkout y al final del quiz.
+- Hecho en Hotmart (verificado recargando, 2026-10-10): precio base de la oferta `eucnkmyz` de US$ 99,38 a **US$ 45,43**; cupón **`LANZAMIENTO65`**, 65 %, todas las ofertas, del 10/10/2026 18:39 al **24/10/2026 23:59** (America/Montevideo). El cupón `84` ya no existía; solo estaba `LANZAMIENTO84`.
+- Hecho en la página (local): tachado + sticker "−65 %" + ticket "Cupón LANZAMIENTO65 aplicado" + línea roja; sin fecha ni contador (`mostrarFecha`/`mostrarCuenta` en false); `launchEndsAt` = 2026-10-24T23:59-03:00; al vencer pasa sola a US$ 45,43 y saca el cupón del link.
+- Quiz: titular según la meta, se usa la respuesta "día a día" (antes no se usaba), "Ver todo lo que incluye" baja al precio, eventos de Clarity por pregunta.
+- **Pendiente crítico:** `LANZAMIENTO84` sigue válido hasta el 21/10 y con base 45,43 deja el precio en US$ 7,27. Hotmart no permite desactivarlo, solo eliminarlo: espera OK de Santiago. La página publicada todavía usa ese link hasta que se publique la nueva.
+- Opinión de Claude: las dos semanas deberían empezar cuando arranquen los anuncios; el día 25/10 hay que decidir entre quedarse en US$ 45,43 o volver a US$ 15,90 sin tachado. Relanzar el mismo "−65 % por tiempo limitado" sería un descuento permanente disfrazado.
+
 ### 2026-10-09 (noche) — Feedback del socio: quiz como CTA principal, "¿Es para vos?" vuelve, app en beneficios
 - Fuente: [fuentes/chat-santi-amigo-2.md](fuentes/chat-santi-amigo-2.md). Análisis punto por punto: [12-mejoras-pagina.md](12-mejoras-pagina.md).
 - Hecho: quiz como botón principal (hero, mitad, cierre) con "Ir directo al precio" secundario; sección de app reescrita en beneficios; "¿Es para vos?" restituida (Santiago y Claude la habían sacado; el socio y la lógica de confianza decían que se quede); páginas más cortas.

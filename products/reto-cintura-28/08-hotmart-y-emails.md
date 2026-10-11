@@ -6,7 +6,7 @@
 |---|---|---|
 | Producto | ID 8680694, eBook, "Salud y Deportes", español, país principal Uruguay, **ventas activas** | |
 | Nombre | **"Reto Cintura 28"** (era "Reto Cintura 28cm"; cambiado el 2026-10-08 a pedido de Santiago) | "28cm" sonaba a promesa de 28 cm menos de cintura |
-| Precio base | **99,38 US$** | **Intencional** (aclarado por Santiago): precio base con un **cupón de 84 %** (código `84`) que deja el precio efectivo en ~US$ 15,90. También se aplicó al order bump. El tráfico pago entra con el cupón. Riesgos y alternativas: [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md) |
+| Precio base | **45,43 US$** (desde 2026-10-10; antes 99,38) | Cupón **`LANZAMIENTO65`** (65 %, todas las ofertas) del 10/10/2026 18:39 al 24/10/2026 23:59 (Montevideo) deja US$ 15,90. `LANZAMIENTO84` (84 %, hasta 21/10) **sigue válido** y con la base nueva da US$ 7,27: eliminar con OK de Santiago (Hotmart no deja desactivar). Ver [`compliance/precios-y-descuentos.md`](../../compliance/precios-y-descuentos.md) |
 | Ofertas | 1 oferta ("Precio base", código `eucnkmyz`, pago al contado) | Recuperador automático de carritos: **no disponible** |
 | Reembolso | 7 días | OK |
 | Archivos del producto | 2: guía (11,81 MB) y hojas para imprimir (188 KB) | OK; el menú va como bump, producto aparte |
@@ -26,8 +26,10 @@ Links de la oferta (públicos):
 **Link correcto para los anuncios y para `checkoutUrl` en `landing-config.json`:**
 
 ```
-https://pay.hotmart.com/B107932749E?checkoutMode=10&offDiscount=LANZAMIENTO84
+https://pay.hotmart.com/B107932749E?checkoutMode=10&offDiscount=LANZAMIENTO65
 ```
+
+(Desde 2026-10-10. Antes: `offDiscount=LANZAMIENTO84`. Probado el 2026-10-11 en el checkout real desde Uruguay: "Cupón de descuento (65 %)", producto $ 1.927 − $ 1.252,55 = **$ 674,45** (≈ US$ 15,90); bump $ 209 (≈ US$ 4,90).)
 
 Con `?coupon=LANZAMIENTO84` el cupón **no se aplica** y el comprador ve el precio base (R$ 547 ≈ US$ 99). Con `offDiscount=` sí: "Desconto (84 %)", total R$ 87,52 ≈ US$ 15,90.
 

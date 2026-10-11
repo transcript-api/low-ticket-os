@@ -10,16 +10,23 @@ Código estático listo para Cloudflare Pages. Incluye `assets/landing` (imágen
 - Todo lo que estaba debajo (producto por dentro, comparadores, FAQ, oferta) se mantiene. Se corrigieron dos frases de la sección "Si te pasa esto" (edad y cuerpo dirigidos a quien lee).
 
 ## Regla de honestidad del precio
-`landing-config.json` tiene `listPrice`, `launchEndsAt` y `discountLabel`. **El precio tachado, el % y la cuenta regresiva solo aparecen si `listPrice` está cargado y `launchEndsAt` es una fecha futura.** Si no, se muestra solo el precio final. Esa fecha tiene que coincidir con el fin real del cupón en Hotmart y con un precio posterior que se cobre de verdad. Ver [`compliance/precios-y-descuentos.md`](../../../compliance/precios-y-descuentos.md).
+`landing-config.json` tiene `listPrice`, `launchEndsAt`, `discountLabel`, `cupon`, `urgencia`, `urgenciaCorta`, `mostrarCuenta` y `mostrarFecha`. **El precio tachado, el sticker del %, el ticket "Cupón … aplicado" y la línea roja de urgencia solo aparecen si `listPrice` está cargado y `launchEndsAt` es una fecha futura.** Si no, se muestra solo el precio final. Esa fecha tiene que coincidir con el fin real del cupón en Hotmart y con un precio posterior que se cobre de verdad. Ver [`compliance/precios-y-descuentos.md`](../../../compliance/precios-y-descuentos.md).
+- **Dónde se ve el descuento (desde 2026-10-09):** hero (tachado + sticker + línea roja), tarjeta de precio (ticket del cupón + tachado + sticker; línea roja debajo del botón al checkout), barra fija del celular ("Por tiempo limitado") y resultado del quiz (igual que la tarjeta, más el tachado en la barra fija del quiz).
+- **Sin fecha ni cuenta regresiva** por pedido de Santiago (`mostrarFecha: false`, `mostrarCuenta: false`). Se pueden encender con `true`.
+- **Al vencer `launchEndsAt`** la página pasa sola al precio de lista (`listPrice`) y saca `offDiscount=` del link de pago (`venta.js`, `afterLaunch`). Así nunca muestra un precio distinto al del checkout aunque nadie la toque. Si después se decide otro precio, se cambia `price` y se vacían `listPrice` y `launchEndsAt`.
 Para ver el diseño con descuento sin activar nada real: `?demo=lanzamiento` (marca "Vista previa").
 
 ## Datos y pixel
-El quiz no envía respuestas a ninguna herramienta. Solo dos eventos sin datos: `QuizStart` y `QuizComplete`. `InitiateCheckout` se dispara al tocar cualquier botón `data-buy`.
+El quiz no envía respuestas a ninguna herramienta. Solo dos eventos sin datos: `QuizStart` y `QuizComplete`. `InitiateCheckout` se dispara al tocar cualquier botón `data-buy`. Solo para Clarity, `quiz_p1` … `quiz_p6` marcan hasta qué pregunta llegó cada visita (sin respuestas): sirve para ver dónde abandonan.
+
+## Quiz: cómo se arma el resultado
+Las 6 respuestas se usan: el titular repite la meta (`META`), las tarjetas responden a "lo que te pasó" (`POR_QUE`), "qué necesitás" (`SERVIRA`), tiempo + día a día (`TIEMPO` + `DIA`) y el cierre a "cuándo empezarías" (`CIERRE`). "Ver todo lo que incluye" baja a `#precio`.
 
 ## Pendiente
 - Testimonios del reto presencial: hay una plantilla comentada en `index.html` (antes de las preguntas frecuentes). Solo con permiso escrito.
-- Cargar `listPrice`/`launchEndsAt` cuando Santiago confirme el precio real posterior y la fecha de fin del cupón.
+- Decidir qué pasa después del 2026-10-24 (fin del cupón `LANZAMIENTO65`): quedarse en US$ 45,43 o volver a US$ 15,90 sin tachado.
 - Actualizar la captura `app-hoy.webp` ("12 de 31") a "12 de 28".
 
 ## Publicación
 Online en Vercel (cuenta de Santiago, proyecto `reto-cintura-28`): https://reto-cintura-28.vercel.app . Se sube con `vercel deploy --prod` desde la carpeta del sitio (sin `assets/world`, con `vercel.json`). Cada cambio de la página se republica así.
+**Ojo:** la publicación tiene que incluir `mi-reto-…/` (app, 270 archivos) y `gracias-…/`, que no están en el repo. Si se publica solo esta carpeta, se borran la app y la página de gracias para quien ya compró. Si no tenés el ZIP del sitio a mano, se pueden bajar de la publicación anterior con la API de Vercel (`GET /v6/deployments/{id}/files` y `/v8/deployments/{id}/files/{uid}`).

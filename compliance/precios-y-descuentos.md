@@ -64,3 +64,11 @@ Esto no es asesoría legal: ante la duda, consultar a un profesional del país d
 ## Actualización 2026-10-09: de "84 % sobre 99,38" a "65 % sobre 45,43"
 
 Santiago eligió mostrar **65 % de descuento** manteniendo US$ 15,90: precio de lista = 15,90 / (1 − 0,65) = **US$ 45,43**. Para que sea coherente hay que cambiar en Hotmart el precio base a US$ 45,43 y el cupón a 65 %; mientras el checkout muestre 99,38 / 84 %, la página no debe mostrar el tachado. La página lo tiene cargado y apagado (`listPrice`, `discountLabel`, `launchEndsAt` vacío). Se enciende solo con fecha real de fin del cupón. Contador falso: no se implementa (ver `docs/bitacora.md`).
+
+## Actualización 2026-10-09 (noche): cupón `LANZAMIENTO65` por dos semanas
+
+- Santiago fijó el cupón **`LANZAMIENTO65`** (65 %) por dos semanas: fin **2026-10-24 23:59 (UTC−3)**, igual que `launchEndsAt` en la página.
+- En la página: tachado + "−65 %" + "Precio de lanzamiento por tiempo limitado" en rojo chico, **sin fecha ni contador** (pedido de Santiago). Es honesto porque el fin existe y se cumple.
+- **Al vencer**, la página muestra US$ 45,43 sin descuento y el link va sin cupón. Para que el "antes" sea real, US$ 45,43 tiene que ser el precio que se cobra después. Si se decide volver a US$ 15,90, se muestra solo el precio final, sin tachado.
+- **No se puede** relanzar el mismo "−65 % por tiempo limitado" cada dos semanas: sería un descuento permanente presentado como temporal.
+- Los cupones viejos `84` y `LANZAMIENTO84` se desactivan: con base US$ 45,43 darían US$ 7,27.

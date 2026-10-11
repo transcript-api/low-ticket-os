@@ -4,6 +4,13 @@ Resumen vivo del producto para quien llegue nuevo. Actualizalo al cerrar cada tr
 
 **Última actualización: 2026-10-09 (noche)**
 
+## ACTUALIZACIÓN 2026-10-10: descuento encendido en Hotmart, página nueva sin publicar
+
+- **Hotmart:** base **US$ 45,43**, cupón **`LANZAMIENTO65`** (65 %) hasta el **24/10 23:59**. Verificado.
+- **Página nueva** (65 % al lado del precio, rojo "por tiempo limitado", quiz mejorado): lista en el repo, **sin publicar** porque falta la autorización de Santiago para publicar en producción.
+- **Riesgo abierto:** `LANZAMIENTO84` sigue válido hasta el 21/10 y la página online todavía lo usa: con la base nueva cobra US$ 7,27. Se cierra publicando la página nueva y eliminando ese cupón (con OK).
+- **Al publicar:** el sitio lleva la app (`mi-reto-…`) y gracias (`gracias-…`), que no están en el repo. Ver bitácora.
+
 ## DÓNDE PARAMOS (2026-10-09, noche) Y QUÉ SIGUE
 
 **Hecho:** página v3 online con apertura de una pantalla, quiz como botón principal (hero, mitad y cierre), "Ir directo al precio", bonus en la tarjeta de precio, sección de app en beneficios, "¿Es para vos?" restituida, Clarity activo, semanas 5-7 nombradas. Feedback del socio analizado en [12-mejoras-pagina.md](12-mejoras-pagina.md). Todo en GitHub.

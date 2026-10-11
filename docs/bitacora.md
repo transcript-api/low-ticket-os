@@ -2,6 +2,16 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-10 · Descuento 65 % en Hotmart y en la página, mejoras del quiz
+
+- Se instaló la CLI de Vercel (63.1.2) y Santiago la conectó a su cuenta. El repo no tiene dependencias de npm.
+- **Hotmart (Santiago inició sesión en una ventana de Playwright; Claude operó):** precio base US$ 99,38 → **US$ 45,43**; cupón **`LANZAMIENTO65`** 65 % hasta el 24/10/2026 23:59 (Montevideo). Verificado recargando.
+- **Página (local, sin publicar):** tachado + "−65 %" + ticket del cupón + "Precio de lanzamiento por tiempo limitado" en rojo chico (hero, debajo del botón al checkout, final del quiz, barra fija). Sin fecha ni contador, a pedido de Santiago. Al vencer pasa sola al precio de lista. Probado en 360, 393 px y escritorio, sin errores de consola, y simulando la fecha vencida.
+- **Quiz:** titular según la meta, la respuesta "día a día" ahora se usa, "Ver todo lo que incluye" lleva al precio (antes a "Si te pasa esto"), eventos `quiz_p1…6` en Clarity.
+- **Bloqueos:** (1) Claude Code no permitió publicar en producción sin autorización explícita de Santiago. (2) `LANZAMIENTO84` sigue válido: Hotmart solo deja eliminarlo y Claude había dicho "desactivar sin borrar", así que espera OK. Mientras la página vieja siga online, su link con `LANZAMIENTO84` cobra US$ 7,27.
+- **Aprendizaje:** el sitio en Vercel lleva la app y gracias, que no están en el repo. Antes de publicar desde `pagina/` hay que sumarlas, o se borran. Se bajaron de la publicación anterior con la API de Vercel (271 archivos, verificados).
+- **Opinión:** las dos semanas deberían arrancar con los anuncios; el contador del checkout contradice el "por tiempo limitado" y conviene sacarlo; el 25/10 hay que decidir el precio sin repetir el lanzamiento.
+
 ## 2026-10-09 (cierre de la noche) · Feedback del socio, Miro al repo, dónde paramos
 
 - Santiago pasó 8 capturas con la revisión del socio (7/10: mucha explicación, poco deseo y prueba). Se transcribió a `products/reto-cintura-28/fuentes/chat-santi-amigo-2.md` y se analizó en `12-mejoras-pagina.md`.

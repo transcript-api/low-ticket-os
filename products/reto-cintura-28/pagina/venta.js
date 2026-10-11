@@ -5,7 +5,7 @@
 (function () {
   'use strict';
   var W = window, D = document;
-  var DEF = { clarityId: '', checkoutUrl: '', price: 'US$ 15,90', priceNote: 'Pago único. Acceso inmediato.', priceLabel: 'Pago único', listPrice: '', launchEndsAt: '', launchLabel: 'Precio de lanzamiento', mostrarFecha: false, discountLabel: '', tema: 'noche', metaPixelId: '', utmifyScript: false, soporte: '', soporteTexto: '' };
+  var DEF = { clarityId: '', checkoutUrl: '', price: 'US$ 15,90', priceNote: 'Pago único. Acceso inmediato.', priceLabel: 'Pago único', listPrice: '', launchEndsAt: '', launchLabel: 'Precio de lanzamiento', mostrarFecha: false, mostrarCuenta: false, discountLabel: '', cupon: '', urgencia: '', urgenciaCorta: '', tema: 'noche', metaPixelId: '', utmifyScript: false, soporte: '', soporteTexto: '' };
   var reduce = W.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function all(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }
   function clamp(v, a, b) { a = a === undefined ? 0 : a; b = b === undefined ? 1 : b; return Math.min(b, Math.max(a, v)); }
@@ -28,7 +28,16 @@
     var s = D.createElement('script'); s.async = true; s.src = 'https://www.clarity.ms/tag/' + encodeURIComponent(id);
     D.head.appendChild(s);
   }
+  /* Cuando vence launchEndsAt también vence el cupón en Hotmart: la página pasa sola al precio de lista y saca el cupón del link, para decir lo mismo que el checkout. */
+  function afterLaunch(cfg) {
+    var fin = Date.parse(cfg.launchEndsAt);
+    if (!cfg.listPrice || isNaN(fin) || Date.now() < fin) return cfg;
+    cfg.price = cfg.listPrice; cfg.listPrice = ''; cfg.cupon = '';
+    cfg.checkoutUrl = String(cfg.checkoutUrl || '').replace(/([?&])offDiscount=[^&]*&?/, '$1').replace(/[?&]$/, '');
+    return cfg;
+  }
   function apply(cfg) {
+    cfg = afterLaunch(cfg);
     W.R28CFG = cfg;
     if (cfg.checkoutUrl) all('a[data-buy]').forEach(function (a) { a.href = cfg.checkoutUrl; });
     all('[data-cfg]').forEach(function (el) { var v = cfg[el.getAttribute('data-cfg')]; if (typeof v === 'string' && v) el.textContent = v; });

@@ -1,7 +1,8 @@
 /* Reto Cintura 28 · Apertura, precio y quiz de la página de ventas.
    - Sin dependencias. Lee la configuración que carga venta.js (evento "r28:config").
    - El quiz NO envía respuestas a ninguna herramienta de anuncios: solo dos eventos sin datos (QuizStart y QuizComplete).
-   - El precio tachado y la cuenta regresiva solo aparecen si hay una fecha real de fin (launchEndsAt) en landing-config.json. */
+   - El precio tachado, el % y la línea roja de urgencia solo aparecen si hay una fecha real de fin (launchEndsAt) en landing-config.json.
+     La fecha y la cuenta regresiva quedan ocultas salvo mostrarFecha / mostrarCuenta en true. */
 (function () {
   'use strict';
   var W = window, D = document;
@@ -65,6 +66,19 @@
     veinte: 'Tus 20 a 30 minutos son justo lo que pide el reto.',
     varia: 'Los días justos usás el Plan B de 8 minutos; los demás, el entreno completo.'
   };
+  var DIA = {
+    trabajo: 'Lo hacés antes o después del trabajo, en tu casa y sin traslados.',
+    familia: 'Se hace en el living, sin salir de casa, entre una cosa y otra del día.',
+    lleno: 'No es una cosa más para pensar: la app ya te dice qué toca hoy y cuánto dura.',
+    otra: 'Elegís el momento del día que te quede mejor; el timer hace el resto.'
+  };
+  /* El titular del resultado repite la meta que eligió (no promete un resultado). */
+  var META = {
+    ropa: 'Tu plan para sentirte cómoda con tu ropa.',
+    energia: 'Tu plan para tener más energía cada día.',
+    terminar: 'Tu plan para terminar algo, esta vez sí.',
+    fuerza: 'Tu plan para sentirte más fuerte.'
+  };
   var CIERRE = {
     hoy: 'Tenés acceso inmediato: podés hacer el Día 0 hoy mismo.',
     manana: 'Mañana a esta hora podés estar en el Día 1.',
@@ -91,16 +105,23 @@
     var meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
     return d.getDate() + ' de ' + meses[d.getMonth()];
   }
+  /* Línea roja de urgencia. Sin fecha ni cuenta regresiva salvo que mostrarFecha / mostrarCuenta estén en true. */
+  function urgencyText() {
+    return (CFG.urgencia || (CFG.launchLabel || 'Precio de lanzamiento') + ' por tiempo limitado') + (CFG.mostrarFecha ? ' · hasta el ' + fmtDate() : '');
+  }
+  function countHTML() { return CFG.mostrarCuenta ? ' · quedan <b data-countdown>' + remaining() + '</b>' : ''; }
+  function urgencyHTML() { return '<i aria-hidden="true"></i><span>' + esc(urgencyText()) + countHTML() + '</span>'; }
   function priceHTML(size) {
     var price = esc(CFG.price);
     if (!launchOn()) {
       return '<div class="pb pb-' + size + '"><b class="pb-now">' + price + '</b><span class="pb-note">' + esc(CFG.priceNote || 'Pago único. Acceso inmediato.') + '</span></div>';
     }
-    var demo = params.get('demo') === 'lanzamiento' ? '<span class="pb-demo">Vista previa</span>' : '';
-    return '<div class="pb pb-' + size + ' is-launch">' + demo +
-      '<div class="pb-row"><s class="pb-list">' + esc(listPrice()) + '</s><b class="pb-now">' + price + '</b>' +
-      (CFG.discountLabel || demo() ? '<span class="pb-off">' + esc(CFG.discountLabel || '65 % OFF') + '</span>' : '') + '</div>' +
-      '<span class="pb-note">' + esc(CFG.launchLabel || 'Precio de lanzamiento') + (CFG.mostrarFecha ? ' hasta el ' + fmtDate() : ' por tiempo limitado') + ' · quedan <b data-countdown>' + remaining() + '</b></span></div>';
+    var off = CFG.discountLabel || (demo() ? '−65 %' : ''), cupon = CFG.cupon || (demo() ? 'LANZAMIENTO65' : '');
+    return '<div class="pb pb-' + size + ' is-launch">' + (demo() ? '<span class="pb-demo">Vista previa</span>' : '') +
+      (size === 'l' && cupon ? '<span class="pb-coupon">Cupón <b>' + esc(cupon) + '</b> aplicado</span>' : '') +
+      '<div class="pb-row"><s class="pb-list"><span class="pb-sr">Antes </span>' + esc(listPrice()) + '</s><b class="pb-now">' + price + '</b>' +
+      (off ? '<span class="pb-off">' + esc(off) + '</span>' : '') + '</div>' +
+      (size === 'm' ? '<p class="pb-red">' + urgencyHTML() + '</p>' : '') + '</div>';
   }
   function paintPrices() {
     if (!CFG) return;
@@ -110,8 +131,11 @@
     all('[data-list-price]').forEach(function (el) {
       if (launchOn()) { el.textContent = listPrice(); el.hidden = false; } else { el.hidden = true; }
     });
+    all('[data-urgency]').forEach(function (el) {
+      if (launchOn()) { el.innerHTML = urgencyHTML(); el.hidden = false; } else { el.hidden = true; }
+    });
     all('[data-deadline]').forEach(function (el) {
-      if (launchOn()) { el.innerHTML = el.getAttribute('data-deadline') === 'short' ? 'Quedan <b data-countdown>' + remaining() + '</b>' : (CFG.mostrarFecha ? 'Hasta el ' + fmtDate() : 'Tiempo limitado') + ' · quedan <b data-countdown>' + remaining() + '</b>'; el.hidden = false; } else { el.hidden = true; }
+      if (launchOn()) { el.innerHTML = CFG.mostrarCuenta ? 'Quedan <b data-countdown>' + remaining() + '</b>' : esc(CFG.urgenciaCorta || 'Por tiempo limitado'); el.hidden = false; } else { el.hidden = true; }
     });
   }
   function tick() {
@@ -138,7 +162,7 @@
       if (a === 'close') close();
       else if (a === 'back') { if (step > 0) { step--; render(); } else close(); }
       else if (a === 'opt') pick(+b.getAttribute('data-i'));
-      else if (a === 'info') { close(); var t = D.getElementById('info'); if (t) t.scrollIntoView({ behavior: 'smooth' }); }
+      else if (a === 'info') { close(); var t = D.getElementById('precio'); if (t) t.scrollIntoView({ behavior: 'smooth' }); }
       else if (a === 'redo') { answers = {}; step = 0; render(); }
     });
     D.addEventListener('keydown', function (e) { if (e.key === 'Escape' && root && !root.hidden) close(); });
@@ -158,6 +182,8 @@
     var body = root.querySelector('.qz-body'), top = root.querySelector('.qz-top');
     if (step >= QS.length) { top.hidden = false; setBar(1); return result(body); }
     var q = QS[step], sel = answers[q.id];
+    /* Solo Clarity y sin respuestas: muestra en qué pregunta abandonan. */
+    try { if (W.clarity) W.clarity('event', 'quiz_p' + (step + 1)); } catch (e) {}
     setBar((step + 1) / (QS.length + 1));
     body.innerHTML = '<div class="qz-q" key="' + step + '"><p class="qz-count">Pregunta ' + (step + 1) + ' de ' + QS.length + '</p>' +
       '<h2 class="qz-h" tabindex="-1">' + esc(q.p) + '</h2><p class="qz-hint">Elegí la que más se parezca a vos.</p><div class="qz-ops">' +
@@ -181,21 +207,22 @@
     var chips = [text('pasado'), text('tiempo'), text('meta')];
     body.innerHTML = '<div class="qz-res">' +
       '<p class="qz-kick">Tu resultado</p>' +
-      '<h2 class="qz-rh">Este plan está pensado para alguien como vos.</h2>' +
+      '<h2 class="qz-rh">' + esc(META[key('meta')]) + '</h2>' +
       '<p class="qz-rs">Por lo que respondiste, el Reto Cintura 28 encaja con tu situación.</p>' +
       '<div class="qz-chips"><span class="qz-chips-t">Me contaste que:</span>' + chips.map(function (c) { return '<span class="qz-chip">' + esc(c) + '</span>'; }).join('') + '</div>' +
       '<div class="qz-card"><b>Lo que te pasó antes</b><p>' + esc(POR_QUE[key('pasado')]) + '</p></div>' +
       '<div class="qz-card"><b>Lo que más te va a servir</b><p>' + esc(SERVIRA[key('distinto')]) + '</p></div>' +
-      '<div class="qz-card"><b>Tu tiempo</b><p>' + esc(TIEMPO[key('tiempo')]) + '</p></div>' +
+      '<div class="qz-card"><b>Tu tiempo y tu día</b><p>' + esc(TIEMPO[key('tiempo')] + ' ' + DIA[key('dia')]) + '</p></div>' +
       '<ul class="qz-inc"><li>App con timer guiado</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semanas 5, 6 y 7 de regalo</li></ul>' +
       '<div class="qz-offer"><div data-price-block="l"></div>' +
       '<a class="qz-buy" data-buy href="' + esc(buy) + '">Quiero empezar mi reto</a>' +
+      '<p class="pb-red pb-red-c" data-urgency hidden></p>' +
       '<p class="qz-close">' + esc(CIERRE[key('cuando')]) + '</p>' +
       '<button type="button" class="qz-info" data-qz="info">Ver todo lo que incluye ↓</button></div>' +
       '<p class="qz-g"><b>Garantía de 7 días.</b> Si sentís que no es para vos, pedís el reembolso y te devolvemos el 100 %.</p>' +
       '<p class="qz-s">Programa de hábitos y actividad física para personas adultas sanas. Si estás embarazada, tenés una lesión o una condición médica, consultá antes de empezar. Tus respuestas no se guardan ni se envían.</p>' +
       '<button type="button" class="qz-redo" data-qz="redo">Volver a hacer el test</button>' +
-      '<div class="qz-fix is-off"><a class="qz-buy" data-buy href="' + esc(buy) + '">Empezar · <span data-cfg="price"></span></a></div></div>';
+      '<div class="qz-fix is-off"><a class="qz-buy" data-buy href="' + esc(buy) + '">Empezar · <s data-list-price hidden></s> <span data-cfg="price"></span></a></div></div>';
     paintPrices(); root.scrollTop = 0; body.scrollTop = 0;
     var fix = body.querySelector('.qz-fix'), main = body.querySelector('.qz-offer .qz-buy');
     if (fix && main && 'IntersectionObserver' in W) new IntersectionObserver(function (es) { fix.classList.toggle('is-off', es[0].isIntersecting); }, { root: root, threshold: 0.6 }).observe(main);

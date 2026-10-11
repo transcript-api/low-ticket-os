@@ -6,7 +6,11 @@
 |---|---|
 | Casos reales / prueba social: videos y fotos del reto presencial con permiso escrito (usar `pagina/voces-plantilla.html`) | Santiago |
 | Decidir si se testea el titular emocional (EXP-004) y el quiz como CTA principal contra compra directa (EXP-005) cuando haya tráfico | Santiago + Claude |
-| Encender descuento y cronómetro: Hotmart (base 45,43 · cupón 65 % · fin del cupón) + `launchEndsAt` | Santiago (+ Claude con OK) |
+| ~~Encender descuento: Hotmart (base 45,43 · cupón 65 % · fin del cupón) + `launchEndsAt`~~ Hecho en Hotmart y en la página local el 2026-10-10 (`LANZAMIENTO65` hasta 24/10 23:59) | — |
+| **Publicar la página nueva** (bloqueado por permiso de Claude Code: Santiago autoriza o publica él). El sitio publicado lleva también la app y gracias: se bajaron de la publicación anterior a la carpeta temporal de Claude | Santiago / Claude con OK |
+| **Eliminar `LANZAMIENTO84`** (Hotmart no deja desactivarlo): con base 45,43 cobra US$ 7,27 hasta el 21/10 | Santiago (OK) |
+| Decidir el 25/10 qué precio queda: US$ 45,43 o US$ 15,90 sin tachado | Santiago |
+| Sacar o atar a fecha real el contador del checkout de Hotmart (contradice "por tiempo limitado") | Claude con OK |
 
 | Tarea (agregado el 2026-10-09) | Quién |
 |---|---|
