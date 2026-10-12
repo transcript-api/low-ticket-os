@@ -7,8 +7,8 @@ Resumen vivo del producto para quien llegue nuevo. Actualizalo al cerrar cada tr
 ## ACTUALIZACIÓN 2026-10-10: descuento encendido en Hotmart, página nueva sin publicar
 
 - **Hotmart:** base **US$ 45,43**, cupón **`LANZAMIENTO65`** (65 %) hasta el **24/10 23:59**. Verificado.
-- **Página nueva** (65 % al lado del precio, rojo "por tiempo limitado", quiz mejorado): lista en el repo, **sin publicar** porque falta la autorización de Santiago para publicar en producción.
-- **Riesgo abierto:** `LANZAMIENTO84` sigue válido hasta el 21/10 y la página online todavía lo usa: con la base nueva cobra US$ 7,27. Se cierra publicando la página nueva y eliminando ese cupón (con OK).
+- **Página nueva online** (2026-10-12, verificada en celular y escritorio): 65 % al lado del precio, rojo "por tiempo limitado" sin fecha ni contador, link con `LANZAMIENTO65`, quiz mejorado. App y gracias siguen funcionando.
+- **Riesgo abierto:** `LANZAMIENTO84` sigue válido hasta el 21/10: quien tenga un link viejo paga US$ 7,27. Se cierra eliminando ese cupón (espera OK de Santiago).
 - **Al publicar:** el sitio lleva la app (`mi-reto-…`) y gracias (`gracias-…`), que no están en el repo. Ver bitácora.
 
 ## DÓNDE PARAMOS (2026-10-09, noche) Y QUÉ SIGUE

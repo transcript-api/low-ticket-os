@@ -4,6 +4,8 @@ Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuev
 
 ## 2026-10-10 · Descuento 65 % en Hotmart y en la página, mejoras del quiz
 
+- **Actualización 2026-10-12:** Santiago publicó la página desde la carpeta armada por Claude. Verificado online: descuento, línea roja, link con `LANZAMIENTO65`, quiz, app y gracias (200), sin errores de consola. Falta el OK para eliminar `LANZAMIENTO84`.
+
 - Se instaló la CLI de Vercel (63.1.2) y Santiago la conectó a su cuenta. El repo no tiene dependencias de npm.
 - **Hotmart (Santiago inició sesión en una ventana de Playwright; Claude operó):** precio base US$ 99,38 → **US$ 45,43**; cupón **`LANZAMIENTO65`** 65 % hasta el 24/10/2026 23:59 (Montevideo). Verificado recargando.
 - **Página (local, sin publicar):** tachado + "−65 %" + ticket del cupón + "Precio de lanzamiento por tiempo limitado" en rojo chico (hero, debajo del botón al checkout, final del quiz, barra fija). Sin fecha ni contador, a pedido de Santiago. Al vencer pasa sola al precio de lista. Probado en 360, 393 px y escritorio, sin errores de consola, y simulando la fecha vencida.

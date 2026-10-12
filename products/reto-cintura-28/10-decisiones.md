@@ -7,7 +7,7 @@ Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su soc
 - Hecho en Hotmart (verificado recargando, 2026-10-10): precio base de la oferta `eucnkmyz` de US$ 99,38 a **US$ 45,43**; cupón **`LANZAMIENTO65`**, 65 %, todas las ofertas, del 10/10/2026 18:39 al **24/10/2026 23:59** (America/Montevideo). El cupón `84` ya no existía; solo estaba `LANZAMIENTO84`.
 - Hecho en la página (local): tachado + sticker "−65 %" + ticket "Cupón LANZAMIENTO65 aplicado" + línea roja; sin fecha ni contador (`mostrarFecha`/`mostrarCuenta` en false); `launchEndsAt` = 2026-10-24T23:59-03:00; al vencer pasa sola a US$ 45,43 y saca el cupón del link.
 - Quiz: titular según la meta, se usa la respuesta "día a día" (antes no se usaba), "Ver todo lo que incluye" baja al precio, eventos de Clarity por pregunta.
-- **Pendiente crítico:** `LANZAMIENTO84` sigue válido hasta el 21/10 y con base 45,43 deja el precio en US$ 7,27. Hotmart no permite desactivarlo, solo eliminarlo: espera OK de Santiago. La página publicada todavía usa ese link hasta que se publique la nueva.
+- **Pendiente crítico:** `LANZAMIENTO84` sigue válido hasta el 21/10 y con base 45,43 deja el precio en US$ 7,27. Hotmart no permite desactivarlo, solo eliminarlo: espera OK de Santiago. La página nueva (online desde 2026-10-12) ya usa `LANZAMIENTO65`; el riesgo queda solo para links viejos.
 - Opinión de Claude: las dos semanas deberían empezar cuando arranquen los anuncios; el día 25/10 hay que decidir entre quedarse en US$ 45,43 o volver a US$ 15,90 sin tachado. Relanzar el mismo "−65 % por tiempo limitado" sería un descuento permanente disfrazado.
 
 ### 2026-10-09 (noche) — Feedback del socio: quiz como CTA principal, "¿Es para vos?" vuelve, app en beneficios
