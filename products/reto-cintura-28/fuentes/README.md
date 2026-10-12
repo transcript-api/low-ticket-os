@@ -2,6 +2,17 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Videos para sustituir la sección de la app (2026-10-12)
+
+Santiago pidió usar los dos últimos videos descargados en su PC. Se identificaron por fecha de modificación, se inspeccionaron fotogramas de las cuatro escenas y se verificaron dimensiones, duración y ausencia de audio. Se conservan los originales en el repo, sin editar su contenido:
+
+| Original de Descargas | Archivo en `pagina/assets/motion/` | Tamaño | SHA-256 (16) |
+|---|---|---|---|
+| `seccion-app-celular-1080x1350.webm` | `seccion-app-celular.webm` | 2.025.986 bytes | `3e60c724ddce2e19` |
+| `seccion-app-escritorio-1920x1080.webm` | `seccion-app-escritorio.webm` | 2.301.275 bytes | `69329b454f78a396` |
+
+Se suman conversiones MP4/H.264 con `faststart` y posters WebP del primer segundo. Los MP4 se incorporan explícitamente aunque `.gitignore` ignore videos MP4 por defecto. No son testimonios ni resultados de clientas; muestran la app. El contador "12 de 31" ya aparece en las fuentes originales y queda registrado como pendiente.
+
 ### Referencia visual de identificación (2026-10-12)
 
 Santiago compartió en el chat una captura con título en cursiva fucsia, tarjetas rosadas, botón ancho y retrato. La indicó como referencia para sustituir `#info`. Después pidió quitar la foto y agregar un bucle vertical a las tarjetas. La implementación final incorpora el estilo mediante HTML/CSS y el movimiento mediante CSS/JavaScript; no guarda ni usa una foto nueva. No se incorporan afirmaciones nuevas ni pruebas sociales de la captura.

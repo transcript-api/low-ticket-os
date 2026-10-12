@@ -2,6 +2,8 @@
 
 ## Hoy
 
+- [x] **2026-10-12 (video):** sustituir la sección de la app por los últimos videos de Descargas, con selección celular/escritorio y fondo continuo. Publicado como sitio completo; app y gracias conservadas.
+
 - [x] **2026-10-12 (Codex):** actualizar `#info` según la referencia de Santiago, quitar la foto y compactar la lista con movimiento vertical, pausa y modo de movimiento reducido. Publicado y verificado online con los 343 archivos del sitio completo, preservando app y gracias.
 - [ ] Medir con tráfico real el inicio y la finalización del quiz después de este cambio visual; no hay datos nuevos de conversión.
 
@@ -25,7 +27,7 @@
 | Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |
 | Decidir fecha real de fin del lanzamiento; cambiar en Hotmart precio base a US$ 45,43, cupón a 65 % y fin del cupón; recién ahí cargar `launchEndsAt` | Santiago (+ Claude con OK) |
 | Checkout: contador, banner, texto del bump | Claude con OK |
-| Reemplazar `app-hoy.webp` (dice "12 de 31") | Claude |
+| Reemplazar `app-hoy.webp` y actualizar las capturas incluidas en los videos de la app (dicen "12 de 31") | Santiago + agente |
 | Videos e imágenes del reto presencial con permiso | Santiago |
 
 | Tarea | Quién |

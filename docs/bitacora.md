@@ -2,6 +2,17 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Codex: bloque de la app sustituido por video
+
+- Santiago pidió revisar los dos últimos videos descargados y reemplazar todo el bloque de teléfonos, título, párrafo y beneficios por solo el video, fundido con su fondo blanco cálido.
+- Se usan ambos originales: vertical 1080×1350 para celular hasta 860 px y horizontal 1920×1080 para escritorio. Duran 24 s, VP9, sin audio. Se copian al repo sin editar y se agregan conversiones MP4/H.264 y posters para compatibilidad.
+- Se retiran los teléfonos y la lista de beneficios antiguos del HTML/CSS/JS. `#info` conserva su lista compacta. `#app` tiene solo el video visible; el título y descripción para accesibilidad están ocultos visualmente.
+- Solo se descarga la versión correspondiente al acercarse a la sección. Reproducción silenciosa en bucle, pausa por toque/teclado y fuera de pantalla. Movimiento reducido o bloqueo de autoplay habilitan controles manuales. Sin JavaScript se ofrece el MP4 vertical.
+- Fondo inicial `#FCFAF8`, igualado al fotograma decodificado para evitar diferencias de un punto de RGB entre navegador y archivo. Sin borde, sombra ni redondeado exterior.
+- Validación local: selección de versión, descarga única, reproducción, pausa, cambio de ancho, MP4, movimiento reducido, color del fondo, apertura del quiz y acceso a app/gracias; sin errores de JavaScript ni archivos fallidos.
+- Se verificaron las huellas de los 349 archivos subidos y el HTML servido antes de promover `dpl_3AYP6mrDooMfgxmjU6NifNsGJf5T` a https://reto-cintura-28.vercel.app/#app. Todos los archivos de compradoras y de gracias se conservan.
+- Opinión y mejora: la presentación se integra mejor al fondo; medir su efecto con tráfico real antes de seguir cambiando. El "12 de 31" que muestran las fuentes originales sigue pendiente; no se editó el contenido de los videos en este pedido.
+
 ## 2026-10-12 — Codex: identificación sin foto y con movimiento vertical
 
 - Santiago pidió implementar la referencia visual de "Si te pasa esto"; luego precisó que quede sin la foto de la mujer y que las tarjetas se desplacen en vertical para reducir la altura. Autorizó planificación y ejecución en el chat.

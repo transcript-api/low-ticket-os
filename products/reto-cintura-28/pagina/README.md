@@ -1,5 +1,13 @@
 # Página de ventas · versión v3 (apertura de una pantalla + quiz)
 
+## Actualización 2026-10-12: presentación de la app en video
+
+El bloque de teléfonos y beneficios se reemplazó por `#app`: solo el video, sin texto ni tarjetas externos. Hasta 860 px usa `assets/motion/seccion-app-celular.webm` (1080×1350); desde 861 px usa `seccion-app-escritorio.webm` (1920×1080). Ambos duran 24 s y no tienen audio. Se agregan MP4/H.264 para navegadores sin VP9 y posters WebP.
+
+La página descarga únicamente la versión seleccionada cuando se acerca a la sección. El fondo parte de `#FCFAF8` y se ajusta al color decodificado del video para que no se note el límite. Reproductor sin marco; reproducción silenciosa en bucle, pausa al salir de pantalla y al tocar o usar Espacio/Enter. Movimiento reducido y bloqueos de autoplay permiten reproducción manual. Sin JavaScript se ofrece el MP4 vertical con controles.
+
+Publicación completa de 349 archivos, `dpl_3AYP6mrDooMfgxmjU6NifNsGJf5T`, manteniendo los archivos originales de la app y de gracias. Se conserva la sección `#info` con su lista vertical compacta.
+
 ## Actualización 2026-10-12: identificación compacta
 
 `#info` sigue la referencia visual enviada por Santiago, con titular serif en cursiva fucsia, tarjetas rosadas con checks, cierre destacado y CTA ancho con flecha. Por su última indicación, el bloque queda centrado **sin foto**.

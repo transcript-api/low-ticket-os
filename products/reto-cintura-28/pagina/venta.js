@@ -75,9 +75,75 @@
     seen.observe(precio);
   }
 
-  /* ---------- 1b. Beneficios de la app: se duplica la lista para el bucle vertical del celular (el CSS oculta el duplicado en escritorio) ---------- */
-  all('[data-loop]').forEach(function (ul) {
-    all('li', ul).forEach(function (li) { var c = li.cloneNode(true); c.className = 'dup'; c.setAttribute('aria-hidden', 'true'); ul.appendChild(c); });
+  /* ---------- Presentación de la app: una sola versión de video según la pantalla ---------- */
+  all('[data-app-video]').forEach(function (video) {
+    var desktop = W.matchMedia('(min-width: 861px)'), motion = W.matchMedia('(prefers-reduced-motion: reduce)');
+    var format = video.canPlayType('video/webm; codecs="vp9"') ? 'webm' : 'mp4';
+    var inView = false, userPaused = false, selectedSource = '';
+    video.muted = true;
+
+    /* La decodificación puede variar un punto de RGB entre navegadores y formatos. */
+    video.addEventListener('loadeddata', function () {
+      try {
+        var canvas = D.createElement('canvas'); canvas.width = canvas.height = 1;
+        var context = canvas.getContext('2d'); context.drawImage(video, 0, 0, 1, 1, 0, 0, 1, 1);
+        var pixel = context.getImageData(0, 0, 1, 1).data;
+        video.closest('.r28-app-section').style.setProperty('--app-video-bg', 'rgb(' + pixel[0] + ',' + pixel[1] + ',' + pixel[2] + ')');
+      } catch (e) { /* Si no se puede leer, se conserva el blanco cálido original. */ }
+    });
+
+    function label() {
+      video.setAttribute('aria-label', video.controls ? 'Presentación de la app Reto Cintura 28' : (video.paused ? 'Reproducir presentación de la app' : 'Pausar presentación de la app'));
+    }
+    function play() {
+      if (!inView || userPaused || motion.matches) return;
+      var promise = video.play();
+      if (promise && promise.catch) promise.catch(function (error) {
+        if (error.name === 'AbortError') return;
+        video.controls = true; video.removeAttribute('role'); label();
+      });
+    }
+    function loadSource() {
+      if (video.getAttribute('src') === selectedSource) return;
+      var time = video.currentTime || 0;
+      video.pause();
+      video.src = selectedSource;
+      video.addEventListener('loadedmetadata', function () { if (time) video.currentTime = Math.min(time, video.duration); }, { once: true });
+      video.load();
+    }
+    function select() {
+      var layout = desktop.matches ? 'desktop' : 'mobile', file = desktop.matches ? 'escritorio' : 'celular';
+      video.dataset.layout = layout;
+      video.width = desktop.matches ? 1920 : 1080; video.height = desktop.matches ? 1080 : 1350;
+      video.poster = 'assets/motion/seccion-app-' + file + '-poster.webp';
+      selectedSource = 'assets/motion/seccion-app-' + file + '.' + format;
+      if (inView) { loadSource(); play(); }
+    }
+    function preference() {
+      video.controls = motion.matches;
+      video.tabIndex = 0;
+      if (motion.matches) { video.pause(); video.removeAttribute('role'); }
+      else { video.setAttribute('role', 'button'); play(); }
+      label();
+    }
+    function toggle() {
+      if (video.controls) return;
+      userPaused = !video.paused;
+      if (userPaused) video.pause(); else { inView = true; loadSource(); play(); }
+    }
+    video.addEventListener('click', toggle);
+    video.addEventListener('keydown', function (e) {
+      if (!video.controls && (e.key === ' ' || e.key === 'Enter')) { e.preventDefault(); toggle(); }
+    });
+    video.addEventListener('play', label); video.addEventListener('pause', label);
+    desktop.addEventListener('change', select); motion.addEventListener('change', preference);
+    select(); preference();
+    if ('IntersectionObserver' in W) {
+      new IntersectionObserver(function (entries) {
+        inView = entries[0].isIntersecting;
+        if (inView) { loadSource(); play(); } else video.pause();
+      }, { rootMargin: '200px 0px' }).observe(video);
+    } else { inView = true; loadSource(); play(); }
   });
 
   /* Identificación: bucle compacto, pausa explícita y lista completa si se reduce el movimiento. */

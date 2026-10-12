@@ -6,6 +6,7 @@
 - **Último cambio:** 2026-10-08. Se incorporó el material completo (sitio, creativos, guía, hojas, menú, portadas y banners), los datos vigentes de oferta y una revisión crítica. Detalle en [10-decisiones.md](10-decisiones.md).
 - **Actualización 2026-10-09:** página v3 online (https://reto-cintura-28.vercel.app). Lo vigente y lo que falta: [INFORME.md](INFORME.md) (empezar por "Dónde paramos").
 - **Actualización 2026-10-12 (Codex):** sección `#info` rediseñada según la referencia de Santiago, centrada y sin foto. Las cinco tarjetas rosadas con checks se desplazan en un bucle vertical compacto, con pausa y modo estático para quienes reducen movimiento. Publicada conservando todos los archivos de la app y de gracias; detalle en [10-decisiones.md](10-decisiones.md).
+- **Actualización 2026-10-12 (video de la app):** el bloque de teléfonos, título y beneficios se reemplazó por una presentación de 24 s. Video vertical en celular y horizontal en escritorio; fondo fundido con el video, sin marco ni tarjetas externas. Publicado en [#app](https://reto-cintura-28.vercel.app/#app), conservando app y gracias.
 - **Test activo:** ninguno.
 - **Siguiente paso:** sincronizar precio en creativos y página, verificar el estado de Hotmart y definir los cambios de la página. Ver [11-pendientes.md](11-pendientes.md).
 
