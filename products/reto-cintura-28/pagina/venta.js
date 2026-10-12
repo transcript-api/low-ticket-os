@@ -75,6 +75,11 @@
     seen.observe(precio);
   }
 
+  /* ---------- 1b. Beneficios de la app: se duplica la lista para el bucle vertical del celular (el CSS oculta el duplicado en escritorio) ---------- */
+  all('[data-loop]').forEach(function (ul) {
+    all('li', ul).forEach(function (li) { var c = li.cloneNode(true); c.className = 'dup'; c.setAttribute('aria-hidden', 'true'); ul.appendChild(c); });
+  });
+
   /* ---------- 2. Comparadores de platos ---------- */
   var comps = all('[data-comp]');
   comps.forEach(function (c) {

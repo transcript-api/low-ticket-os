@@ -66,6 +66,7 @@
 .r28-phone.c { right: 0; top: 70px; transform: rotate(5deg); }
 .r28-feats { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 14px; }
 .r28-feats li { background: var(--card); border-radius: 18px; padding: 16px 18px; box-shadow: 0 1px 2px rgba(28, 19, 36, .05), 0 8px 24px rgba(28, 19, 36, .05); }
+.r28-feats .dup { display: none; }
 .r28-feats b { font-family: var(--display); font-size: 1.12rem; display: block; margin-bottom: 2px; }
 .r28-feats span { color: var(--muted); font-size: .98rem; }
 
@@ -153,6 +154,12 @@
   .r28-who figure { order: -1; }
   .r28-vs div { padding: 16px 14px; font-size: .95rem; }
   .r28-phones { height: 520px; }
+  /* Beneficios de la app: lista vertical que sube sin parar (se pausa mientras se toca) */
+  .r28-feats-win { height: 340px; overflow: hidden; margin-top: 22px; -webkit-mask-image: linear-gradient(transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(transparent, #000 9%, #000 91%, transparent); }
+  .r28-feats { display: block; margin: 0; animation: feats-up 30s linear infinite; will-change: transform; }
+  .r28-feats li { margin-bottom: 14px; }
+  .r28-feats .dup { display: block; }
+  .r28-feats-win:active .r28-feats { animation-play-state: paused; }
   .r28-phone { width: 46vw; max-width: 230px; }
   .r28-phone.a { left: -4%; } .r28-phone.b { left: 27%; } .r28-phone.c { right: -4%; }
   .r28-day { grid-template-columns: 1fr 1fr; }
@@ -173,6 +180,8 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body { margin: 0; background: #FCF9F7; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@keyframes feats-up { to { transform: translateY(-50%); } }
+@media (max-width: 860px) and (prefers-reduced-motion: reduce) { .r28-feats-win { height: auto; overflow: visible; -webkit-mask-image: none; mask-image: none; } .r28-feats { animation: none; } .r28-feats .dup { display: none; } }
 
 /* Guía por dentro: tira de páginas reales */
 .r28-pages { margin-top: 32px; display: grid; grid-auto-flow: column; grid-auto-columns: clamp(170px, 42vw, 230px); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px max(20px, calc((100vw - 1120px) / 2 + 20px)) 18px; scrollbar-width: thin; }

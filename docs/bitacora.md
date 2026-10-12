@@ -6,6 +6,7 @@ Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuev
 
 - Santiago pidió borrar "Buscá compañía" y "Misión del día" (no venden), borrar "¿Es para vos?" (repetida) y cambiar "PDF" por "guía" (incluido el título "No es solo un PDF…"). Hecho en `pagina/index.html` y `venta.css` (grilla de "Así es un día" pasó a 3 columnas). Revisado en escritorio y celular, sin errores de consola.
 - **Regla nueva (AGENTS.md punto 8):** la página vende, no documenta la app; cada bloque responde "¿por qué compro?", sin relleno, sin repetición, "guía" y no "PDF".
+- Corrección posterior: el título correcto era "No es solo una guía. También es tu app del reto." (había sido acortado de más). La primera tarjeta ya no habla de "idea para la cabeza y misión". **En celular**, la lista de 5 beneficios de la app es ahora una columna vertical que sube sin parar (bucle de 30 s, se pausa mientras se toca, se queda quieta si la persona tiene "reducir movimiento"); en escritorio no cambia. Implementado con CSS + duplicado de la lista en `venta.js`.
 - Falta publicar (la publicación en producción la hace Santiago o la autoriza en Claude Code).
 
 ## 2026-10-10 · Descuento 65 % en Hotmart y en la página, mejoras del quiz
