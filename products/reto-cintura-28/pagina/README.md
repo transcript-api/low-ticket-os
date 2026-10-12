@@ -1,5 +1,13 @@
 # Página de ventas · versión v3 (apertura de una pantalla + quiz)
 
+## Última actualización 2026-10-12: hero y acompañamiento
+
+El hero usa `assets/motion/hero-app.webm` (15 s, vertical), con MP4 alternativo y poster. El fondo se iguala al fotograma decodificado. Su acción principal es comprar; el test sigue como alternativa. Se eliminan las dos tarjetas antes/después del reto y se reemplaza la sección del Día 12 por un selector de día normal/Plan B y tarjetas de acompañamiento.
+
+Oferta confirmada por Santiago: **7 semanas de asesoramiento personalizado por WhatsApp**, **comunidad en WhatsApp de por vida** y **app/materiales de por vida**. Aparece en los puntos clave y en el quiz. Se ofrece solo **Semana 5 de regalo**, que está entregada en la app; las semanas 6 y 7 permanecen pendientes. El cupón sigue aplicado en el checkout, pero se elimina su ticket redundante en la interfaz.
+
+Publicación completa de 352 archivos: `dpl_5T6TKjmfsybviNYeSNYCMjSUuWSL`. Conserva app y gracias. Se probaron cinco anchos de pantalla, videos, compra y cupón, elección del día, bonus, quiz y movimiento reducido. La mejora comercial es una hipótesis que debe medirse con compras reales.
+
 ## Actualización 2026-10-12: presentación de la app en video
 
 El bloque de teléfonos y beneficios se reemplazó por `#app`: solo el video, sin texto ni tarjetas externos. Hasta 860 px usa `assets/motion/seccion-app-celular.webm` (1080×1350); desde 861 px usa `seccion-app-escritorio.webm` (1920×1080). Ambos duran 24 s y no tienen audio. Se agregan MP4/H.264 para navegadores sin VP9 y posters WebP.

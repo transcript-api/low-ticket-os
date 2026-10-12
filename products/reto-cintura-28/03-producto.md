@@ -1,5 +1,11 @@
 # 03 · Producto
 
+## Acompañamiento añadido por Santiago (2026-10-12)
+
+Asesoramiento personalizado por WhatsApp durante 7 semanas y comunidad en WhatsApp de por vida, incluidos con el reto. La app, la guía y los materiales también tienen acceso de por vida. Esta es una prestación confirmada por el dueño; el cambio de la página no crea el grupo ni automatiza el asesoramiento. Queda pendiente incluir los contactos/invitaciones en la entrega a compradoras.
+
+La oferta pública se ajustó a lo que entrega la app actual: Día 0, 28 días y la Semana 5 de regalo. La implementación de las Semanas 6 y 7 sigue pendiente y ya no se promete en la página ni en el resultado del quiz.
+
 ## Qué incluye (datos del centro de mando)
 
 | Componente | Detalle | Archivo / ubicación |

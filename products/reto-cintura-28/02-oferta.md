@@ -1,5 +1,17 @@
 # 02 · Oferta
 
+## Actualización de acompañamiento (Santiago, 2026-10-12)
+
+Incluido en el mismo pago del reto, según lo confirmado por Santiago en el chat:
+
+- Asesoramiento personalizado por **WhatsApp durante 7 semanas**.
+- Comunidad del reto en **WhatsApp con acceso de por vida**.
+- App, guía y demás materiales con **acceso de por vida**.
+
+No se inventan disponibilidad 24/7, consultas ilimitadas, credenciales profesionales ni plazos de respuesta. La prestación humana y los enlaces de acceso son responsabilidad de Santiago. El costo operativo de este asesoramiento no está incorporado a los cálculos anteriores; revisarlo cuando haya datos.
+
+La página ahora ofrece **Semana 5 de regalo**, que está entregada en la app. Se retira la promesa de las Semanas 6 y 7 mientras no estén publicadas. Las **7 semanas de asesoramiento** son un beneficio distinto y no significan siete semanas de contenido dentro de la app.
+
 ## Oferta vigente (datos de Santiago, 2026-10-08)
 
 | Pieza | Valor | Verificado |

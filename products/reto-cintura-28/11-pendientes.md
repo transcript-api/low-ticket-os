@@ -2,6 +2,10 @@
 
 ## Hoy
 
+- [x] **2026-10-12 (hero y oferta):** hero con video integrado; quitar las dos tarjetas marcadas; nueva sección rosa; compra directa y test opcional. Añadidos asesoramiento por WhatsApp 7 semanas, comunidad y materiales de por vida. Publicado como sitio completo.
+- [ ] Santiago: incluir contacto/invitación de WhatsApp para asesoramiento y comunidad en la entrega a compradoras; definir desde cuándo se cuentan las 7 semanas y cómo se organiza la atención.
+- [ ] Medir compras reales por visita y costo de prestación del asesoramiento antes de atribuir mejoras de conversión.
+
 - [x] **2026-10-12 (video):** sustituir la sección de la app por los últimos videos de Descargas, con selección celular/escritorio y fondo continuo. Publicado como sitio completo; app y gracias conservadas.
 
 - [x] **2026-10-12 (Codex):** actualizar `#info` según la referencia de Santiago, quitar la foto y compactar la lista con movimiento vertical, pausa y modo de movimiento reducido. Publicado y verificado online con los 343 archivos del sitio completo, preservando app y gracias.
@@ -21,7 +25,7 @@
 |---|---|
 | ~~Clarity~~ Hecho: ID cargado y verificado que carga | — |
 | **Publicar el arreglo de la app (letras ilegibles en modo oscuro)**: está en la carpeta de publicación, falta subirlo a Vercel | Santiago |
-| **Verificado 2026-10-12 (Claude, app online): la app publicada tiene 36 días (Día 0, 28 del reto y Semana 5 = días 29-35). NO tiene semanas 6 y 7**, pero la página dice "Semanas 5, 6 y 7 de regalo" y "28 días + 3 de regalo". Hasta publicar la app con 6 y 7, la página promete algo que no se entrega | Santiago |
+| **App publicada con 36 días (Día 0, 28 del reto y Semana 5 = días 29-35), sin semanas 6 y 7.** Codex corrigió la página y quiz el 2026-10-12 para ofrecer solo Semana 5. Publicar 6 y 7 antes de volver a prometerlas | Santiago |
 | **Semanas 6 y 7 de regalo en la app (Santiago, 2026-10-10)**: la página ya las nombra; no lanzar anuncios antes | Santiago |
 | Pasar el ID del píxel de Meta (`metaPixelId`) y cargarlo también en Hotmart (Herramientas → Píxel) para que Meta vea checkout y compra | Santiago + Claude |
 | Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |

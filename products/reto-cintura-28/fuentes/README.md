@@ -2,6 +2,14 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Hero, revisión y acompañamiento (2026-10-12)
+
+- Video elegido por Santiago: `Downloads/app-reto-cintura-28.webm`, 15 s, 1080×1350, VP9, sin audio; **1.902.293 bytes**, SHA-256 (16) `604cb221be92e9d6`. Coincide con el video anterior guardado en el repo. Se usa como `pagina/assets/motion/hero-app.webm`, sin cambiar su contenido, y se suman MP4 y poster.
+- Capturas del chat: indican la zona del hero a reemplazar, las tarjetas antes/después a quitar y la sección rosa a replantear.
+- Texto pegado: revisión de ChatGPT sobre claridad, confianza, video de producto, test opcional, coherencia de oferta y medición. Se tomó como insumo; no se copian garantías de conversión ni se inventan responsables o testimonios.
+- Confirmación del dueño en el mismo chat: asesoramiento por WhatsApp 7 semanas; grupo y demás contenidos con acceso de por vida. Su provisión es del dueño; los contactos no fueron suministrados.
+- Fuente de entrega real: `mi-reto-tausu9m6/js/data-days-e.js` de la publicación vigente, con Semana 5 y días 29 a 35. La página ya no promete semanas 6 y 7 hasta que estén disponibles.
+
 ### Videos para sustituir la sección de la app (2026-10-12)
 
 Santiago pidió usar los dos últimos videos descargados en su PC. Se identificaron por fecha de modificación, se inspeccionaron fotogramas de las cuatro escenas y se verificaron dimensiones, duración y ausencia de audio. Se conservan los originales en el repo, sin editar su contenido:

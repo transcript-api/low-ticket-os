@@ -76,21 +76,25 @@
   }
 
   /* ---------- Presentación de la app: una sola versión de video según la pantalla ---------- */
-  all('[data-app-video]').forEach(function (video) {
+  all('[data-app-video], [data-hero-video]').forEach(function (video) {
+    var hero = video.hasAttribute('data-hero-video');
     var desktop = W.matchMedia('(min-width: 861px)'), motion = W.matchMedia('(prefers-reduced-motion: reduce)');
     var format = video.canPlayType('video/webm; codecs="vp9"') ? 'webm' : 'mp4';
     var inView = false, userPaused = false, selectedSource = '';
     video.muted = true;
 
     /* La decodificación puede variar un punto de RGB entre navegadores y formatos. */
-    video.addEventListener('loadeddata', function () {
+    function blendBackground() {
       try {
         var canvas = D.createElement('canvas'); canvas.width = canvas.height = 1;
         var context = canvas.getContext('2d'); context.drawImage(video, 0, 0, 1, 1, 0, 0, 1, 1);
         var pixel = context.getImageData(0, 0, 1, 1).data;
-        video.closest('.r28-app-section').style.setProperty('--app-video-bg', 'rgb(' + pixel[0] + ',' + pixel[1] + ',' + pixel[2] + ')');
+        video.closest(hero ? '.ap-motion' : '.r28-app-section').style.setProperty(hero ? '--hero-video-bg' : '--app-video-bg', 'rgb(' + pixel[0] + ',' + pixel[1] + ',' + pixel[2] + ')');
       } catch (e) { /* Si no se puede leer, se conserva el blanco cálido original. */ }
-    });
+    }
+    video.addEventListener('loadeddata', blendBackground);
+    video.addEventListener('seeked', blendBackground);
+    video.addEventListener('pause', blendBackground);
 
     function label() {
       video.setAttribute('aria-label', video.controls ? 'Presentación de la app Reto Cintura 28' : (video.paused ? 'Reproducir presentación de la app' : 'Pausar presentación de la app'));
@@ -112,11 +116,11 @@
       video.load();
     }
     function select() {
-      var layout = desktop.matches ? 'desktop' : 'mobile', file = desktop.matches ? 'escritorio' : 'celular';
+      var layout = hero ? 'hero' : (desktop.matches ? 'desktop' : 'mobile'), file = desktop.matches ? 'escritorio' : 'celular';
       video.dataset.layout = layout;
-      video.width = desktop.matches ? 1920 : 1080; video.height = desktop.matches ? 1080 : 1350;
-      video.poster = 'assets/motion/seccion-app-' + file + '-poster.webp';
-      selectedSource = 'assets/motion/seccion-app-' + file + '.' + format;
+      video.width = !hero && desktop.matches ? 1920 : 1080; video.height = !hero && desktop.matches ? 1080 : 1350;
+      video.poster = hero ? 'assets/motion/hero-app-poster.webp' : 'assets/motion/seccion-app-' + file + '-poster.webp';
+      selectedSource = (hero ? 'assets/motion/hero-app' : 'assets/motion/seccion-app-' + file) + '.' + format;
       if (inView) { loadSource(); play(); }
     }
     function preference() {
@@ -144,6 +148,16 @@
         if (inView) { loadSource(); play(); } else video.pause();
       }, { rootMargin: '200px 0px' }).observe(video);
     } else { inView = true; loadSource(); play(); }
+  });
+
+  all('[data-day-demo]').forEach(function (demo) {
+    all('[data-day-switch]', demo).forEach(function (button) {
+      button.addEventListener('click', function () {
+        var selected = button.getAttribute('data-day-switch');
+        all('[data-day-switch]', demo).forEach(function (item) { item.setAttribute('aria-pressed', String(item === button)); });
+        all('[data-day-panel]', demo).forEach(function (panel) { panel.hidden = panel.getAttribute('data-day-panel') !== selected; });
+      });
+    });
   });
 
   /* Identificación: bucle compacto, pausa explícita y lista completa si se reduce el movimiento. */

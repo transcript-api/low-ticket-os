@@ -116,9 +116,8 @@
     if (!launchOn()) {
       return '<div class="pb pb-' + size + '"><b class="pb-now">' + price + '</b><span class="pb-note">' + esc(CFG.priceNote || 'Pago único. Acceso inmediato.') + '</span></div>';
     }
-    var off = CFG.discountLabel || (demo() ? '−65 %' : ''), cupon = CFG.cupon || (demo() ? 'LANZAMIENTO65' : '');
+    var off = CFG.discountLabel || (demo() ? '−65 %' : '');
     return '<div class="pb pb-' + size + ' is-launch">' + (demo() ? '<span class="pb-demo">Vista previa</span>' : '') +
-      (size === 'l' && cupon ? '<span class="pb-coupon">Cupón <b>' + esc(cupon) + '</b> aplicado</span>' : '') +
       '<div class="pb-row"><s class="pb-list"><span class="pb-sr">Antes </span>' + esc(listPrice()) + '</s><b class="pb-now">' + price + '</b>' +
       (off ? '<span class="pb-off">' + esc(off) + '</span>' : '') + '</div>' +
       (size === 'm' ? '<p class="pb-red">' + urgencyHTML() + '</p>' : '') + '</div>';
@@ -213,7 +212,7 @@
       '<div class="qz-card"><b>Lo que te pasó antes</b><p>' + esc(POR_QUE[key('pasado')]) + '</p></div>' +
       '<div class="qz-card"><b>Lo que más te va a servir</b><p>' + esc(SERVIRA[key('distinto')]) + '</p></div>' +
       '<div class="qz-card"><b>Tu tiempo y tu día</b><p>' + esc(TIEMPO[key('tiempo')] + ' ' + DIA[key('dia')]) + '</p></div>' +
-      '<ul class="qz-inc"><li>App con timer guiado</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semanas 5, 6 y 7 de regalo</li></ul>' +
+      '<ul class="qz-inc"><li>App con timer guiado y materiales de por vida</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semana 5 de regalo</li><li>7 semanas de asesoramiento personalizado por WhatsApp</li><li>Comunidad del reto en WhatsApp con acceso de por vida</li></ul>' +
       '<div class="qz-offer"><div data-price-block="l"></div>' +
       '<a class="qz-buy" data-buy href="' + esc(buy) + '">Quiero empezar mi reto</a>' +
       '<p class="pb-red pb-red-c" data-urgency hidden></p>' +

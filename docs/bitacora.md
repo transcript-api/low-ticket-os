@@ -2,6 +2,16 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Codex: hero, oferta y sección rosa orientados a la compra
+
+- Santiago pidió el video `app-reto-cintura-28.webm` integrado en el hero, retirar dos tarjetas bajo las semanas, replantear la sección rosa y reforzar conversión con criterio propio. La revisión pegada de ChatGPT se trató como referencia, no como instrucciones obligatorias.
+- Confirmó asesoramiento personalizado por WhatsApp 7 semanas y comunidad/materiales de por vida. Se añadió a hero, bloque rosa, oferta, bonus, FAQ, cierre y quiz, sin inventar credenciales, disponibilidad o consultas ilimitadas.
+- Hero oscuro fundido con el video original de 15 s. Compra directa como CTA principal y test opcional; mismo checkout, precio y cupón, con menos ruido visual del ticket de cupón. Se quitaron los bloques marcados.
+- Nueva sección rosa "Tu día cambia. Tu plan sigue.": ejemplo normal y Plan B de 8 minutos con selector funcional, acompañamiento, comunidad y CTA con precio/garantía.
+- Se corrigió una promesa no entregada: la app solo contiene Semana 5, días 29–35. Página, bonus y quiz ofrecen esa semana; las 7 semanas de asesoramiento son un servicio distinto. No se alteran los archivos de la app ni gracias.
+- Pruebas locales y online en cinco anchos de 320 a 1440 px: fondo/video, enlaces de compra y cupón, selector, beneficios, quiz completo y foco, movimiento reducido y rutas privadas; sin errores JS ni archivos fallidos. También se revalidaron los videos de `#app` y la alternativa MP4. Publicación completa de 352 archivos, todas las huellas y HTML verificados, promovida `dpl_5T6TKjmfsybviNYeSNYCMjSUuWSL`.
+- Opinión: priorizar facilidad de empezar, alternativa para días difíciles y acompañamiento real aporta claridad. Su impacto en ventas todavía es una hipótesis; medir compras por visitante, no solo tests o clics. Pendiente: acceso/contactos de WhatsApp en entrega y corregir capturas originales con "31".
+
 ## 2026-10-12 — Codex: bloque de la app sustituido por video
 
 - Santiago pidió revisar los dos últimos videos descargados y reemplazar todo el bloque de teléfonos, título, párrafo y beneficios por solo el video, fundido con su fondo blanco cálido.
