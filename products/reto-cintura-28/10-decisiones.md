@@ -2,6 +2,17 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-12 — Platos en horizontal y producto principal antes del precio
+- Pedido: movimiento horizontal continuo de los platos en teléfono, sustituir "Trabajá tu cintura" por **"Afiná tu cintura"** y evaluar el chat con el amigo sobre presentar el valor de la oferta.
+- Platos: una fila móvil con bucle de 34 s, cuatro originales y cuatro copias decorativas. Pausa explícita y al interactuar/usar teclado; comparación por toque sincronizada entre original y copia. Con movimiento reducido quedan cuatro tarjetas sin animación y desplazamiento manual. Escritorio mantiene cuatro columnas.
+- Del chat se adopta la estructura: primero lo que recibe, luego el precio. App, asesoramiento personalizado por WhatsApp 7 semanas, comunidad y guía de por vida forman el producto principal y aparecen justo antes del precio/CTA; ya no son bonus. Recetas, ejercicios y Plan B se agrupan como funciones de la app. Extras: Semana 5, imprimibles y guías complementarias. Quiz coherente con las mismas cuatro partes.
+- No se adoptan los valores tentativos de US$ 20/30/10/15 ni el total US$ 100 sin referencias defendibles. Tampoco se sube el precio a partir del diálogo: sigue el precio/cupón vigentes. Es una prueba de presentación, no un test A/B ni una mejora de conversión ya medida.
+- Se ajusta el margen de las anclas `#precio` y `#platos` para el encabezado fijo. En móvil, la barra fija se oculta mientras está visible el botón principal de compra, para evitar duplicarlo.
+- Pruebas locales y online: 320, 390, 768 y 1440 px; movimiento real, pausa/reanudación, continuidad del bucle, comparación táctil, copias ocultas a lectores de pantalla, movimiento reducido, grilla de escritorio, oferta/quiz de cuatro partes y checkout con cupón. También se verificaron el encabezado visible al navegar al precio y la barra oculta cuando se muestra la compra principal. Sin errores JS, imágenes fallidas ni desborde horizontal.
+- Publicación: 352 archivos; todas las huellas y el HTML servido coinciden con la versión probada. Promovido `dpl_FhmE3e6oDoRq1YxbFNRQPVmMXha3`, preservando app y gracias.
+- Conexión: el CLI falló con `fetch failed`; funcionó ejecutándolo con Node `--use-system-ca --dns-result-order=ipv4first`. No se desactivó TLS ni se cambiaron certificados/configuración global.
+- Mejora siguiente: medir compras por visitante y costo de atención; si se desean valores por componente, conseguir referencias reales antes de publicarlos.
+
 ### 2026-10-12 — Se elimina la descripción bajo "Mirá la guía por dentro"
 - Santiago pidió quitar el párrafo que empieza "La guía está en formato historia". Se elimina solo ese texto; el título y las muestras de la guía siguen visibles. Opinión: las muestras ya permiten entender el formato. Mejora pendiente: actualizar las capturas originales con el contador "31".
 

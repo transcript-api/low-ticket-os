@@ -2,6 +2,9 @@
 
 ## Hoy
 
+- [x] 2026-10-12: platos en bucle horizontal móvil; hero "Afiná tu cintura"; separar cuatro componentes principales de los extras y presentarlos antes del precio.
+- [ ] Para poner importes individuales en la oferta: aportar precios/referencias defendibles de cada componente. No se publicaron los importes tentativos ni un total US$ 100.
+
 - [x] 2026-10-12: quitar el párrafo descriptivo bajo "Mirá la guía por dentro", por pedido de Santiago.
 
 - [x] **2026-10-12 (hero y oferta):** hero con video integrado; quitar las dos tarjetas marcadas; nueva sección rosa; compra directa y test opcional. Añadidos asesoramiento por WhatsApp 7 semanas, comunidad y materiales de por vida. Publicado como sitio completo.

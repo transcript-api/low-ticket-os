@@ -1,5 +1,9 @@
 # 03 · Producto
 
+## Presentación principal (2026-10-12)
+
+App, asesoramiento personalizado 7 semanas por WhatsApp, comunidad y guía de por vida forman el producto principal. Ejercicios, recetas y Plan B son funciones de la app. Semana 5, hojas imprimibles y guías complementarias se presentan como extras. Esta reorganización no cambia los archivos entregados ni el precio.
+
 ## Acompañamiento añadido por Santiago (2026-10-12)
 
 Asesoramiento personalizado por WhatsApp durante 7 semanas y comunidad en WhatsApp de por vida, incluidos con el reto. La app, la guía y los materiales también tienen acceso de por vida. Esta es una prestación confirmada por el dueño; el cambio de la página no crea el grupo ni automatiza el asesoramiento. Queda pendiente incluir los contactos/invitaciones en la entrega a compradoras.

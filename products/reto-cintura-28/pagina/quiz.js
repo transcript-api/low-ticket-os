@@ -212,7 +212,8 @@
       '<div class="qz-card"><b>Lo que te pasó antes</b><p>' + esc(POR_QUE[key('pasado')]) + '</p></div>' +
       '<div class="qz-card"><b>Lo que más te va a servir</b><p>' + esc(SERVIRA[key('distinto')]) + '</p></div>' +
       '<div class="qz-card"><b>Tu tiempo y tu día</b><p>' + esc(TIEMPO[key('tiempo')] + ' ' + DIA[key('dia')]) + '</p></div>' +
-      '<ul class="qz-inc"><li>App con timer guiado y materiales de por vida</li><li>Guía completa en formato historia</li><li>22 ejercicios con 3 niveles y 32 recetas</li><li>Plan B de 8 minutos y Semana 5 de regalo</li><li>7 semanas de asesoramiento personalizado por WhatsApp</li><li>Comunidad del reto en WhatsApp con acceso de por vida</li></ul>' +
+      '<ul class="qz-inc"><li>App de por vida: timer guiado, 22 ejercicios, 3 niveles, Plan B de 8 minutos y 32 recetas</li><li>7 semanas de asesoramiento personalizado por WhatsApp</li><li>Comunidad del reto en WhatsApp con acceso de por vida</li><li>Guía completa y materiales de por vida</li></ul>' +
+      '<p class="qz-g">También recibís la Semana 5 de regalo, hojas para imprimir y guías de eventos, hinchazón y sueño.</p>' +
       '<div class="qz-offer"><div data-price-block="l"></div>' +
       '<a class="qz-buy" data-buy href="' + esc(buy) + '">Quiero empezar mi reto</a>' +
       '<p class="pb-red pb-red-c" data-urgency hidden></p>' +

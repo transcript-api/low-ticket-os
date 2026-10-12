@@ -2,6 +2,14 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Platos en horizontal y oferta de cuatro partes
+- Santiago pidió la fila de platos en movimiento horizontal constante para teléfono, el hero "Afiná tu cintura" y probar las ideas más sensatas del chat con su amigo.
+- Se implementó bucle móvil de 34 s, pausa, comparación por toque sincronizada, copias decorativas fuera de accesibilidad y modo estático con movimiento reducido. Escritorio conserva cuatro columnas.
+- App, asesoramiento 7 semanas por WhatsApp, comunidad y guía de por vida se presentan como producto principal antes del precio. Los extras quedan separados; el quiz muestra las mismas cuatro partes. Se conservan precio y cupón; no se publican valores tentativos ni un total artificial de US$ 100.
+- Se corrigen anclas bajo el encabezado y se oculta la barra móvil cuando el CTA principal está visible. Validación local y online en cuatro anchos, bucle sin salto, pausa, comparación, accesibilidad, oferta, quiz y rutas de compradoras; también comprobadas las anclas y la barra de compra. Sin errores JS ni archivos fallidos.
+- Publicados 352 archivos, verificados por huellas y HTML servido, `dpl_FhmE3e6oDoRq1YxbFNRQPVmMXha3`. App y gracias conservadas. El CLI necesitó Node `--use-system-ca --dns-result-order=ipv4first` para conectar; no se desactiva TLS ni se modifica configuración global.
+- Opinión/mejora: la jerarquía refleja mejor lo comprado; medir ventas antes de cambiar otra vez o aumentar precio. Valores individuales solo con una base documentada.
+
 ## 2026-10-12 — Se quita el párrafo descriptivo de la guía
 - Pedido de Santiago: eliminar el texto de la captura, "La guía está en formato historia… Estas son páginas reales del reto". Solo cambia ese párrafo en `index.html`; las muestras y su título se conservan. Publicación con el sitio completo, preservando app y gracias. Opinión: las muestras explican el formato por sí mismas. Mejora pendiente: corregir capturas con "31".
 

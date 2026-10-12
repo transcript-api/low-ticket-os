@@ -66,6 +66,12 @@
     }
   });
   var precio = D.getElementById('precio');
+  var mainBuy = D.querySelector('#precio [data-buy]');
+  if (mainBuy && 'IntersectionObserver' in W) {
+    new IntersectionObserver(function (entries) {
+      D.documentElement.classList.toggle('r28-main-cta-visible', entries[0].isIntersecting);
+    }, { threshold: 0.25 }).observe(mainBuy);
+  }
   if (precio && 'IntersectionObserver' in W) {
     var seen = new IntersectionObserver(function (es) {
       es.forEach(function (x) {
@@ -176,9 +182,32 @@
   });
 
   /* ---------- 2. Comparadores de platos ---------- */
+  all('[data-food-carousel]').forEach(function (carousel) {
+    var track = carousel.querySelector('.r28-comps'), pause = carousel.parentElement.querySelector('[data-food-pause]');
+    if (!track || !pause) return;
+    all('[data-comp]', track).forEach(function (card, index) {
+      card.setAttribute('data-food-pair', String(index));
+      var copy = card.cloneNode(true); copy.classList.add('food-duplicate'); copy.setAttribute('aria-hidden', 'true');
+      all('button', copy).forEach(function (button) { button.tabIndex = -1; }); track.appendChild(copy);
+    });
+    carousel.classList.add('is-ready'); pause.hidden = false;
+    pause.addEventListener('click', function () {
+      var paused = carousel.classList.toggle('is-paused'); pause.setAttribute('aria-pressed', String(paused));
+      pause.textContent = paused ? 'Reanudar movimiento' : 'Pausar movimiento';
+    });
+    carousel.addEventListener('focusout', function (e) { if (!carousel.contains(e.relatedTarget)) carousel.scrollLeft = 0; });
+  });
   var comps = all('[data-comp]');
+  function flipPair(card, value, touched) {
+    var pair = card.getAttribute('data-food-pair');
+    comps.forEach(function (item) {
+      if (item === card || (pair !== null && item.getAttribute('data-food-pair') === pair)) {
+        item.classList.toggle('show-b', value); if (touched) item.setAttribute('data-touched', '1');
+      }
+    });
+  }
   comps.forEach(function (c) {
-    c.querySelector('[data-flip]').addEventListener('click', function () { c.setAttribute('data-touched', '1'); c.classList.toggle('show-b'); });
+    c.querySelector('[data-flip]').addEventListener('click', function () { flipPair(c, !c.classList.contains('show-b'), true); });
   });
   if (comps.length && 'IntersectionObserver' in W && !reduce) {
     var peek = new IntersectionObserver(function (es) {
@@ -186,7 +215,7 @@
         if (!x.isIntersecting) return;
         peek.unobserve(x.target);
         var c = x.target, i = comps.indexOf(c);
-        setTimeout(function () { if (!c.hasAttribute('data-touched')) c.classList.add('show-b'); }, 1300 + i * 350);
+        setTimeout(function () { if (!c.hasAttribute('data-touched')) flipPair(c, true, false); }, 1300 + i * 350);
       });
     }, { threshold: 0.6 });
     comps.forEach(function (c) { peek.observe(c); });

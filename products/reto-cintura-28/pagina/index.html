@@ -32,7 +32,7 @@
     <div class="r28-wrap ap-grid">
       <div class="ap-copy">
         <p class="ap-kick"><span class="ap-dot" aria-hidden="true"></span>Reto de 28 días · desde tu casa</p>
-        <h1 class="ap-h1">Trabajá tu cintura.<em>Con un plan de 28&nbsp;días.</em><span>Desde casa. A tu nivel. Con acompañamiento.</span></h1>
+        <h1 class="ap-h1">Afiná tu cintura.<em>Con un plan de 28&nbsp;días.</em><span>Desde casa. A tu nivel. Con acompañamiento.</span></h1>
         <p class="ap-sub">La app te dice qué hacer cada día. Entrenás de 20 a 30 minutos, comés normal y tenés un Plan B de 8 minutos cuando el día no da.</p>
         <ul class="ap-chips"><li>20 a 30 minutos</li><li>Comida normal</li><li>Garantía de 7 días</li></ul>
         <div class="ap-support"><p><b>Asesoramiento personalizado</b> por WhatsApp durante 7 semanas.</p><p><b>Comunidad, app y materiales</b> con acceso de por vida.</p></div>
@@ -150,11 +150,12 @@
     </div>
   </section>
 
-  <section class="r28-sec">
+  <section class="r28-sec" id="platos">
     <div class="r28-wrap">
       <h2 class="r28-h2">Comé lo de siempre. Armado distinto.</h2>
       <p class="r28-lead" style="margin-top:16px">Sin dietas raras ni prohibidos. Tocá cada plato para ver cómo cambia en el reto.</p>
-      <div class="r28-comps">
+      <div class="r28-food-carousel" data-food-carousel role="region" aria-label="Platos de siempre y su versión Cintura">
+      <div class="r28-comps" id="r28-food-track">
         <div class="r28-comp" data-comp>
           <button type="button" class="ci" data-flip aria-label="Cambiar entre el plato de siempre y la versión Cintura"><img src="assets/landing/comp-milanesa-antes.webp" alt="Milanesa frita con papas fritas y huevo frito" loading="lazy" width="480" height="600"><img class="b" src="assets/landing/comp-milanesa-cintura.webp" alt="Milanesa de pollo al horno con ensalada y puré de calabaza" loading="lazy" width="480" height="600"><span class="lab a">De siempre</span><span class="lab b">Versión Cintura</span></button>
           <h3>La milanesa</h3><p>Mismo antojo, mucho menos aceite y el doble de verdura.</p>
@@ -172,6 +173,8 @@
           <h3>La merienda</h3><p>La merienda planificada es la que te salva de la picada de la tarde.</p>
         </div>
       </div>
+      </div>
+      <button type="button" class="r28-food-pause" data-food-pause aria-controls="r28-food-track" aria-pressed="false" hidden>Pausar movimiento</button>
     </div>
   </section>
 
@@ -183,29 +186,27 @@
     <div class="r28-wrap r28-offer">
       <div>
         <h2 class="r28-h2">Todo lo que recibís hoy.</h2>
+        <p class="r28-offer-lead">Tu acceso completo al Reto Cintura 28: la app, el plan y el acompañamiento. Todo en un solo pago.</p>
         <ul class="r28-stack">
-          <li><img src="assets/landing/app-hoy.webp" alt="" loading="lazy"><div><b>La app del Reto Cintura 28</b><span>Día 0, los 28 del reto y una semana de regalo, con timer guiado, recetas y tu progreso. Se abre desde el navegador del celular y queda para siempre.</span></div></li>
-          <li><img src="assets/landing/guia-s.webp" alt="" loading="lazy" width="56" height="56"><div><b>Guía completa en formato historia</b><span>Una página por día en formato historia, para leer en el celular como un posteo.</span></div></li>
-          <li><img src="assets/landing/hojas-s.webp" alt="" loading="lazy" width="56" height="56"><div><b>Hojas para imprimir</b><span>Calendario del reto, tus medidas, lista de compras y tus reglas para pegar en la heladera.</span></div></li>
-          <li><img src="assets/landing/sentadilla-s.webp" alt="" loading="lazy"><div><b>22 ejercicios con 3 niveles</b><span>Técnica con fotos, errores comunes y demo en dos tiempos.</span></div></li>
-          <li><img src="assets/landing/plato-s.webp" alt="" loading="lazy"><div><b>32 recetas y método del plato</b><span>Comida de supermercado, sin contar calorías, y tus platos de siempre en versión Cintura.</span></div></li>
+          <li><img src="assets/landing/app-hoy.webp" alt="" loading="lazy"><div><small class="r28-component-term">App · acceso de por vida</small><b>Tu reto resuelto en el celular</b><span>Entrenos con 22 ejercicios y 3 niveles, timer guiado, Plan B de 8 minutos, 32 recetas y tu progreso. Abrís el día y sabés qué hacer.</span></div></li>
+          <li><i class="r28-offer-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></i><div><small class="r28-component-term">WhatsApp · durante 7 semanas</small><b>Asesoramiento personalizado</b><span>Tenés a quién consultar tus dudas sobre el reto. El acompañamiento es parte de tu acceso.</span></div></li>
+          <li><i class="r28-offer-icon" aria-hidden="true">∞</i><div><small class="r28-component-term">Comunidad · acceso de por vida</small><b>Un grupo para compartir el proceso</b><span>Acceso a la comunidad del reto en WhatsApp para compartir avances, dudas y acompañarte.</span></div></li>
+          <li><img src="assets/landing/guia-s.webp" alt="" loading="lazy" width="56" height="56"><div><small class="r28-component-term">Guía · acceso de por vida</small><b>Tu plan completo, paso a paso</b><span>Los 28 días organizados para seguir el programa desde el celular, con ejercicios, comida y hábitos.</span></div></li>
         </ul>
-        <div class="r28-included-support"><p>También está incluido tu acompañamiento</p><div><b>7 semanas</b><span>Asesoramiento personalizado por WhatsApp</span></div><div><b>De por vida</b><span>Comunidad en WhatsApp, app y materiales</span></div></div>
+        <p class="r28-package-note">App + guía + comunidad + asesoramiento.<br><b>Un solo acceso. Todo incluido.</b></p>
       </div>
       <div class="r28-price">
         <span class="tag" data-cfg="priceLabel">Pago único</span>
         <h3>Reto Cintura 28</h3>
+        <div class="r28-price-includes"><p>Tu acceso completo incluye</p><ul><li>App y guía de por vida</li><li>7 semanas de asesoramiento por WhatsApp</li><li>Comunidad en WhatsApp de por vida</li></ul></div>
         <div data-price-block="l"><div class="pb pb-l"><b class="pb-now" data-cfg="price">US$ 15,90</b></div></div>
         <p class="note"><span data-cfg="priceNote">Pago único. Acceso inmediato.</span> App y materiales de por vida, con acompañamiento incluido.</p>
         <a class="r28-buy" data-buy href="#precio">Quiero empezar hoy</a>
         <p class="pb-red pb-red-c" data-urgency hidden></p>
         <div class="r28-secure"><span>Acceso inmediato por email</span><span>Tarjeta o medios locales</span></div>
-        <div class="r28-bonuses"><p>Bonus incluidos, sin costo</p><ul>
-          <li><strong>7 semanas de asesoramiento personalizado por WhatsApp</strong></li>
-          <li><strong>Comunidad del reto en WhatsApp con acceso de por vida</strong></li>
-          <li>Acompañamiento día por día: la app te dice qué hacer y 7 emails te acompañan en el reto</li>
+        <div class="r28-bonuses"><p>Además, te llevás estos extras</p><ul>
           <li>Semana 5 de regalo: tu rutina con timer para seguir; la repetís y subís de nivel cuando quieras</li>
-          <li>Plan B de 8 minutos para los días imposibles</li>
+          <li>Hojas para imprimir: calendario del reto, medidas y lista de compras</li>
           <li>Guías de eventos, hinchazón y sueño</li>
         </ul></div>
         <div class="r28-guar"><div class="r28-seal">7<small>DÍAS</small></div><p><b>Garantía de 7 días.</b> Si en la primera semana sentís que no es para vos, pedís el reembolso y te devolvemos el 100%. Sin preguntas.</p></div>

@@ -1,5 +1,11 @@
 # 02 · Oferta
 
+## Presentación de la oferta principal (2026-10-12, chat con el amigo)
+
+La app, la guía, la comunidad y el asesoramiento son las cuatro partes del producto principal. Se muestran antes del precio y en el resultado del quiz. Plan B, ejercicios y recetas son funciones de la app, no componentes monetarios separados para inflar una suma. Los extras se limitan a Semana 5, hojas imprimibles y guías complementarias.
+
+Se conserva el precio vigente de US$ 15,90 y su checkout/cupón. Los importes de US$ 20/30/10/15 y el total US$ 100 del chat eran propuestas sin referencias de venta independiente; no se publican como valores reales ni como un descuento adicional. Para añadir valores individuales, Santiago deberá aportar una base defendible (precios reales o referencias comparables documentadas).
+
 ## Actualización de acompañamiento (Santiago, 2026-10-12)
 
 Incluido en el mismo pago del reto, según lo confirmado por Santiago en el chat:

@@ -163,6 +163,7 @@
 .r28-fit .no li::before { content: "✕"; font-weight: 800; color: var(--muted); }
 
 /* Qué recibís + precio */
+#precio, #platos { scroll-margin-top: 84px; }
 .r28-offer { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 4vw, 48px); align-items: start; }
 .r28-stack { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 2px; }
 .r28-stack li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 14px 0; border-top: 1px solid var(--line); }
@@ -170,6 +171,16 @@
 .r28-stack li i { width: 56px; height: 56px; border-radius: 14px; display: grid; place-content: center; background: var(--rosa); font-style: normal; font: 800 .95rem var(--display); letter-spacing: -.01em; color: var(--fucsia); }
 .r28-stack b { display: block; font-size: 1.05rem; }
 .r28-stack span { color: var(--muted); font-size: .92rem; }
+.r28-offer-lead { margin-top: 18px !important; color: var(--ink-2); font-size: 1.04rem; max-width: 48ch; }
+.r28-component-term { display: block; color: #AC0049; font: 700 .72rem/1.4 var(--body); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 5px; }
+.r28-stack i.r28-offer-icon { font-size: 1.65rem; }
+.r28-package-note { margin-top: 20px !important; padding: 18px 20px; background: #FFF0F5; border: 1px solid #F2D2DE; border-radius: 18px; font-size: .94rem; line-height: 1.5; color: #6B4158; }
+.r28-package-note b { color: var(--ink); }
+.r28-price-includes { border-block: 1px solid rgba(255,255,255,.14); padding-block: 14px; }
+.r28-price-includes p { font-size: .72rem; text-transform: uppercase; font-weight: 700; letter-spacing: .06em; color: rgba(255,255,255,.6); }
+.r28-price-includes ul { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.r28-price-includes li { position: relative; padding-left: 22px; font-size: .87rem; line-height: 1.4; }
+.r28-price-includes li::before { content: "✓"; position: absolute; left: 0; color: var(--lima); font-weight: 800; }
 .r28-price { position: sticky; top: 90px; background: var(--ink); color: #FFF; border-radius: 30px; padding: 30px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 30px 70px rgba(28, 19, 36, .25); }
 .r28-price .tag { align-self: flex-start; background: var(--lima); color: var(--ink); font-weight: 700; font-size: .85rem; padding: 6px 12px; border-radius: 999px; }
 .r28-price h3 { font-size: 1.9rem; }
@@ -215,6 +226,7 @@
   .r28-price { position: static; }
   .r28-sticky { display: none; }
   html.ap-past .r28-sticky { display: flex; }
+  html.ap-past.r28-main-cta-visible .r28-sticky { display: none; }
   .r28-topcta { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -240,7 +252,11 @@ body { margin: 0; background: #FCF9F7; }
 .r28-week .r28-bonus { position: static; display: inline-block; margin-bottom: 10px; background: var(--lima); color: var(--ink); font-weight: 800; font-size: .8rem; padding: 6px 12px; border-radius: 999px; }
 
 /* Comparadores de platos */
-.r28-comps { margin-top: 36px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.r28-food-carousel { margin-top: 36px; }
+.r28-comps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.r28-comp.food-duplicate { display: none; }
+.r28-food-pause { display: none; appearance: none; border: 0; background: transparent; color: var(--muted); cursor: pointer; font: 600 .8rem var(--body); min-height: 44px; margin-left: auto; text-decoration: underline; text-underline-offset: 3px; }
+.r28-food-pause[hidden] { display: none; }
 .r28-comp h3 { font-size: 1.35rem; margin: 14px 0 6px; }
 .r28-comp p { color: var(--ink-2); font-size: .95rem; }
 .r28-comp .ci { all: unset; box-sizing: border-box; cursor: pointer; position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; border-radius: 22px; overflow: hidden; background: var(--rosa); box-shadow: 0 1px 2px rgba(28, 19, 36, .06), 0 12px 30px rgba(28, 19, 36, .1); -webkit-tap-highlight-color: transparent; }
@@ -264,7 +280,14 @@ body { margin: 0; background: #FCF9F7; }
 .r28-steps span { color: var(--muted); font-size: .95rem; }
 
 @media (max-width: 860px) {
-  .r28-comps { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .r28-food-carousel { overflow-x: auto; padding-bottom: 12px; scrollbar-width: none; }
+  .r28-food-carousel.is-ready { overflow: hidden; }
+  .r28-comps { display: flex; width: max-content; gap: 14px; align-items: flex-start; }
+  .r28-comp { flex: 0 0 auto; width: clamp(220px, 72vw, 300px); }
+  .r28-food-carousel.is-ready .r28-comps { animation: food-left 34s linear infinite; will-change: transform; }
+  .r28-food-carousel.is-ready .food-duplicate { display: block; }
+  .r28-food-carousel.is-paused .r28-comps, .r28-food-carousel:active .r28-comps, .r28-food-carousel:has(.ci:focus-visible) .r28-comps { animation-play-state: paused; }
+  .r28-food-pause:not([hidden]) { display: block; }
   .r28-comp h3 { font-size: 1.12rem; margin-top: 10px; }
   .r28-comp p { font-size: .88rem; }
   .r28-comp .lab { left: 8px; top: 8px; font-size: .72rem; padding: 5px 9px; }
@@ -272,8 +295,13 @@ body { margin: 0; background: #FCF9F7; }
   .r28-steps { grid-template-columns: 1fr; }
   .r28-pages { padding-inline: 20px; }
 }
+@keyframes food-left { to { transform: translateX(calc(-50% - 7px)); } }
+@media (max-width: 860px) and (hover: hover) { .r28-food-carousel.is-ready:hover .r28-comps { animation-play-state: paused; } }
 @media (prefers-reduced-motion: reduce) {
   .r28-comp .ci img { transition: none; }
+  .r28-food-carousel.is-ready { overflow-x: auto; }
+  .r28-food-carousel.is-ready .r28-comps { animation: none; will-change: auto; }
+  .r28-food-carousel.is-ready .food-duplicate, .r28-food-pause { display: none !important; }
 }
 
 /* Escritorio: las 5 semanas entran en una fila (la 5 no queda escondida en el carrusel) */

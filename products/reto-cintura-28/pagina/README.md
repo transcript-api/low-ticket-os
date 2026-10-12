@@ -1,5 +1,13 @@
 # Página de ventas · versión v3 (apertura de una pantalla + quiz)
 
+## Última presentación: platos y oferta (2026-10-12)
+
+El hero dice "Afiná tu cintura". `#platos` usa una fila horizontal móvil que se mueve en bucle de 34 s; permite pausar y tocar para comparar. Las copias están ocultas a lectores de pantalla y no entran en el orden del teclado. Movimiento reducido desactiva la animación y permite desplazamiento manual. Escritorio mantiene la grilla de cuatro platos.
+
+Antes del precio se presentan las cuatro partes principales: app, asesoramiento por WhatsApp 7 semanas, comunidad y guía de por vida. Los extras quedan aparte. El quiz refleja esa misma estructura. No se añaden valores individuales sin base ni un total artificial US$ 100; se conserva precio y cupón.
+
+Sitio completo de 352 archivos, publicación `dpl_FhmE3e6oDoRq1YxbFNRQPVmMXha3`. Anclas adaptadas al encabezado fijo y barra de compra móvil oculta cuando el CTA principal es visible. Para el CLI en esta PC se usó Node con `--use-system-ca --dns-result-order=ipv4first`, manteniendo validación TLS.
+
 ## Última actualización 2026-10-12: hero y acompañamiento
 
 El hero usa `assets/motion/hero-app.webm` (15 s, vertical), con MP4 alternativo y poster. El fondo se iguala al fotograma decodificado. Su acción principal es comprar; el test sigue como alternativa. Se eliminan las dos tarjetas antes/después del reto y se reemplaza la sección del Día 12 por un selector de día normal/Plan B y tarjetas de acompañamiento.

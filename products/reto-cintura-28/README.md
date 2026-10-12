@@ -9,6 +9,7 @@
 - **Actualización 2026-10-12 (video de la app):** el bloque de teléfonos, título y beneficios se reemplazó por una presentación de 24 s. Video vertical en celular y horizontal en escritorio; fondo fundido con el video, sin marco ni tarjetas externas. Publicado en [#app](https://reto-cintura-28.vercel.app/#app), conservando app y gracias.
 - **Actualización 2026-10-12 (oferta y conversión):** hero con el video de 15 s, compra directa y test secundario; sección rosa centrada en Plan B y acompañamiento. Incluye 7 semanas de asesoramiento por WhatsApp y comunidad/materiales de por vida, confirmados por Santiago. Se retiran las dos tarjetas marcadas y la promesa de semanas extra no entregadas: queda Semana 5 de regalo. No hay datos nuevos de conversión.
 - **Ajuste posterior 2026-10-12:** quitado el párrafo descriptivo bajo "Mirá la guía por dentro", por pedido de Santiago.
+- **Última presentación 2026-10-12:** hero "Afiná tu cintura"; platos en un bucle horizontal continuo en celular. Oferta principal ordenada como app, asesoramiento 7 semanas, comunidad y guía antes del precio; extras separados, sin valores monetarios inventados. Precio vigente conservado.
 - **Test activo:** ninguno.
 - **Siguiente paso:** sincronizar precio en creativos y página, verificar el estado de Hotmart y definir los cambios de la página. Ver [11-pendientes.md](11-pendientes.md).
 

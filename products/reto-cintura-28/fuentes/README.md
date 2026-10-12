@@ -2,6 +2,10 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Chat sobre presentación de valor (2026-10-12)
+
+Santiago compartió tres capturas de su conversación con un amigo. Proponen presentar app, guía, comunidad y asesoramiento antes del precio, distinguir producto principal de bonus y usar importes individuales solo si son defendibles. Los importes US$ 20/30/10/15 y el total US$ 100 son propuestas del diálogo, no precios independientes verificados. Se adoptó el orden y la jerarquía; no se copiaron números ni se cambió el ticket. Una cuarta captura indica los platos que deben desplazarse horizontalmente en móvil.
+
 ### Hero, revisión y acompañamiento (2026-10-12)
 
 - Video elegido por Santiago: `Downloads/app-reto-cintura-28.webm`, 15 s, 1080×1350, VP9, sin audio; **1.902.293 bytes**, SHA-256 (16) `604cb221be92e9d6`. Coincide con el video anterior guardado en el repo. Se usa como `pagina/assets/motion/hero-app.webm`, sin cambiar su contenido, y se suman MP4 y poster.
