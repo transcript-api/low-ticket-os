@@ -65,6 +65,7 @@ Página publicada, con eventos verificados, compra de prueba pasando por ella, y
 3. **Utmify** activo y probado con compra de prueba.
 4. **Apertura de una sola pantalla**: nada de scroll largo antes del primer argumento. Un botón principal, un link directo al precio y precio visible.
 5. **Precio tachado y cuenta regresiva solo con fecha real** (`listPrice` + `launchEndsAt` iguales al fin del cupón en Hotmart). Sin fecha real quedan apagados. La fecha visible y el contador son opcionales (`mostrarFecha`, `mostrarCuenta`): "por tiempo limitado" sin fecha vale si el fin existe y se cumple. Al vencer, la página pasa sola al precio de lista y saca el cupón del link, para que nunca diga algo distinto al checkout.
+6b. **Mundo real, sin relleno ni repetición** (decidido el 2026-10-12, regla 8 de `AGENTS.md`): cada bloque responde "¿por qué compro?"; nada de tareas internas de la app como argumento; una idea, un lugar; "guía", no "PDF".
 6. **Sin cifras de contenido como argumento** ("128 páginas" asusta). Se vende la transformación y la facilidad de empezar; los bonus van en letra chica dentro de la tarjeta de precio.
 7. Botones que bajan directo al precio para quien ya quiere comprar.
 8. Código de la página guardado en `products/<producto>/pagina/` y publicado con `vercel deploy --prod`.

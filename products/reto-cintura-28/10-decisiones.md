@@ -2,6 +2,12 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-12 — Página: se borran "Buscá compañía", "Misión del día" y "¿Es para vos?"; "PDF" pasa a "guía"
+- Decisión (de Santiago): en "Así es un día por dentro" quedan solo Mover y Comer (se sacan "Para la cabeza: Buscá compañía" y "Misión del día: Contale a una persona…", que no venden). Se borra la sección "¿Es para vos?" porque repite lo que ya dicen "Si te pasa esto", el quiz y el precio. Donde decía "PDF" ahora dice "guía"; el título "No es solo un PDF. Es tu app del reto." pasó a "Es tu app del reto.".
+- Cambia lo registrado el 2026-10-09 (noche): "¿Es para vos?" había sido restituida por pedido del socio. Santiago la vuelve a sacar por repetida.
+- Opinión de Claude: de acuerdo con "Buscá compañía/Misión", son mundo-app, no argumento de compra. Sobre "¿Es para vos?": filtra y da confianza, pero la advertencia de embarazo y lesión sigue en el pie y en el resultado del quiz, así que no se pierde la parte legal. Si Clarity muestra dudas antes de comprar, se puede volver a una versión de una línea.
+- Regla nueva en `AGENTS.md` (punto 8) y `playbook/05-pagina.md`.
+
 ### 2026-10-10 — Descuento encendido: base US$ 45,43 + cupón `LANZAMIENTO65` por dos semanas
 - Decisión (de Santiago): mostrar el 65 % al lado del precio, cupón `LANZAMIENTO65` por dos semanas, sin decir en la página cuánto dura; solo "Precio de lanzamiento por tiempo limitado" en rojo chico en el hero, debajo del botón al checkout y al final del quiz.
 - Hecho en Hotmart (verificado recargando, 2026-10-10): precio base de la oferta `eucnkmyz` de US$ 99,38 a **US$ 45,43**; cupón **`LANZAMIENTO65`**, 65 %, todas las ofertas, del 10/10/2026 18:39 al **24/10/2026 23:59** (America/Montevideo). El cupón `84` ya no existía; solo estaba `LANZAMIENTO84`.

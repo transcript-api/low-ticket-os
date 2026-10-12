@@ -2,6 +2,12 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 · Limpieza de la página y regla "mundo real"
+
+- Santiago pidió borrar "Buscá compañía" y "Misión del día" (no venden), borrar "¿Es para vos?" (repetida) y cambiar "PDF" por "guía" (incluido el título "No es solo un PDF…"). Hecho en `pagina/index.html` y `venta.css` (grilla de "Así es un día" pasó a 3 columnas). Revisado en escritorio y celular, sin errores de consola.
+- **Regla nueva (AGENTS.md punto 8):** la página vende, no documenta la app; cada bloque responde "¿por qué compro?", sin relleno, sin repetición, "guía" y no "PDF".
+- Falta publicar (la publicación en producción la hace Santiago o la autoriza en Claude Code).
+
 ## 2026-10-10 · Descuento 65 % en Hotmart y en la página, mejoras del quiz
 
 - **Actualización 2026-10-12:** Santiago publicó la página desde la carpeta armada por Claude. Verificado online: descuento, línea roja, link con `LANZAMIENTO65`, quiz, app y gracias (200), sin errores de consola. Falta el OK para eliminar `LANZAMIENTO84`.

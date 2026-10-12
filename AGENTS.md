@@ -45,6 +45,7 @@ Resumen. El detalle y el porqué están en `docs/01-principios.md`.
 5. **Los números mandan, no la intuición.** Toda decisión de precio, oferta o escala sale de `playbook/formulas.md` con datos reales. Si no hay datos, se marca como **hipótesis**.
 6. **Lo que ya funcionó se documenta; lo que falló también.** Un test sin registrar no existió.
 7. **La página dice lo mismo que el anuncio.** Si no, Meta lo rechaza y la persona se va.
+8. **Mundo real: la página vende, no documenta la app.** Cada bloque tiene que responder "¿por qué compro?". Prohibido poner detalles internos que suenan a tarea, relleno o curiosidad (ej. "Para la cabeza: buscá compañía", "Misión del día: contale a una persona que hacés el reto"). Prohibido repetir la misma idea en varias secciones (si ya lo dice el precio, el quiz o el pie, no va en otra tarjeta). Antes de agregar o dejar un bloque, preguntate si una compradora real lo extrañaría; si no, se borra. Se vende "guía" y "app", nunca "PDF" (suena a archivo suelto y baja el valor percibido). Aviso de salud: va una vez, en el pie y en el resultado del quiz.
 
 ### Al incorporar material nuevo (documentos, estrategias, creativos)
 

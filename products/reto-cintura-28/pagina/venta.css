@@ -82,17 +82,13 @@
 .r28-bookends b { font-family: var(--display); font-size: 1.15rem; }
 
 /* Un día por dentro */
-.r28-day { margin-top: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.r28-day { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .r28-day > div { background: var(--card); border-radius: 22px; padding: 20px; box-shadow: 0 1px 2px rgba(28, 19, 36, .05), 0 8px 24px rgba(28, 19, 36, .05); display: flex; flex-direction: column; gap: 8px; }
 .r28-day small { font-weight: 700; color: var(--fucsia); font-size: .82rem; }
 .r28-day b { font-family: var(--display); font-size: 1.25rem; line-height: 1.15; }
 .r28-day span { color: var(--muted); font-size: .95rem; }
-.r28-day .big { grid-row: span 2; padding: 0; overflow: hidden; }
+.r28-day .big { padding: 0; overflow: hidden; }
 .r28-day .big img { width: 100%; height: 100%; object-fit: cover; min-height: 260px; }
-.r28-day .mind { background: var(--ink); color: #FFF; }
-.r28-day .mind b { color: var(--lima); }
-.r28-day .mind span { color: rgba(255, 255, 255, .8); }
-.r28-day .mis { background: none; box-shadow: none; border: 2px dashed var(--fucsia); }
 
 /* Para quién */
 .r28-fit { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -110,7 +106,7 @@
 .r28-stack { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 2px; }
 .r28-stack li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 14px 0; border-top: 1px solid var(--line); }
 .r28-stack li img { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; }
-.r28-stack li i { width: 56px; height: 56px; border-radius: 14px; display: grid; place-content: center; background: var(--rosa); font-style: normal; font: 800 1.2rem var(--display); color: var(--fucsia); }
+.r28-stack li i { width: 56px; height: 56px; border-radius: 14px; display: grid; place-content: center; background: var(--rosa); font-style: normal; font: 800 .95rem var(--display); letter-spacing: -.01em; color: var(--fucsia); }
 .r28-stack b { display: block; font-size: 1.05rem; }
 .r28-stack span { color: var(--muted); font-size: .92rem; }
 .r28-price { position: sticky; top: 90px; background: var(--ink); color: #FFF; border-radius: 30px; padding: 30px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 30px 70px rgba(28, 19, 36, .25); }
