@@ -106,7 +106,7 @@
 .r28-offer { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 4vw, 48px); align-items: start; }
 .r28-stack { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 2px; }
 .r28-stack li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 14px 0; border-top: 1px solid var(--line); }
-.r28-stack li img { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; }
+.r28-stack li img { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; box-shadow: 0 0 0 1px var(--line); }
 .r28-stack li i { width: 56px; height: 56px; border-radius: 14px; display: grid; place-content: center; background: var(--rosa); font-style: normal; font: 800 .95rem var(--display); letter-spacing: -.01em; color: var(--fucsia); }
 .r28-stack b { display: block; font-size: 1.05rem; }
 .r28-stack span { color: var(--muted); font-size: .92rem; }
