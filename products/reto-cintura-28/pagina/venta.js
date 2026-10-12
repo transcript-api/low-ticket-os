@@ -80,6 +80,21 @@
     all('li', ul).forEach(function (li) { var c = li.cloneNode(true); c.className = 'dup'; c.setAttribute('aria-hidden', 'true'); ul.appendChild(c); });
   });
 
+  /* Identificación: bucle compacto, pausa explícita y lista completa si se reduce el movimiento. */
+  all('[data-pains-loop]').forEach(function (loop) {
+    var list = loop.querySelector('.r28-pains'), toggle = loop.querySelector('[data-pains-toggle]');
+    if (!list || !toggle) return;
+    all('li', list).forEach(function (li) {
+      var copy = li.cloneNode(true); copy.classList.add('dup'); copy.setAttribute('aria-hidden', 'true'); list.appendChild(copy);
+    });
+    loop.classList.add('is-ready'); toggle.hidden = false;
+    toggle.addEventListener('click', function () {
+      var paused = loop.classList.toggle('is-paused');
+      toggle.setAttribute('aria-pressed', String(paused));
+      toggle.textContent = paused ? 'Reanudar movimiento' : 'Pausar movimiento';
+    });
+  });
+
   /* ---------- 2. Comparadores de platos ---------- */
   var comps = all('[data-comp]');
   comps.forEach(function (c) {

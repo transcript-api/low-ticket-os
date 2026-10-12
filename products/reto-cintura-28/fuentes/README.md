@@ -2,6 +2,10 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Referencia visual de identificación (2026-10-12)
+
+Santiago compartió en el chat una captura con título en cursiva fucsia, tarjetas rosadas, botón ancho y retrato. La indicó como referencia para sustituir `#info`. Después pidió quitar la foto y agregar un bucle vertical a las tarjetas. La implementación final incorpora el estilo mediante HTML/CSS y el movimiento mediante CSS/JavaScript; no guarda ni usa una foto nueva. No se incorporan afirmaciones nuevas ni pruebas sociales de la captura.
+
 Verificado el 2026-10-08: las 12 direcciones públicas respondieron 200 y los tamaños coinciden con lo que hay en `Descargas` de la PC de Santiago.
 
 ## Producto y página

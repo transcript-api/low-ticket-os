@@ -2,6 +2,16 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Codex: identificación sin foto y con movimiento vertical
+
+- Santiago pidió implementar la referencia visual de "Si te pasa esto"; luego precisó que quede sin la foto de la mujer y que las tarjetas se desplacen en vertical para reducir la altura. Autorizó planificación y ejecución en el chat.
+- Se editan solo `products/reto-cintura-28/pagina/index.html`, `venta.css` y `venta.js`: título fucsia con serif en cursiva, tarjetas rosadas con checks, bloque centrado, cierre destacado y CTA ancho con flecha. El quiz y la oferta conservan su funcionamiento.
+- Bucle de 28 s, ventana de 180/200 px, pausa explícita y por puntero/toque. Movimiento reducido y ausencia de JavaScript muestran las cinco tarjetas completas. Duplicados ocultos a lectores de pantalla.
+- Se validó local y online en seis anchos entre 320 y 1819 px: movimiento, pausa, continuidad del bucle, movimiento reducido, seis preguntas del quiz, foco al cerrar, precio y checkout. Sin errores de JavaScript ni archivos fallidos. App y gracias responden correctamente.
+- El CLI autenticado permitió recuperar los 343 archivos de la publicación anterior y verificar sus SHA-1; se mantienen app y gracias. Se compararon todos los archivos subidos contra la versión probada y se promovió `dpl_5By649uzWAhMJrgxjGUsG7SJN7fk` a https://reto-cintura-28.vercel.app.
+- No se agregó fotografía al resultado final. El intento previo de extraer la foto con IA fue rechazado por el filtro de imágenes; la posterior instrucción de Santiago eliminó esa foto del alcance.
+- Opinión y mejora sugerida: la ventana compacta acerca el CTA; medir con visitas reales si mejora el inicio y finalización del quiz. No se inventan métricas ni se declara un test A/B.
+
 ## 2026-10-12 · Limpieza de la página y regla "mundo real"
 
 - **App: letras ilegibles en modo oscuro (reportado por Santiago).** Causa: `styles.css` de la app usaba `var(--ink)` como fondo oscuro (timer, pantalla de inicio, tarjeta de hoy, cabecera de semana, tarjeta "Para la cabeza"), y en modo oscuro del celular ese color pasa a rosa claro con letras blancas. Arreglo: color fijo `--night` (#1C1324) en esos fondos, botón de la celebración con letra fija y color del "kicker" en `app.js`. Barrido de contraste en 10 pantallas y las fases del timer: antes 10 problemas en modo oscuro, después 0 (modo claro: 0 antes y después). **La app no está en el repo** (vive en la carpeta de publicación y en Vercel): el arreglo está en la carpeta armada por Claude y falta publicarlo.

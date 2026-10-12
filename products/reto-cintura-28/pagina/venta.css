@@ -34,14 +34,55 @@
 .r28-go-note { font-size: .9rem; color: var(--ink-2); align-self: center; }
 
 /* Identificación */
-.r28-who { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
-.r28-who figure { margin: 0; position: relative; }
-.r28-who figure img { border-radius: 28px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
-.r28-who figcaption { position: absolute; left: 16px; bottom: 16px; background: var(--card); border-radius: 14px; padding: 8px 12px; font-size: .78rem; color: var(--muted); }
-.r28-pains { list-style: none; padding: 0; margin: 28px 0 0; display: flex; flex-direction: column; }
-.r28-pains li { padding: 18px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 34px 1fr; gap: 12px; font-size: 1.08rem; }
-.r28-pains li::before { content: ""; width: 22px; height: 22px; margin-top: 3px; border-radius: 7px; border: 2.5px solid var(--fucsia); }
-.r28-who .r28-after { margin-top: 26px; font-family: var(--display); font-weight: 700; font-size: 1.4rem; line-height: 1.2; }
+.r28-identify { --identify-ink: #1D2532; --identify-pink: #EF0060; background: #FCFAF9; color: var(--identify-ink); scroll-margin-top: 64px; }
+.r28-who { width: min(800px, 100%); }
+.r28-who > div { min-width: 0; }
+.r28-who .r28-h2 { text-align: center; font-size: clamp(2.5rem, 4.5vw, 4.25rem); line-height: 1.04; letter-spacing: -.045em; text-wrap: initial; }
+.r28-who .r28-h2 > span:first-child { display: block; }
+.r28-who .r28-h2 > span:last-of-type, .r28-who .r28-h2 > em { display: inline-block; }
+.r28-who .r28-h2 > em { font-family: "DM Serif Display", Georgia, serif; font-size: 1.14em; font-weight: 400; letter-spacing: -.035em; line-height: 1.02; color: var(--identify-pink); }
+.r28-pains-loop { margin-top: 26px; }
+.r28-pains { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.r28-pains .dup { display: none; }
+.r28-pains-loop.is-ready .r28-pains-window { height: 180px; overflow: hidden; padding-block: 10px; -webkit-mask-image: linear-gradient(transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(transparent, #000 8%, #000 92%, transparent); }
+.r28-pains-loop.is-ready .r28-pains { animation: pains-up 28s linear infinite; }
+.r28-pains-loop.is-ready .r28-pains .dup { display: flex; }
+/* Media lista más medio gap: la segunda copia ocupa exactamente el lugar de la primera. */
+@keyframes pains-up { to { transform: translateY(calc(-50% - 4px)); } }
+.r28-pains-loop.is-paused .r28-pains, .r28-pains-window:hover .r28-pains, .r28-pains-window:active .r28-pains { animation-play-state: paused; }
+.r28-pains-toggle { display: block; margin: 2px 0 0 auto; min-height: 44px; border: 0; border-radius: 8px; padding: 6px 10px; background: transparent; color: #67515B; cursor: pointer; font: 600 .8rem var(--body); text-decoration: underline; text-underline-offset: 3px; }
+.r28-pains-toggle[hidden] { display: none; }
+.r28-pains-toggle:hover { color: var(--identify-pink); }
+.r28-pains li { position: relative; padding: 10px 16px 10px 68px; min-height: 54px; display: flex; align-items: center; border-radius: 18px; background: #FCEFF2; font-size: 1.0625rem; line-height: 1.35; }
+.r28-pains li::before { content: ""; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border-radius: 50%; background: var(--identify-pink); }
+.r28-pains li::after { content: ""; position: absolute; left: 26px; top: calc(50% - 9px); width: 9px; height: 16px; border-right: 3px solid #FFF; border-bottom: 3px solid #FFF; transform: rotate(42deg); }
+.r28-who .r28-after { margin-top: 24px; text-align: center; font-size: clamp(1.35rem, 2vw, 1.875rem); line-height: 1.15; }
+.r28-after strong { display: block; font-family: var(--display); font-weight: 800; letter-spacing: -.035em; }
+.r28-after em { display: block; margin-top: 2px; font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
+.r28-after em span { position: relative; display: inline-block; }
+.r28-after em span::after { content: ""; position: absolute; inset: auto 0 -8px; height: 7px; border-top: 3px solid #FFA3BD; border-radius: 50%; transform: rotate(-2deg); }
+.r28-who .cta-quiz { display: flex; width: min(100%, 560px); margin: 26px auto 0; padding: 15px 18px 13px; gap: 3px; background: var(--identify-pink); font-size: clamp(1.1rem, 1.6vw, 1.5rem); font-weight: 700; box-shadow: 0 12px 28px rgba(239, 0, 96, .24); }
+.r28-who .cta-quiz small { font-size: 1rem; font-weight: 400; opacity: 1; }
+.r28-quiz-label { display: inline-flex; align-items: center; justify-content: center; gap: 12px; }
+.r28-quiz-label svg { flex-shrink: 0; }
+@media (max-width: 860px) {
+  .r28-identify { padding-block: 64px; }
+  .r28-who .r28-h2 { font-size: clamp(2.35rem, 8.8vw, 3.5rem); }
+  .r28-who .r28-h2 > span, .r28-who .r28-h2 > em { display: block; }
+  .r28-pains-loop { margin-top: 24px; }
+  .r28-pains-loop.is-ready .r28-pains-window { height: 200px; }
+  .r28-pains li { padding: 12px 14px 12px 58px; border-radius: 16px; font-size: 1rem; }
+  .r28-pains li::before { width: 30px; height: 30px; left: 14px; }
+  .r28-pains li::after { left: 24px; width: 8px; height: 14px; top: calc(50% - 8px); }
+  .r28-who .r28-after { font-size: clamp(1.3rem, 4.9vw, 1.65rem); line-height: 1.22; }
+  .r28-who .cta-quiz { width: 100%; margin-inline: 0; font-size: 1.15rem; }
+  .r28-who .cta-quiz small { font-size: .875rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .r28-pains-loop.is-ready .r28-pains-window { height: auto; padding-block: 0; overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .r28-pains-loop.is-ready .r28-pains { animation: none; }
+  .r28-pains-loop.is-ready .r28-pains .dup, .r28-pains-toggle { display: none; }
+}
 
 /* Reencuadre */
 .r28-dark { background: var(--ink); color: #FFF; }
@@ -150,8 +191,7 @@
 
 @media (max-width: 860px) {
   .r28 { font-size: 16px; }
-  .r28-who, .r28-inside, .r28-offer, .r28-fit { grid-template-columns: 1fr; }
-  .r28-who figure { order: -1; }
+  .r28-inside, .r28-offer, .r28-fit { grid-template-columns: 1fr; }
   .r28-vs div { padding: 16px 14px; font-size: .95rem; }
   .r28-phones { height: 520px; }
   /* Beneficios de la app: lista vertical que sube sin parar (se pausa mientras se toca) */

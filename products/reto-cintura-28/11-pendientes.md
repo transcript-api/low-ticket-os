@@ -2,6 +2,9 @@
 
 ## Hoy
 
+- [x] **2026-10-12 (Codex):** actualizar `#info` según la referencia de Santiago, quitar la foto y compactar la lista con movimiento vertical, pausa y modo de movimiento reducido. Publicado y verificado online con los 343 archivos del sitio completo, preservando app y gracias.
+- [ ] Medir con tráfico real el inicio y la finalización del quiz después de este cambio visual; no hay datos nuevos de conversión.
+
 | Tarea (agregado el 2026-10-09, feedback del socio) | Quién |
 |---|---|
 | Casos reales / prueba social: videos y fotos del reto presencial con permiso escrito (usar `pagina/voces-plantilla.html`) | Santiago |

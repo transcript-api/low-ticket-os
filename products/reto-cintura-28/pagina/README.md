@@ -1,5 +1,13 @@
 # Página de ventas · versión v3 (apertura de una pantalla + quiz)
 
+## Actualización 2026-10-12: identificación compacta
+
+`#info` sigue la referencia visual enviada por Santiago, con titular serif en cursiva fucsia, tarjetas rosadas con checks, cierre destacado y CTA ancho con flecha. Por su última indicación, el bloque queda centrado **sin foto**.
+
+La lista se mueve hacia arriba en un bucle de 28 s dentro de una ventana de 180 px en escritorio y 200 px en celular. Se pausa con el botón visible, al pasar el puntero o sostener el toque. Si se reduce el movimiento en el dispositivo, se muestran las cinco tarjetas completas sin animación. Sin JavaScript tampoco se recorta la lista. Los duplicados son decorativos para lectores de pantalla.
+
+Se probaron local y online seis anchos de pantalla, el bucle sin salto, pausa/reanudación, movimiento reducido y las seis preguntas del quiz. Solo cambian `index.html`, `venta.css` y `venta.js`. Publicación completa promovida en Vercel: `dpl_5By649uzWAhMJrgxjGUsG7SJN7fk`; app y gracias conservadas con sus archivos originales y sus rutas verificadas.
+
 Código estático listo para Cloudflare Pages. Incluye `assets/landing` (imágenes). **No** incluye la app de miembros ni la página de gracias (rutas privadas) ni los PDF del producto: viven en el ZIP del sitio en la PC de Santiago. Para publicar: `vercel deploy --prod --yes` desde la carpeta del sitio (el sitio publicado además lleva esas dos carpetas privadas, copiadas del ZIP).
 
 ## Qué cambió respecto de la v2
