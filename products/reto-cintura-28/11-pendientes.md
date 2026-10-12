@@ -15,6 +15,7 @@
 | Tarea (agregado el 2026-10-09) | Quién |
 |---|---|
 | ~~Clarity~~ Hecho: ID cargado y verificado que carga | — |
+| **Verificado 2026-10-12 (Claude, app online): la app publicada tiene 36 días (Día 0, 28 del reto y Semana 5 = días 29-35). NO tiene semanas 6 y 7**, pero la página dice "Semanas 5, 6 y 7 de regalo" y "28 días + 3 de regalo". Hasta publicar la app con 6 y 7, la página promete algo que no se entrega | Santiago |
 | **Semanas 6 y 7 de regalo en la app (Santiago, 2026-10-10)**: la página ya las nombra; no lanzar anuncios antes | Santiago |
 | Pasar el ID del píxel de Meta (`metaPixelId`) y cargarlo también en Hotmart (Herramientas → Píxel) para que Meta vea checkout y compra | Santiago + Claude |
 | Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |
