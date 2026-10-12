@@ -2,6 +2,9 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-12 — Se elimina la descripción bajo "Mirá la guía por dentro"
+- Santiago pidió quitar el párrafo que empieza "La guía está en formato historia". Se elimina solo ese texto; el título y las muestras de la guía siguen visibles. Opinión: las muestras ya permiten entender el formato. Mejora pendiente: actualizar las capturas originales con el contador "31".
+
 ### 2026-10-12 — Hero con video, compra directa y acompañamiento confirmado
 - Santiago pidió reemplazar el teléfono del hero por `Downloads/app-reto-cintura-28.webm`, fundir los fondos, eliminar los dos bloques señalados bajo las semanas y mejorar la sección rosa con criterio propio. Aportó una revisión de ChatGPT como referencia, no como instrucciones obligatorias. Autorizó cambios para mejorar el recorrido de compra.
 - Confirmación expresa del dueño: asesoramiento personalizado por WhatsApp durante **7 semanas**; comunidad en WhatsApp, app y materiales **de por vida**. Se incorpora en hero, sección rosa, resumen de oferta, bonus, FAQ, cierre y resultado del quiz, sin prometer horas de atención, consultas ilimitadas o credenciales no confirmadas.

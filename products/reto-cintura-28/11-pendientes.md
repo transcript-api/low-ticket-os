@@ -2,6 +2,8 @@
 
 ## Hoy
 
+- [x] 2026-10-12: quitar el párrafo descriptivo bajo "Mirá la guía por dentro", por pedido de Santiago.
+
 - [x] **2026-10-12 (hero y oferta):** hero con video integrado; quitar las dos tarjetas marcadas; nueva sección rosa; compra directa y test opcional. Añadidos asesoramiento por WhatsApp 7 semanas, comunidad y materiales de por vida. Publicado como sitio completo.
 - [ ] Santiago: incluir contacto/invitación de WhatsApp para asesoramiento y comunidad en la entrega a compradoras; definir desde cuándo se cuentan las 7 semanas y cómo se organiza la atención.
 - [ ] Medir compras reales por visita y costo de prestación del asesoramiento antes de atribuir mejoras de conversión.

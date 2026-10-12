@@ -2,6 +2,9 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Se quita el párrafo descriptivo de la guía
+- Pedido de Santiago: eliminar el texto de la captura, "La guía está en formato historia… Estas son páginas reales del reto". Solo cambia ese párrafo en `index.html`; las muestras y su título se conservan. Publicación con el sitio completo, preservando app y gracias. Opinión: las muestras explican el formato por sí mismas. Mejora pendiente: corregir capturas con "31".
+
 ## 2026-10-12 — Codex: hero, oferta y sección rosa orientados a la compra
 
 - Santiago pidió el video `app-reto-cintura-28.webm` integrado en el hero, retirar dos tarjetas bajo las semanas, replantear la sección rosa y reforzar conversión con criterio propio. La revisión pegada de ChatGPT se trató como referencia, no como instrucciones obligatorias.
