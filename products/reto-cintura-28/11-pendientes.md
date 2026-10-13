@@ -2,6 +2,8 @@
 
 ## Hoy
 
+- [x] 2026-10-13: sustituir toda la sección rosa por resultados de Pame (7 semanas) y Lu (4 semanas), del reto online y con autorización escrita confirmada por Santiago. Videos pequeños de 8 s optimizados y publicación verificada.
+- [ ] Antes de publicar el motion graphic como anuncio, confirmar qué representa `+152` y respaldarlo con datos reales. El archivo se revisó como referencia; no se editó ni se publicó en Meta.
 - [x] 2026-10-12: miniaturas de asesoramiento y comunidad; "Todo lo que recibís hoy" en bucle horizontal compacto en celular, con pausa y movimiento reducido. Publicado y revisado online, con precio y accesos de compradoras conservados.
 - [ ] Observar con tráfico real si se leen los cuatro accesos y si conviene ajustar la velocidad de la fila móvil.
 - [x] 2026-10-12: tarjeta "Si comprás hoy te llevás", cuatro valores estimados por acceso (35 + 25 + 15 + 5 = US$ 80), asesoramiento personalizado conmigo y frase antes del precio; extras corregidos a semanas 5, 6 y 7, por instrucción expresa de Santiago.
@@ -21,7 +23,7 @@
 
 | Tarea (agregado el 2026-10-09, feedback del socio) | Quién |
 |---|---|
-| Casos reales / prueba social: videos y fotos del reto presencial con permiso escrito (usar `pagina/voces-plantilla.html`) | Santiago |
+| ~~Casos reales / prueba social~~ Publicados el 2026-10-13: Pame y Lu, del reto online; permiso escrito confirmado por Santiago. La plantilla presencial queda para futuros casos de ese formato | — |
 | Decidir si se testea el titular emocional (EXP-004) y el quiz como CTA principal contra compra directa (EXP-005) cuando haya tráfico | Santiago + Claude |
 | ~~Encender descuento: Hotmart (base 45,43 · cupón 65 % · fin del cupón) + `launchEndsAt`~~ Hecho en Hotmart y en la página local el 2026-10-10 (`LANZAMIENTO65` hasta 24/10 23:59) | — |
 | ~~Publicar la página nueva~~ Hecho: la publicó Santiago desde la carpeta armada por Claude (página nueva + app + gracias). Verificado online el 2026-10-12 en celular y escritorio | — |
@@ -39,7 +41,7 @@
 | Decidir fecha real de fin del lanzamiento; cambiar en Hotmart precio base a US$ 45,43, cupón a 65 % y fin del cupón; recién ahí cargar `launchEndsAt` | Santiago (+ Claude con OK) |
 | Checkout: contador, banner, texto del bump | Claude con OK |
 | Reemplazar `app-hoy.webp` y actualizar las capturas incluidas en los videos de la app (dicen "12 de 31") | Santiago + agente |
-| Videos e imágenes del reto presencial con permiso | Santiago |
+| Más casos reales con permiso, si se decide ampliar la prueba social | Santiago |
 
 | Tarea | Quién |
 |---|---|

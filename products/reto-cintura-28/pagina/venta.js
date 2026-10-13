@@ -156,14 +156,17 @@
     } else { inView = true; loadSource(); play(); }
   });
 
-  all('[data-day-demo]').forEach(function (demo) {
-    all('[data-day-switch]', demo).forEach(function (button) {
-      button.addEventListener('click', function () {
-        var selected = button.getAttribute('data-day-switch');
-        all('[data-day-switch]', demo).forEach(function (item) { item.setAttribute('aria-pressed', String(item === button)); });
-        all('[data-day-panel]', demo).forEach(function (panel) { panel.hidden = panel.getAttribute('data-day-panel') !== selected; });
-      });
-    });
+  /* Clientas: videos completos de 8 s; el antes ocupa los primeros 4 s. */
+  var results = all('[data-result-video]');
+  results.forEach(function (video) {
+    var phase = video.parentElement.querySelector('[data-result-phase]');
+    function updatePhase() { if (phase) phase.textContent = video.currentTime >= 4 ? 'Después' : 'Antes'; }
+    video.addEventListener('timeupdate', updatePhase); video.addEventListener('seeked', updatePhase);
+    video.addEventListener('play', function () { results.forEach(function (other) { if (other !== video) other.pause(); }); });
+    if ('IntersectionObserver' in W) {
+      new IntersectionObserver(function (entries) { if (!entries[0].isIntersecting) video.pause(); }).observe(video);
+    }
+    updatePhase();
   });
 
   /* Identificación: bucle compacto, pausa explícita y lista completa si se reduce el movimiento. */

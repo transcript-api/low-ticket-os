@@ -2,6 +2,14 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-13 — Resultados reales de Pame y Lu en la sección rosa
+- Santiago aportó dos videos de antes/después y pidió reemplazar toda la sección "Tu día cambia" por casos pequeños. Confirmó permiso escrito de ambas y que hicieron la versión online: Pame 7 semanas, Lu 4 semanas. Estos datos sustituyen la hipótesis anterior de casos exclusivamente presenciales.
+- Se mantienen los clips completos de 8 s y su secuencia, sin retocar el cuerpo. Codificación H.264 540 × 960 con `faststart`, de 2,67 MB a 0,68 MB entre ambos; posters WebP. Tarjetas pequeñas en una fila, incluso en celular, con nombres, tiempos, contexto de resultados individuales y CTA. Reproducción al tocar y etiquetas Antes/Después, un video a la vez, pausa fuera de pantalla. Se quitan selector y tarjetas anteriores; apoyo/comunidad siguen en hero y oferta.
+- Motion graphic revisado como referencia visual (app guiada, timer y alimentación); no editado ni publicado en Meta. El gráfico `+152` no tiene una base aportada y no se incorpora a la página. Archivos, tamaños y huellas en fuentes.
+- Validado local y online en 320, 390, 768 y 1440 px: tamaño, fila, contexto, reproducción y duración, etiquetas al buscar, pausa, precio/cupón, quiz y rutas de compradoras. Revalidada la fila de accesos y valores US$ 80. Sin errores JS, archivos fallidos ni desborde; capturas revisadas.
+- Publicado `dpl_B2cZrYyX3PnLFN6RpatAZ6nsAQi5`: huellas de los 358 archivos y HTML servido verificados; app, gracias y medios anteriores conservados.
+- Opinión/mejora: los dos casos online aportan evidencia identificable sin convertir sus tiempos en una promesa. Medir reproducciones y compras por visita; respaldar cifras del creativo antes de usarlo en anuncios.
+
 ## 2026-10-12 — Miniaturas y accesos en horizontal en celular
 - Santiago pidió imágenes para asesoramiento y comunidad y compactar "Todo lo que recibís hoy" como la fila de platos. Dos ilustraciones 3D decorativas generadas con imagegen y exportadas a WebP 320 × 320, unos 14 KB entre ambas; prompts y fuentes registrados. No representan miembros reales ni conversaciones.
 - Cuatro tarjetas en una fila móvil continua de 40 s, altura de 224–243 px, con pausa, interacción/teclado, pausa fuera de pantalla y alternativa sin animación con movimiento reducido o sin JS. Copias decorativas fuera de accesibilidad. Escritorio conserva la lista completa y el precio no cambia.

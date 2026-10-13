@@ -2,6 +2,28 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Pame y Lu: casos del reto online (2026-10-13)
+
+Santiago aportó los dos videos, confirmó que **ambas autorizaron por escrito** su publicación y que hicieron **la versión online**. Pame tuvo un proceso de **7 semanas** y Lu de **4 semanas**, según el dueño. Esto sustituye la hipótesis anterior de que la prueba social disponible sería solo del reto presencial. No se adjuntaron autorizaciones individuales al repo; la confirmación fue del dueño en el chat.
+
+| Fuente de Descargas | Duración / formato | Tamaño original | SHA-256 (16) |
+|---|---|---|---|
+| `Pame-antes-despues.mp4` | 8 s, 720 × 1280, H.264, 24 fps, sin audio | 1.578.949 bytes | `cfc9a7318dd2aac4` |
+| `Lu-antes-despues.mp4` | 8 s, 720 × 1280, H.264, 24 fps, sin audio | 1.094.563 bytes | `643a581c17d3ac89` |
+
+Los primeros 4 s muestran el antes y los últimos 4 s, el después. Se mantienen los 8 s completos: no se cortan escenas ni se altera la velocidad o el cuerpo. Se codifica a H.264, 540 × 960, CRF 26, con `faststart`. Posters del fotograma a 0,5 s, exportados a WebP. Los originales de Descargas no se modifican.
+
+| Archivo en `pagina/assets/resultados/` | Tamaño | SHA-256 (16) |
+|---|---|---|
+| `pame-7-semanas.mp4` | 418.114 bytes | `803e1ed4d29bd9b1` |
+| `lu-4-semanas.mp4` | 256.908 bytes | `2345c4c7764597d6` |
+| `pame-poster.webp` | 33.436 bytes | `04ddf02435921ef2` |
+| `lu-poster.webp` | 18.866 bytes | `5bc16f2144c253e6` |
+
+La página usa los nombres de pila, tiempos aportados y contexto online. No añade kilos, centímetros, frases atribuidas ni resultados garantizados. Los videos reducen aproximadamente un 75 % el peso combinado de los originales.
+
+Referencia adicional: `d9584ee9-0f30-463a-aeeb-06c62a56b934.mp4`, motion graphic previsto para Meta, 37,55 s, 1080 × 1920, H.264/AAC, 43.694.942 bytes, SHA-256 (16) `d3ae0aa66ffe207b`. Se revisaron fotogramas de su recorrido visual: acompañamiento, app con timer y alimentación cotidiana, coherentes con la oferta de la página. El gráfico `+152` aparece en el creativo, sin una base aportada en este pedido; no se incorpora esa cifra a la landing. El creativo no se edita ni se publica en Meta en este tramo.
+
 ### Miniaturas de asesoramiento y comunidad (2026-10-12)
 
 Santiago pidió reemplazar los dos iconos sin miniatura de "Todo lo que recibís hoy" y compactar esa lista en horizontal como los platos. Se generaron dos ilustraciones con la herramienta integrada imagegen: teléfono con burbujas de conversación y check, y burbuja con figuras abstractas de comunidad. Paleta rosa, fucsia y lima; sin conversaciones, integrantes reales ni texto. [Prompts finales y archivos](miniaturas-asesoramiento-comunidad.md).

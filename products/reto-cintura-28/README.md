@@ -2,7 +2,7 @@
 
 ## Estado
 
-- **Fase del flujo:** 03 Oferta (vigente definida por Santiago el 2026-10-08) y 05 Página (cambios pendientes: Santiago tiene una lista). Producto, creativos y videos ya producidos. Todavía no hay ventas ni gasto en anuncios (dato de Santiago; **no verificado en Hotmart**, no hubo acceso).
+- **Fase del flujo:** 03 Oferta (vigente definida por Santiago el 2026-10-08) y 05 Página (cambios pendientes: Santiago tiene una lista). Producto, creativos y videos ya producidos. Sin ventas ni gasto en anuncios según el dato de Santiago del **2026-10-08** (**no verificado en Hotmart**, no hubo acceso); no se cuenta con una actualización de métricas comerciales.
 - **Último cambio:** 2026-10-08. Se incorporó el material completo (sitio, creativos, guía, hojas, menú, portadas y banners), los datos vigentes de oferta y una revisión crítica. Detalle en [10-decisiones.md](10-decisiones.md).
 - **Actualización 2026-10-09:** página v3 online (https://reto-cintura-28.vercel.app). Lo vigente y lo que falta: [INFORME.md](INFORME.md) (empezar por "Dónde paramos").
 - **Actualización 2026-10-12 (Codex):** sección `#info` rediseñada según la referencia de Santiago, centrada y sin foto. Las cinco tarjetas rosadas con checks se desplazan en un bucle vertical compacto, con pausa y modo estático para quienes reducen movimiento. Publicada conservando todos los archivos de la app y de gracias; detalle en [10-decisiones.md](10-decisiones.md).
@@ -12,6 +12,7 @@
 - **Última presentación 2026-10-12:** hero "Afiná tu cintura"; platos en un bucle horizontal continuo en celular. Oferta principal ordenada como app, asesoramiento 7 semanas, comunidad y guía antes del precio; extras separados, sin valores monetarios inventados. Precio vigente conservado.
 - **Ajuste más reciente 2026-10-12:** tarjeta de precio con "Si comprás hoy te llevás" y valores estimados al lado: asesoramiento personalizado conmigo US$ 35, app vitalicia US$ 25, comunidad vitalicia US$ 15 y guía/materiales vitalicios US$ 5; total US$ 80. Precio real US$ 15,90 y diseño conservados. Santiago corrigió el regalo a semanas 5, 6 y 7: página y quiz actualizados; archivos de la app preservados.
 - **Último ajuste visual 2026-10-12:** miniaturas ilustradas para asesoramiento y comunidad; "Todo lo que recibís hoy" en fila horizontal continua de 40 s en celular, con pausa, teclado y movimiento reducido. En escritorio conserva la lista. Publicado y verificado en cuatro anchos; precio, extras y accesos conservados.
+- **Último cambio 2026-10-13:** sección rosa sustituida por dos casos del reto online: Pame, 7 semanas; Lu, 4 semanas. Permiso escrito confirmado por Santiago. Videos pequeños de 8 s, 75 % menos peso combinado, reproducción al tocar y etiquetas Antes/Después; publicado y probado online. El motion graphic aportado se revisó como referencia, sin editar/publicar el anuncio.
 - **Test activo:** ninguno.
 - **Siguiente paso:** sincronizar precio en creativos y página, verificar el estado de Hotmart y definir los cambios de la página. Ver [11-pendientes.md](11-pendientes.md).
 

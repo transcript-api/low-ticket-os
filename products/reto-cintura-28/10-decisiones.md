@@ -2,6 +2,17 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-13 — La sección rosa pasa a mostrar resultados de Pame y Lu
+- Santiago pidió retirar toda la sección "Tu día cambia. Tu plan sigue." y sustituirla por dos videos pequeños de antes/después. Aportó Pame (7 semanas), Lu (4 semanas) y un motion graphic como referencia del anuncio previsto para Meta.
+- Antes de publicar, confirmó en el chat que ambas autorizaron por escrito y que hicieron **la versión online**. Se identifican así, sustituyendo la hipótesis anterior de casos presenciales. No se añaden frases atribuidas, kilos, centímetros ni resultados garantizados.
+- Nueva sección en la misma ubicación y ancla `#acompanamiento`: "Resultados de clientas / Mirá sus cambios", dos tarjetas en una fila incluso en celular, nombres y tiempos, contexto de experiencia individual del reto online y CTA de compra. Se mantiene el rosa. Se elimina el selector de día, tarjetas de apoyo y código/estilos correspondientes. Asesoramiento y comunidad siguen en hero y oferta.
+- Los originales ya duran 8 s: se conservan completos (4 s antes y 4 s después), sin alterar cuerpos, velocidad ni escenas. H.264 540 × 960 con `faststart`; peso combinado de 2.673.512 a 675.022 bytes, cerca de 75 % menos. Posters WebP del segundo 0,5. Originales de Descargas conservados.
+- Reproducción al tocar, con controles nativos y `playsinline`, sin autoplay ni precarga del video. Etiqueta de fase sincronizada con el tiempo; reproducir un caso pausa el otro y salir de la vista también pausa. Escritorio: 200 px de ancho por video; celular de 390 px: 153 px por video.
+- Se revisa el recorrido visual del motion: app organizada, timer y alimentación cotidiana, coherentes con la página. No se modifica/publica el anuncio. Su gráfico `+152` no tiene una base aportada en este pedido y no se copia a la landing. Fuente y huellas registradas en `fuentes/README.md`.
+- Validación local y online en 320, 390, 768 y 1440 px: tamaños, fila, contexto/tiempos, duración 8 s, reproducción, cambio Antes/Después al buscar, un video a la vez, pausa fuera de pantalla, precio/cupón, quiz y rutas de compradoras. También se verifica el bucle de accesos y la suma de US$ 80. Sin errores JS, archivos fallidos ni desborde. Capturas revisadas.
+- Publicado `dpl_B2cZrYyX3PnLFN6RpatAZ6nsAQi5`: verificados los 358 archivos subidos y el HTML servido. Solo tres archivos de página cambiados y cuatro medios nuevos; app, gracias y otros medios conservados.
+- Opinión/mejora: ahora hay dos casos identificables del programa online, con tiempos explícitos. Medir reproducciones y compras por visita antes de atribuir mejora de conversión; respaldar cualquier cifra adicional del anuncio con datos reales.
+
 ### 2026-10-12 — Miniaturas nuevas y accesos en una fila móvil
 - Santiago pidió miniaturas para asesoramiento y comunidad y propuso que "Todo lo que recibís hoy" corra en horizontal como los platos para ocupar menos altura.
 - Se generan dos ilustraciones decorativas con la herramienta integrada imagegen: teléfono con chat/check y burbuja con figuras abstractas de comunidad. Paleta rosa, fucsia y lima, sin conversaciones ni integrantes reales. WebP 320 × 320 de 7.670 y 6.448 bytes; prompts y procedencia en `fuentes/miniaturas-asesoramiento-comunidad.md`. Miniaturas de app y guía conservadas.
