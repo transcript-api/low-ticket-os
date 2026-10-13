@@ -2,9 +2,9 @@
 
 ## Presentación de la oferta principal (2026-10-12, chat con el amigo)
 
-La app, la guía, la comunidad y el asesoramiento son las cuatro partes del producto principal. Se muestran antes del precio y en el resultado del quiz. Plan B, ejercicios y recetas son funciones de la app, no componentes monetarios separados para inflar una suma. Los extras se limitan a Semana 5, hojas imprimibles y guías complementarias.
+La app, la guía, la comunidad y el asesoramiento son las cuatro partes del producto principal. Se muestran antes del precio y en el resultado del quiz. Plan B, ejercicios y recetas son funciones de la app. Los extras incluyen las semanas 5, 6 y 7 de regalo, hojas imprimibles y guías complementarias, según la corrección posterior de Santiago.
 
-Se conserva el precio vigente de US$ 15,90 y su checkout/cupón. Los importes de US$ 20/30/10/15 y el total US$ 100 del chat eran propuestas sin referencias de venta independiente; no se publican como valores reales ni como un descuento adicional. Para añadir valores individuales, Santiago deberá aportar una base defendible (precios reales o referencias comparables documentadas).
+Se conserva el precio vigente de US$ 15,90 y su checkout/cupón. Santiago pidió después una valoración aproximada de US$ 80: asesoramiento personalizado con él por WhatsApp durante 7 semanas, US$ 35; app de por vida, US$ 25; comunidad de por vida, US$ 15; guía y materiales de por vida, US$ 5. La tarjeta identifica estos importes como **valores estimados**, con total US$ 80 y la frase "Todo eso lo llevás hoy por tan solo" antes del precio real. No son precios de venta independiente verificados ni generan un nuevo descuento porcentual. El precio base US$ 45,43 y la promoción existente del 65 % no cambian.
 
 ## Actualización de acompañamiento (Santiago, 2026-10-12)
 
@@ -16,7 +16,7 @@ Incluido en el mismo pago del reto, según lo confirmado por Santiago en el chat
 
 No se inventan disponibilidad 24/7, consultas ilimitadas, credenciales profesionales ni plazos de respuesta. La prestación humana y los enlaces de acceso son responsabilidad de Santiago. El costo operativo de este asesoramiento no está incorporado a los cálculos anteriores; revisarlo cuando haya datos.
 
-La página ahora ofrece **Semana 5 de regalo**, que está entregada en la app. Se retira la promesa de las Semanas 6 y 7 mientras no estén publicadas. Las **7 semanas de asesoramiento** son un beneficio distinto y no significan siete semanas de contenido dentro de la app.
+Santiago corrigió expresamente la oferta: son **semanas 5, 6 y 7 de regalo**. Se restaura esta descripción en extras, tarjeta de semanas, FAQ y quiz. La revisión anterior solo había encontrado Semana 5 en los archivos de la app; esta modificación es de la página de venta y no implementa contenido nuevo dentro de la app. Santiago debe asegurar la entrega de las semanas confirmadas. Las **7 semanas de asesoramiento** son un servicio distinto.
 
 ## Oferta vigente (datos de Santiago, 2026-10-08)
 

@@ -2,13 +2,13 @@
 
 ## Presentación principal (2026-10-12)
 
-App, asesoramiento personalizado 7 semanas por WhatsApp, comunidad y guía de por vida forman el producto principal. Ejercicios, recetas y Plan B son funciones de la app. Semana 5, hojas imprimibles y guías complementarias se presentan como extras. Esta reorganización no cambia los archivos entregados ni el precio.
+App, asesoramiento personalizado con Santiago durante 7 semanas por WhatsApp, comunidad y guía de por vida forman el producto principal. La tarjeta muestra valores estimados de US$ 35 para el asesoramiento, US$ 25 para la app, US$ 15 para la comunidad y US$ 5 para guía/materiales: total US$ 80. Ejercicios, recetas y Plan B son funciones de la app. Semanas 5, 6 y 7, hojas imprimibles y guías complementarias se presentan como extras. Estos cambios de presentación no modifican los archivos entregados ni el precio de compra.
 
 ## Acompañamiento añadido por Santiago (2026-10-12)
 
 Asesoramiento personalizado por WhatsApp durante 7 semanas y comunidad en WhatsApp de por vida, incluidos con el reto. La app, la guía y los materiales también tienen acceso de por vida. Esta es una prestación confirmada por el dueño; el cambio de la página no crea el grupo ni automatiza el asesoramiento. Queda pendiente incluir los contactos/invitaciones en la entrega a compradoras.
 
-La oferta pública se ajustó a lo que entrega la app actual: Día 0, 28 días y la Semana 5 de regalo. La implementación de las Semanas 6 y 7 sigue pendiente y ya no se promete en la página ni en el resultado del quiz.
+La revisión de la app encontró Día 0, 28 días y Semana 5. Santiago confirmó después que el regalo abarca **semanas 5, 6 y 7** y pidió corregir la página. Página y quiz reflejan su instrucción más reciente; no se modificaron los archivos de la app ni se verificó una nueva entrega de las semanas 6 y 7. Esa entrega sigue a cargo de Santiago.
 
 ## Qué incluye (datos del centro de mando)
 

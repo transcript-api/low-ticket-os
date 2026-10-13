@@ -2,6 +2,15 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-12 — Valores estimados junto a los accesos y regalo hasta la semana 7
+- Santiago pidió conservar el diseño y cambiar solo la presentación de la tarjeta: "Si comprás hoy te llevás", valores claros por componente que sumen US$ 80, "7 semanas de asesoramiento personalizado conmigo" y "Todo eso lo llevás hoy por tan solo" antes del precio.
+- Distribución aproximada autorizada por el dueño: asesoramiento US$ 35, app vitalicia US$ 25, comunidad vitalicia US$ 15 y guía/materiales vitalicios US$ 5. Se rotula **valor estimado** por acceso y conjunto. No se presenta como precio anterior real ni se inventa un segundo porcentaje de descuento. Precio US$ 15,90, base US$ 45,43, cupón y diseño de compra conservados.
+- El dueño corrigió expresamente la duración de los extras: **semanas 5, 6 y 7 de regalo**. Se ajustan extras, tarjeta de semanas, FAQ y quiz para evitar contradicciones. Esto reemplaza la decisión anterior de mostrar solo Semana 5; los archivos de la app de compradoras no se modifican. Santiago queda a cargo de asegurar la entrega de las semanas confirmadas.
+- Se conserva el extra de guías de hinchazón, sueño y eventos, con una descripción breve orientada a hábitos.
+- Validación local y online a 320, 390, 768 y 1440 px: valores alineados a la derecha y sin superposición, suma US$ 80, copia exacta, precio/cupón vigentes, semanas consistentes, quiz y rutas de compradoras. Sin errores JS, archivos fallidos ni desborde horizontal. Capturas revisadas en celular y escritorio.
+- Publicación `dpl_8cGb9uLgdmpuNFFtB7HubCB2TsRA`: 352 archivos; huellas completas y HTML servido verificados. Solo cambian `index.html`, `venta.css` y una frase de `quiz.js`; se conservan app, gracias y medios.
+- Opinión/mejora: esta jerarquía hace explícito el valor del acompañamiento. Medir compras por visita y costo de atención antes de atribuir una mejora de conversión; documentar referencias comparables si más adelante se usa una comparación de precios de venta.
+
 ### 2026-10-12 — Platos en horizontal y producto principal antes del precio
 - Pedido: movimiento horizontal continuo de los platos en teléfono, sustituir "Trabajá tu cintura" por **"Afiná tu cintura"** y evaluar el chat con el amigo sobre presentar el valor de la oferta.
 - Platos: una fila móvil con bucle de 34 s, cuatro originales y cuatro copias decorativas. Pausa explícita y al interactuar/usar teclado; comparación por toque sincronizada entre original y copia. Con movimiento reducido quedan cuatro tarjetas sin animación y desplazamiento manual. Escritorio mantiene cuatro columnas.

@@ -2,6 +2,13 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Tarjeta con valores estimados por acceso: total US$ 80
+- Santiago pidió un ajuste breve de la tarjeta, conservando el diseño. Se muestra "Si comprás hoy te llevás": asesoramiento personalizado conmigo por WhatsApp durante 7 semanas US$ 35, app de por vida US$ 25, comunidad de por vida US$ 15, guía/materiales de por vida US$ 5. Importes identificados como estimados, con total US$ 80 y la frase "Todo eso lo llevás hoy por tan solo" antes del precio real US$ 15,90. Checkout y promoción existentes conservados.
+- Santiago corrigió el regalo a semanas 5, 6 y 7. Extras, tarjeta de semanas, FAQ y quiz quedan coherentes. Esto reemplaza la descripción anterior de solo Semana 5. No se cambia el contenido de la app; la entrega de las semanas confirmadas queda a cargo del dueño. Se conservan las guías prácticas de hinchazón, sueño y eventos.
+- Revisado local y online en cuatro anchos de 320 a 1440 px: importes alineados y sin superposición, suma correcta, textos, precio/cupón, quiz y rutas de compradoras. Sin errores JS, archivos faltantes ni desborde. Capturas revisadas.
+- Publicado `dpl_8cGb9uLgdmpuNFFtB7HubCB2TsRA`, con las huellas de los 352 archivos y el HTML servido verificados. Solo cambian tres archivos de página; app, gracias y videos conservados.
+- Opinión/mejora: destacar el asesoramiento refleja la prioridad indicada por Santiago. Medir ventas por visita y costo del servicio; la mejora de conversión es una hipótesis y los valores no son precios independientes verificados.
+
 ## 2026-10-12 — Platos en horizontal y oferta de cuatro partes
 - Santiago pidió la fila de platos en movimiento horizontal constante para teléfono, el hero "Afiná tu cintura" y probar las ideas más sensatas del chat con su amigo.
 - Se implementó bucle móvil de 34 s, pausa, comparación por toque sincronizada, copias decorativas fuera de accesibilidad y modo estático con movimiento reducido. Escritorio conserva cuatro columnas.

@@ -177,10 +177,16 @@
 .r28-package-note { margin-top: 20px !important; padding: 18px 20px; background: #FFF0F5; border: 1px solid #F2D2DE; border-radius: 18px; font-size: .94rem; line-height: 1.5; color: #6B4158; }
 .r28-package-note b { color: var(--ink); }
 .r28-price-includes { border-block: 1px solid rgba(255,255,255,.14); padding-block: 14px; }
-.r28-price-includes p { font-size: .72rem; text-transform: uppercase; font-weight: 700; letter-spacing: .06em; color: rgba(255,255,255,.6); }
-.r28-price-includes ul { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
-.r28-price-includes li { position: relative; padding-left: 22px; font-size: .87rem; line-height: 1.4; }
+.r28-price-includes .r28-includes-title { font-size: .85rem; font-weight: 800; color: #FFF; }
+.r28-value-caption { display: block; margin-top: 4px; font-size: .72rem; color: rgba(255,255,255,.7); }
+.r28-price-includes ul { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; }
+.r28-price-includes li { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 10px; padding-left: 22px; font-size: .87rem; line-height: 1.4; }
 .r28-price-includes li::before { content: "✓"; position: absolute; left: 0; color: var(--lima); font-weight: 800; }
+.r28-price-includes li small { display: block; color: rgba(255,255,255,.7); font-size: .75rem; margin-top: 2px; }
+.r28-item-value { white-space: nowrap; color: var(--lima); font-weight: 800; font-variant-numeric: tabular-nums; }
+.r28-value-total { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.14); font-size: .78rem; color: rgba(255,255,255,.75); }
+.r28-value-total b { flex-shrink: 0; color: var(--lima); font-size: 1.25rem; font-weight: 800; }
+.r28-price-intro { font-size: .9rem; font-weight: 600; }
 .r28-price { position: sticky; top: 90px; background: var(--ink); color: #FFF; border-radius: 30px; padding: 30px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 30px 70px rgba(28, 19, 36, .25); }
 .r28-price .tag { align-self: flex-start; background: var(--lima); color: var(--ink); font-weight: 700; font-size: .85rem; padding: 6px 12px; border-radius: 999px; }
 .r28-price h3 { font-size: 1.9rem; }

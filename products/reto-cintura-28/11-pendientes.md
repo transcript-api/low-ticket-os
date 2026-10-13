@@ -2,8 +2,9 @@
 
 ## Hoy
 
+- [x] 2026-10-12: tarjeta "Si comprás hoy te llevás", cuatro valores estimados por acceso (35 + 25 + 15 + 5 = US$ 80), asesoramiento personalizado conmigo y frase antes del precio; extras corregidos a semanas 5, 6 y 7, por instrucción expresa de Santiago.
+- [ ] Medir compras por visita y costo del asesoramiento; documentar referencias comparables si se quiere convertir la valoración estimada en una comparación de precios de venta.
 - [x] 2026-10-12: platos en bucle horizontal móvil; hero "Afiná tu cintura"; separar cuatro componentes principales de los extras y presentarlos antes del precio.
-- [ ] Para poner importes individuales en la oferta: aportar precios/referencias defendibles de cada componente. No se publicaron los importes tentativos ni un total US$ 100.
 
 - [x] 2026-10-12: quitar el párrafo descriptivo bajo "Mirá la guía por dentro", por pedido de Santiago.
 
@@ -30,8 +31,7 @@
 |---|---|
 | ~~Clarity~~ Hecho: ID cargado y verificado que carga | — |
 | **Publicar el arreglo de la app (letras ilegibles en modo oscuro)**: está en la carpeta de publicación, falta subirlo a Vercel | Santiago |
-| **App publicada con 36 días (Día 0, 28 del reto y Semana 5 = días 29-35), sin semanas 6 y 7.** Codex corrigió la página y quiz el 2026-10-12 para ofrecer solo Semana 5. Publicar 6 y 7 antes de volver a prometerlas | Santiago |
-| **Semanas 6 y 7 de regalo en la app (Santiago, 2026-10-10)**: la página ya las nombra; no lanzar anuncios antes | Santiago |
+| **Entrega de semanas 6 y 7:** Santiago confirmó que el regalo cubre semanas 5, 6 y 7 y pidió restaurarlo en la página. Los archivos de la app conservados solo contienen hasta el día 35; asegurar la entrega de las semanas 6 y 7 y sincronizarla con esta oferta | Santiago |
 | Pasar el ID del píxel de Meta (`metaPixelId`) y cargarlo también en Hotmart (Herramientas → Píxel) para que Meta vea checkout y compra | Santiago + Claude |
 | Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |
 | Decidir fecha real de fin del lanzamiento; cambiar en Hotmart precio base a US$ 45,43, cupón a 65 % y fin del cupón; recién ahí cargar `launchEndsAt` | Santiago (+ Claude con OK) |

@@ -10,6 +10,7 @@
 - **Actualización 2026-10-12 (oferta y conversión):** hero con el video de 15 s, compra directa y test secundario; sección rosa centrada en Plan B y acompañamiento. Incluye 7 semanas de asesoramiento por WhatsApp y comunidad/materiales de por vida, confirmados por Santiago. Se retiran las dos tarjetas marcadas y la promesa de semanas extra no entregadas: queda Semana 5 de regalo. No hay datos nuevos de conversión.
 - **Ajuste posterior 2026-10-12:** quitado el párrafo descriptivo bajo "Mirá la guía por dentro", por pedido de Santiago.
 - **Última presentación 2026-10-12:** hero "Afiná tu cintura"; platos en un bucle horizontal continuo en celular. Oferta principal ordenada como app, asesoramiento 7 semanas, comunidad y guía antes del precio; extras separados, sin valores monetarios inventados. Precio vigente conservado.
+- **Ajuste más reciente 2026-10-12:** tarjeta de precio con "Si comprás hoy te llevás" y valores estimados al lado: asesoramiento personalizado conmigo US$ 35, app vitalicia US$ 25, comunidad vitalicia US$ 15 y guía/materiales vitalicios US$ 5; total US$ 80. Precio real US$ 15,90 y diseño conservados. Santiago corrigió el regalo a semanas 5, 6 y 7: página y quiz actualizados; archivos de la app preservados.
 - **Test activo:** ninguno.
 - **Siguiente paso:** sincronizar precio en creativos y página, verificar el estado de Hotmart y definir los cambios de la página. Ver [11-pendientes.md](11-pendientes.md).
 
