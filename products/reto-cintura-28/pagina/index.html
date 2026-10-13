@@ -121,7 +121,8 @@
     <div class="r28-wrap">
       <p class="r28-eyebrow">Resultados de clientas</p>
       <h2 class="r28-h2" id="results-title">Mirá sus <em>cambios.</em></h2>
-      <div class="r28-results-grid">
+      <div class="r28-results-carousel" data-results-carousel role="region" tabindex="0" aria-label="Resultados de clientas. Usá las flechas para recorrer los casos.">
+      <div class="r28-results-grid" id="r28-results-track">
         <figure class="r28-result-card">
           <div class="r28-result-media">
             <video id="resultado-pame" data-result-video src="assets/resultados/pame-7-semanas.mp4" poster="assets/resultados/pame-poster.webp" width="540" height="960" controls playsinline preload="none" aria-label="Pame: video de antes y después de un proceso de 7 semanas del reto online"><a href="assets/resultados/pame-7-semanas.mp4">Ver el video de Pame</a></video>
@@ -137,6 +138,8 @@
           <figcaption><div class="r28-result-meta"><b>Lu</b><span>4 semanas</span></div><small>Su antes y su después</small></figcaption>
         </figure>
       </div>
+      </div>
+      <button type="button" class="r28-results-pause" data-results-pause aria-controls="r28-results-track" aria-pressed="false" hidden>Pausar movimiento</button>
       <p class="r28-result-context">Experiencias individuales del reto online. Los resultados varían según cada persona.</p>
       <div class="r28-results-cta"><a class="r28-go" data-buy href="#precio">Quiero empezar mi reto <span aria-hidden="true">→</span></a><p><b data-cfg="price">US$ 15,90</b> · pago único · garantía de 7 días</p></div>
     </div>

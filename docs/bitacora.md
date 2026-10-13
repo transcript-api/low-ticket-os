@@ -2,6 +2,13 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-13 — Galería horizontal mixta preparada
+- Santiago pidió mezclar videos y fotos de Antes/Después interactivas en la misma sección de resultados, como los platos. Se prepara una fila horizontal: bucle cuando hay desborde, pausa/reanudación, pausa al reproducir o comparar, teclado y movimiento reducido. En escritorio los dos videos actuales entran sin repetirse; en celular corren.
+- Comparador de fotos implementado y probado localmente con imágenes de colores neutros: cambio reversible, etiquetas y estados accesibles, sincronización de copia/original y bucle sin salto. Plantilla interna documentada, fuera del sitio publicado.
+- **Faltan las fotos reales** y datos/autorización de los nuevos casos. No se publican pruebas, marcadores ni casos inventados: la fila actual contiene solo los videos de Pame y Lu ya autorizados.
+- Validación local y online en cuatro anchos, videos/fases, bucle y pausa, teclado, movimiento reducido, IDs únicos, precio/cupón, quiz y rutas de compradoras; sin errores JS, archivos fallidos ni desborde. Publicado `dpl_6t81CAudiRff2yVPwVTmpCcnuTto`, 358 archivos y HTML servido verificados; medios, app y gracias conservados.
+- Opinión/mejora: mantener todos los casos en una fila evita que la página crezca con cada incorporación. Revisar la legibilidad de las fotos reales y observar interacción antes de variar la velocidad.
+
 ## 2026-10-13 — Resultados reales de Pame y Lu en la sección rosa
 - Santiago aportó dos videos de antes/después y pidió reemplazar toda la sección "Tu día cambia" por casos pequeños. Confirmó permiso escrito de ambas y que hicieron la versión online: Pame 7 semanas, Lu 4 semanas. Estos datos sustituyen la hipótesis anterior de casos exclusivamente presenciales.
 - Se mantienen los clips completos de 8 s y su secuencia, sin retocar el cuerpo. Codificación H.264 540 × 960 con `faststart`, de 2,67 MB a 0,68 MB entre ambos; posters WebP. Tarjetas pequeñas en una fila, incluso en celular, con nombres, tiempos, contexto de resultados individuales y CTA. Reproducción al tocar y etiquetas Antes/Después, un video a la vez, pausa fuera de pantalla. Se quitan selector y tarjetas anteriores; apoyo/comunidad siguen en hero y oferta.

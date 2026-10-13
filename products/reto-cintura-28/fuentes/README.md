@@ -2,6 +2,12 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Galería mixta de resultados (2026-10-13)
+
+Santiago pidió una sola sección horizontal para mezclar videos y fotos estáticas con comparación al tocar, como los platos. Se implementó la fila y el comportamiento del comparador. Por ahora solo se publican los dos videos autorizados de Pame y Lu: **no se recibieron pares de fotos nuevos**. Para incorporarlos faltan los originales antes/después, nombre, tiempo, programa y autorización de cada caso.
+
+[Plantilla interna del comparador](plantilla-comparador-resultados.html): no se sirve en el sitio y sus marcadores no son casos reales. Mantiene ambas imágenes sin recortar el cuerpo, muestra una a la vez, cambia Antes/Después al tocar y sincroniza la copia del bucle. La interacción se probó localmente con dos imágenes de colores neutros; esas pruebas no se publicaron ni se presentan como resultados.
+
 ### Pame y Lu: casos del reto online (2026-10-13)
 
 Santiago aportó los dos videos, confirmó que **ambas autorizaron por escrito** su publicación y que hicieron **la versión online**. Pame tuvo un proceso de **7 semanas** y Lu de **4 semanas**, según el dueño. Esto sustituye la hipótesis anterior de que la prueba social disponible sería solo del reto presencial. No se adjuntaron autorizaciones individuales al repo; la confirmación fue del dueño en el chat.

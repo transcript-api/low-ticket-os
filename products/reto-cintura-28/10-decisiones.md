@@ -2,6 +2,15 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-13 — Una galería horizontal para videos y fotos interactivas
+- Santiago pidió que los videos y futuros pares de fotos compartan la sección de resultados, con movimiento horizontal y cambio Antes/Después al tocar, como los platos.
+- Se prepara una fila única con tarjetas pequeñas, bucle de 32 s cuando los casos exceden el ancho disponible, pausa/reanudación, pausa por interacción y fuera de pantalla, teclado y movimiento reducido. Los dos videos actuales se mueven en celular; en escritorio, mientras entren completos, se muestran una sola vez. Al reproducir un video se detiene el movimiento para verlo.
+- Comparador listo: dos imágenes completas sin deformar/cortar el cuerpo, cambio al tocar, estado accesible y sincronización entre original y copia del bucle. Al comparar se pausa la fila. Plantilla interna en `fuentes/plantilla-comparador-resultados.html`, fuera de la publicación.
+- **Todavía no se recibieron fotos estáticas nuevas.** La página pública conserva solo Pame y Lu. Para incorporar fotos faltan los pares originales, nombre, tiempo, programa y autorización de cada caso; la consulta sobre permiso/programa de futuros casos sigue pendiente. No se inventan comparadores ni se duplican casos como si fueran clientas distintas.
+- Validación local y online en 320, 390, 768 y 1440 px: movimiento real y pausa en celular, fila estática cuando todo entra, teclado/movimiento reducido, reproducción y fases de videos, sin IDs duplicados, precio/cupón, quiz y rutas de compradoras. El comparador mixto se probó solo localmente con dos imágenes de colores neutros: cambio reversible, estados accesibles, sincronización y bucle sin salto incluso en escritorio. No se publicaron esas pruebas.
+- Publicado `dpl_6t81CAudiRff2yVPwVTmpCcnuTto`: huellas de los 358 archivos y HTML servido verificados; solo cambian tres archivos de página. Videos, posters, app y gracias conservados.
+- Opinión/mejora: una sola fila evita crecer verticalmente con cada caso; pausar al interactuar permite mirar la evidencia. Con las fotos reales, revisar proporciones/legibilidad y medir lectura/reproducción antes de ajustar la velocidad.
+
 ### 2026-10-13 — La sección rosa pasa a mostrar resultados de Pame y Lu
 - Santiago pidió retirar toda la sección "Tu día cambia. Tu plan sigue." y sustituirla por dos videos pequeños de antes/después. Aportó Pame (7 semanas), Lu (4 semanas) y un motion graphic como referencia del anuncio previsto para Meta.
 - Antes de publicar, confirmó en el chat que ambas autorizaron por escrito y que hicieron **la versión online**. Se identifican así, sustituyendo la hipótesis anterior de casos presenciales. No se añaden frases atribuidas, kilos, centímetros ni resultados garantizados.
