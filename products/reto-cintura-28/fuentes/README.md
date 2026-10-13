@@ -2,6 +2,17 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Miniaturas de asesoramiento y comunidad (2026-10-12)
+
+Santiago pidió reemplazar los dos iconos sin miniatura de "Todo lo que recibís hoy" y compactar esa lista en horizontal como los platos. Se generaron dos ilustraciones con la herramienta integrada imagegen: teléfono con burbujas de conversación y check, y burbuja con figuras abstractas de comunidad. Paleta rosa, fucsia y lima; sin conversaciones, integrantes reales ni texto. [Prompts finales y archivos](miniaturas-asesoramiento-comunidad.md).
+
+| Archivo en `pagina/assets/landing/` | Exportación | Tamaño | SHA-256 (16) |
+|---|---|---|---|
+| `asesoramiento-miniatura.webp` | 320 × 320 | 7.670 bytes | `bbfc5e8a965065ff` |
+| `comunidad-miniatura.webp` | 320 × 320 | 6.448 bytes | `2f96a76f227a2e8a` |
+
+Los PNG generados se conservan en `outputs` del workspace; la página consume las versiones WebP livianas incluidas en el repo. App y guía conservan sus miniaturas anteriores. No cambian la oferta, los importes ni la entrega del producto.
+
 ### Chat sobre presentación de valor (2026-10-12)
 
 Santiago compartió tres capturas de su conversación con un amigo. Proponen presentar app, guía, comunidad y asesoramiento antes del precio, distinguir producto principal de bonus y usar importes individuales solo si son defendibles. Los importes US$ 20/30/10/15 y el total US$ 100 son propuestas del diálogo, no precios independientes verificados. Se adoptó el orden y la jerarquía; no se copiaron números ni se cambió el ticket. Una cuarta captura indica los platos que deben desplazarse horizontalmente en móvil.
@@ -12,7 +23,7 @@ Santiago compartió tres capturas de su conversación con un amigo. Proponen pre
 - Capturas del chat: indican la zona del hero a reemplazar, las tarjetas antes/después a quitar y la sección rosa a replantear.
 - Texto pegado: revisión de ChatGPT sobre claridad, confianza, video de producto, test opcional, coherencia de oferta y medición. Se tomó como insumo; no se copian garantías de conversión ni se inventan responsables o testimonios.
 - Confirmación del dueño en el mismo chat: asesoramiento por WhatsApp 7 semanas; grupo y demás contenidos con acceso de por vida. Su provisión es del dueño; los contactos no fueron suministrados.
-- Fuente de entrega real: `mi-reto-tausu9m6/js/data-days-e.js` de la publicación vigente, con Semana 5 y días 29 a 35. La página ya no promete semanas 6 y 7 hasta que estén disponibles.
+- Fuente de entrega revisada: `mi-reto-tausu9m6/js/data-days-e.js` de la publicación vigente, con Semana 5 y días 29 a 35. Santiago corrigió después que el regalo abarca semanas 5, 6 y 7; la página refleja su instrucción más reciente y la entrega de esas semanas queda a su cargo. Ver `10-decisiones.md`.
 
 ### Videos para sustituir la sección de la app (2026-10-12)
 

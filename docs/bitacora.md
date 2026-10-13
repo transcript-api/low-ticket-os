@@ -2,6 +2,13 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-12 — Miniaturas y accesos en horizontal en celular
+- Santiago pidió imágenes para asesoramiento y comunidad y compactar "Todo lo que recibís hoy" como la fila de platos. Dos ilustraciones 3D decorativas generadas con imagegen y exportadas a WebP 320 × 320, unos 14 KB entre ambas; prompts y fuentes registrados. No representan miembros reales ni conversaciones.
+- Cuatro tarjetas en una fila móvil continua de 40 s, altura de 224–243 px, con pausa, interacción/teclado, pausa fuera de pantalla y alternativa sin animación con movimiento reducido o sin JS. Copias decorativas fuera de accesibilidad. Escritorio conserva la lista completa y el precio no cambia.
+- Validación local y online en 320, 390, 768 y 1440 px: movimiento, pausa/reanudación, bucle sin salto, miniaturas, teclado, movimiento reducido, valores US$ 80, precio/cupón, extras, quiz y rutas de compradoras. Sin errores JS, archivos fallidos ni desborde; capturas revisadas.
+- Publicado `dpl_GpF27b3TwYLdsLQ7vdUi8Ra3Sksa`: verificados los 354 archivos subidos y HTML servido. Solo cambian tres archivos de la página y se agregan las dos miniaturas; app, gracias y medios conservados.
+- Opinión/mejora: reduce altura y hace reconocibles los servicios. Observar lectura y uso de pausa con tráfico real antes de ajustar velocidad o atribuir cambios de conversión.
+
 ## 2026-10-12 — Tarjeta con valores estimados por acceso: total US$ 80
 - Santiago pidió un ajuste breve de la tarjeta, conservando el diseño. Se muestra "Si comprás hoy te llevás": asesoramiento personalizado conmigo por WhatsApp durante 7 semanas US$ 35, app de por vida US$ 25, comunidad de por vida US$ 15, guía/materiales de por vida US$ 5. Importes identificados como estimados, con total US$ 80 y la frase "Todo eso lo llevás hoy por tan solo" antes del precio real US$ 15,90. Checkout y promoción existentes conservados.
 - Santiago corrigió el regalo a semanas 5, 6 y 7. Extras, tarjeta de semanas, FAQ y quiz quedan coherentes. Esto reemplaza la descripción anterior de solo Semana 5. No se cambia el contenido de la app; la entrega de las semanas confirmadas queda a cargo del dueño. Se conservan las guías prácticas de hinchazón, sueño y eventos.

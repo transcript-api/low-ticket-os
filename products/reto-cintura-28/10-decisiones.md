@@ -2,6 +2,14 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-12 — Miniaturas nuevas y accesos en una fila móvil
+- Santiago pidió miniaturas para asesoramiento y comunidad y propuso que "Todo lo que recibís hoy" corra en horizontal como los platos para ocupar menos altura.
+- Se generan dos ilustraciones decorativas con la herramienta integrada imagegen: teléfono con chat/check y burbuja con figuras abstractas de comunidad. Paleta rosa, fucsia y lima, sin conversaciones ni integrantes reales. WebP 320 × 320 de 7.670 y 6.448 bytes; prompts y procedencia en `fuentes/miniaturas-asesoramiento-comunidad.md`. Miniaturas de app y guía conservadas.
+- Hasta 860 px, cuatro tarjetas en fila y cuatro copias decorativas para un bucle continuo de 40 s. Altura medida: 224 px en 390/768 y 243 px en 320. Pausa explícita, por interacción/foco y fuera de pantalla; teclado con flechas para recorrer. Movimiento reducido y ausencia de JS permiten desplazamiento manual sin copias visibles. Escritorio conserva la lista completa junto al precio.
+- Validación local y online a 320, 390, 768 y 1440 px: miniaturas cargadas, movimiento efectivo, pausa/reanudación, continuidad menor a 0,1 px, navegación con teclado y movimiento reducido, cuatro accesos originales para lectores de pantalla y sin desborde. Valores de US$ 80, precio/cupón, extras, quiz y rutas de compradoras siguen correctos. Sin errores JS ni archivos fallidos; capturas revisadas.
+- Publicado `dpl_GpF27b3TwYLdsLQ7vdUi8Ra3Sksa`: huellas de los 354 archivos y HTML servido verificados. Solo se modifican tres archivos de página y se añaden dos miniaturas; app, gracias y videos preservados.
+- Opinión/mejora: la fila acorta el recorrido móvil y da identidad visual a los servicios. Observar con tráfico real si las personas pausan y leen los accesos; ajustar velocidad si hace falta, sin atribuir mejoras de conversión todavía.
+
 ### 2026-10-12 — Valores estimados junto a los accesos y regalo hasta la semana 7
 - Santiago pidió conservar el diseño y cambiar solo la presentación de la tarjeta: "Si comprás hoy te llevás", valores claros por componente que sumen US$ 80, "7 semanas de asesoramiento personalizado conmigo" y "Todo eso lo llevás hoy por tan solo" antes del precio.
 - Distribución aproximada autorizada por el dueño: asesoramiento US$ 35, app vitalicia US$ 25, comunidad vitalicia US$ 15 y guía/materiales vitalicios US$ 5. Se rotula **valor estimado** por acceso y conjunto. No se presenta como precio anterior real ni se inventa un segundo porcentaje de descuento. Precio US$ 15,90, base US$ 45,43, cupón y diseño de compra conservados.

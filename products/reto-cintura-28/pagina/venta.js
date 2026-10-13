@@ -181,6 +181,38 @@
     });
   });
 
+  /* Accesos: una fila móvil compacta; escritorio conserva la lista completa. */
+  all('[data-access-carousel]').forEach(function (carousel) {
+    var list = carousel.querySelector('.r28-stack'), pause = carousel.parentElement.querySelector('[data-access-pause]');
+    if (!list || !pause) return;
+    all('li', list).forEach(function (item) {
+      var copy = item.cloneNode(true); copy.classList.add('access-duplicate'); copy.setAttribute('aria-hidden', 'true'); list.appendChild(copy);
+    });
+    carousel.classList.add('is-ready'); pause.hidden = false;
+    function paused(value) {
+      carousel.classList.toggle('is-paused', value); pause.setAttribute('aria-pressed', String(value));
+      pause.textContent = value ? 'Reanudar movimiento' : 'Pausar movimiento';
+    }
+    pause.addEventListener('click', function () {
+      var manual = carousel.classList.contains('is-manual');
+      if (manual) { carousel.classList.remove('is-manual'); carousel.scrollLeft = 0; }
+      paused(manual ? false : !carousel.classList.contains('is-paused'));
+    });
+    carousel.addEventListener('keydown', function (e) {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); pause.click(); }
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault(); carousel.classList.add('is-manual'); paused(true);
+        carousel.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * (list.firstElementChild.offsetWidth + 14), behavior: W.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      }
+    });
+    if ('IntersectionObserver' in W) {
+      carousel.classList.add('is-outside');
+      new IntersectionObserver(function (entries) { carousel.classList.toggle('is-outside', !entries[0].isIntersecting); }, { rootMargin: '100px 0px' }).observe(carousel);
+    }
+    function visibility() { carousel.classList.toggle('is-inactive', D.hidden); }
+    D.addEventListener('visibilitychange', visibility); visibility();
+  });
+
   /* ---------- 2. Comparadores de platos ---------- */
   all('[data-food-carousel]').forEach(function (carousel) {
     var track = carousel.querySelector('.r28-comps'), pause = carousel.parentElement.querySelector('[data-food-pause]');

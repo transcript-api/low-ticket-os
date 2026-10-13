@@ -2,6 +2,8 @@
 
 ## Hoy
 
+- [x] 2026-10-12: miniaturas de asesoramiento y comunidad; "Todo lo que recibís hoy" en bucle horizontal compacto en celular, con pausa y movimiento reducido. Publicado y revisado online, con precio y accesos de compradoras conservados.
+- [ ] Observar con tráfico real si se leen los cuatro accesos y si conviene ajustar la velocidad de la fila móvil.
 - [x] 2026-10-12: tarjeta "Si comprás hoy te llevás", cuatro valores estimados por acceso (35 + 25 + 15 + 5 = US$ 80), asesoramiento personalizado conmigo y frase antes del precio; extras corregidos a semanas 5, 6 y 7, por instrucción expresa de Santiago.
 - [ ] Medir compras por visita y costo del asesoramiento; documentar referencias comparables si se quiere convertir la valoración estimada en una comparación de precios de venta.
 - [x] 2026-10-12: platos en bucle horizontal móvil; hero "Afiná tu cintura"; separar cuatro componentes principales de los extras y presentarlos antes del precio.
