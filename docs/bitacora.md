@@ -2,6 +2,13 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-13 — Seis pares de fotos recibidos, revisión privada preparada
+- Santiago aportó 12 PNG y duraciones de 7, 11, 5, 4, 8 y 4 semanas. Pidió mejorar calidad sin cambiar rostros y normalizar tamaño para la galería mixta.
+- Se inventarían dimensiones/huellas y se conservan copias exactas en `outputs/fotos-resultados/originales/` del workspace. Vista privada con imágenes originales completas en marcos 9:16, A/B por orden recibido. No se aplicó nitidez, IA o asignación definitiva de Antes/Después.
+- Se pidió confirmar autorización escrita/programa, orden y tratamiento. Recomendación: mejora técnica no generativa para preservar exactamente rostros/cuerpos. El primer par parece invertido, pero el orden debe confirmarlo el dueño. Sigue pendiente la respuesta; no se publican fotos nuevas.
+- Código preparado para etiquetas accesibles de casos anónimos; página y medios públicos conservados. Próximo paso al recibir confirmaciones: exportar al mismo marco, revisar fidelidad y ambos lados de cada par, integrar y publicar.
+- Opinión/mejora: la resolución baja obliga a ser conservador y no reconstruir detalles como si fueran evidencia. Conservar fuentes y usar el mismo tratamiento en Antes y Después.
+
 ## 2026-10-13 — Galería horizontal mixta preparada
 - Santiago pidió mezclar videos y fotos de Antes/Después interactivas en la misma sección de resultados, como los platos. Se prepara una fila horizontal: bucle cuando hay desborde, pausa/reanudación, pausa al reproducir o comparar, teclado y movimiento reducido. En escritorio los dos videos actuales entran sin repetirse; en celular corren.
 - Comparador de fotos implementado y probado localmente con imágenes de colores neutros: cambio reversible, etiquetas y estados accesibles, sincronización de copia/original y bucle sin salto. Plantilla interna documentada, fuera del sitio publicado.

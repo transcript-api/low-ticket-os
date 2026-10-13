@@ -2,6 +2,14 @@
 
 Lo más nuevo arriba. Fuente de las del 2026-10-06: chat entre Santiago y su socio + crítica posterior (ver [fuentes/chat-santi-amigo.md](fuentes/chat-santi-amigo.md)). Fuente de las del 2026-10-08: material y datos que pasó Santiago.
 
+### 2026-10-13 — Recibidos seis pares de fotos; preparación privada pendiente de confirmar
+- Santiago aportó 12 PNG en seis pares y tiempos: 7, 11, 5, 4, 8 y 4 semanas. Pidió mejorar calidad sin cambiar rostros y unificar tamaño para integrarlas al carrusel existente.
+- Se inventariaron dimensiones y SHA-256 en `work/results-photos-inventory.json` del workspace y se copiaron los originales sin modificar a `outputs/fotos-resultados/originales/`. Resoluciones de 243 a 393 px de ancho. No se inventan nombres: se usarán tiempos de proceso si no se aportan nombres.
+- Revisión privada en `outputs/fotos-resultados/revision-originales.html` y `.png`, con los originales completos en marcos 9:16. Etiquetas A/B mantienen el orden recibido, todavía sin asignar Antes/Después ni mejorar nitidez. Propuesta de exportación: 540 × 960 px sin deformar ni recortar los cuerpos.
+- Pendientes consultados al dueño: autorización escrita y programa de los seis casos; orden de los pares (el primero parece Después/Antes, los demás propuestos Antes/Después, sin decidir por apariencia); tratamiento no generativo recomendado frente a restauración con IA. No se ha recibido respuesta y no se publica este material mientras falten las confirmaciones.
+- Se prepara soporte para una etiqueta accesible de clienta anónima mediante `data-result-person`, sin tocar videos o imágenes públicos. No se procesaron fotos con IA ni se aplicó nitidez todavía.
+- Opinión/mejora: para evidencia real conviene nitidez conservadora sin reconstrucción generativa; la baja resolución no permite recuperar detalles inexistentes con certeza. Revisar ambos lados de cada par con el mismo tratamiento y conservar las fuentes.
+
 ### 2026-10-13 — Una galería horizontal para videos y fotos interactivas
 - Santiago pidió que los videos y futuros pares de fotos compartan la sección de resultados, con movimiento horizontal y cambio Antes/Después al tocar, como los platos.
 - Se prepara una fila única con tarjetas pequeñas, bucle de 32 s cuando los casos exceden el ancho disponible, pausa/reanudación, pausa por interacción y fuera de pantalla, teclado y movimiento reducido. Los dos videos actuales se mueven en celular; en escritorio, mientras entren completos, se muestran una sola vez. Al reproducir un video se detiene el movimiento para verlo.

@@ -219,7 +219,7 @@
         if (item !== card && (pair === null || item.getAttribute('data-result-pair') !== pair)) return;
         item.classList.toggle('show-after', after);
         var control = item.querySelector('[data-result-flip]'); control.setAttribute('aria-pressed', String(after));
-        control.setAttribute('aria-label', (after ? 'Ver el antes de ' : 'Ver el después de ') + item.querySelector('figcaption b').textContent);
+        control.setAttribute('aria-label', (after ? 'Ver el antes de ' : 'Ver el después de ') + (item.getAttribute('data-result-person') || item.querySelector('figcaption b').textContent));
         all('img', control).forEach(function (img) { img.setAttribute('aria-hidden', String(img.classList.contains('result-after') !== after)); });
         item.querySelector('[data-result-phase]').textContent = after ? 'Después' : 'Antes';
         item.querySelector('[data-result-hint]').textContent = after ? 'Ver antes' : 'Ver después';
