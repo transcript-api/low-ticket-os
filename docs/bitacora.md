@@ -2,6 +2,14 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-13 — Fotos reales mejoradas e incorporadas al carrusel
+- Santiago confirmó autorización y versión online de los seis casos, presentación Antes→Después y nitidez. Se respeta el orden recibido y se muestran tiempos 7/11/5/4/8/4 semanas, sin inventar nombres.
+- Doce fotos de 540 × 960 px, con escalado proporcional completo y nitidez suave no generativa. Se conservan rostros, cuerpos, marcas y fuentes; no se reconstruyen detalles ni se recortan los cuerpos. Peso combinado de 2,53 MB a 0,53 MB (79 % menos), WebP 94. Inventario/huellas y vistas de revisión registrados.
+- Se añaden seis comparadores junto a Pame y Lu. Cambio reversible al tocar, etiquetas accesibles, copia sincronizada y pausa. Velocidad constante 22 px/s para que ocho tarjetas no corran más rápido que dos.
+- Validado localmente en cuatro anchos: ocho originales, seis pares/tiempos, dimensiones, cambios Before/After y sincronización, videos, bucle, accesibilidad, precio/cupón, quiz y rutas de compradoras. Revisados los seis pares visualmente. Verificados los 370 archivos subidos y HTML servido; HTML público y navegador público confirman seis casos y configuración lista.
+- Publicado `dpl_6mQjcMT69WosMe96L8WbqCNb2qKv`. App, gracias y medios anteriores preservados. Hubo fallos/lentitud transitorios de conexión y espera de fuentes en QA; no se cambian TLS ni fuentes de producción.
+- Opinión/mejora: preservar la evidencia original importa más que generar detalle artificial. Medir comparación y compra con tráfico real; documentar cualquier corrección futura de orden que indique el dueño.
+
 ## 2026-10-13 — Seis pares de fotos recibidos, revisión privada preparada
 - Santiago aportó 12 PNG y duraciones de 7, 11, 5, 4, 8 y 4 semanas. Pidió mejorar calidad sin cambiar rostros y normalizar tamaño para la galería mixta.
 - Se inventarían dimensiones/huellas y se conservan copias exactas en `outputs/fotos-resultados/originales/` del workspace. Vista privada con imágenes originales completas en marcos 9:16, A/B por orden recibido. No se aplicó nitidez, IA o asignación definitiva de Antes/Después.

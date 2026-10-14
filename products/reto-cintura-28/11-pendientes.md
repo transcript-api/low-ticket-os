@@ -3,7 +3,7 @@
 ## Hoy
 
 - [x] 2026-10-13: sección de resultados preparada para una fila horizontal mixta de videos y comparadores Antes/Después, con pausa, teclado y movimiento reducido. Publicada con los videos actuales; comparador probado localmente con imágenes neutras.
-- [ ] Se recibieron 12 fotos (seis pares: 7, 11, 5, 4, 8 y 4 semanas). Falta confirmar permiso escrito/programa, orden Antes/Después y tratamiento. Revisión privada de originales en `outputs/fotos-resultados/revision-originales.html` del workspace; todavía no procesadas ni publicadas. Los nombres son opcionales.
+- [x] 2026-10-13: seis pares reales integrados al carrusel con los videos, con tiempos 7/11/5/4/8/4 semanas. Santiago confirmó autorización/online, orden Antes→Después y nitidez suave. Exportados a 540 × 960 px con tratamiento no generativo, sin deformar/recortar cuerpos ni reconstruir rostros.
 - [x] 2026-10-13: sustituir toda la sección rosa por resultados de Pame (7 semanas) y Lu (4 semanas), del reto online y con autorización escrita confirmada por Santiago. Videos pequeños de 8 s optimizados y publicación verificada.
 - [ ] Antes de publicar el motion graphic como anuncio, confirmar qué representa `+152` y respaldarlo con datos reales. El archivo se revisó como referencia; no se editó ni se publicó en Meta.
 - [x] 2026-10-12: miniaturas de asesoramiento y comunidad; "Todo lo que recibís hoy" en bucle horizontal compacto en celular, con pausa y movimiento reducido. Publicado y revisado online, con precio y accesos de compradoras conservados.

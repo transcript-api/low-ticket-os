@@ -122,7 +122,7 @@
 .r28-result-card { flex: 0 0 auto; width: 220px; margin: 0; padding: 10px; border-radius: 24px; background: #FFF; box-shadow: 0 8px 14px rgba(113,27,66,.06); min-width: 0; scroll-snap-align: start; }
 .r28-result-card.result-duplicate { display: none; }
 .r28-results-carousel.is-ready.is-overflowing { overflow: hidden; scroll-snap-type: none; }
-.r28-results-carousel.is-overflowing .r28-results-grid { animation: results-left 32s linear infinite; will-change: transform; }
+.r28-results-carousel.is-overflowing .r28-results-grid { animation: results-left var(--results-loop-duration, 32s) linear infinite; will-change: transform; }
 .r28-results-carousel.is-overflowing .result-duplicate { display: block; }
 .r28-results-carousel.is-paused .r28-results-grid, .r28-results-carousel.is-outside .r28-results-grid, .r28-results-carousel.is-inactive .r28-results-grid, .r28-results-carousel:active .r28-results-grid, .r28-results-carousel:focus-visible .r28-results-grid { animation-play-state: paused; }
 .r28-results-carousel.is-manual { overflow-x: auto; scroll-snap-type: x proximity; }

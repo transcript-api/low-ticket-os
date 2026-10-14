@@ -2,9 +2,17 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Seis pares de fotos publicados (2026-10-13)
+
+Santiago confirmó que los seis casos están autorizados y son online; pidió que todos se presenten Antes→Después y aceptó mejorar nitidez. Se respeta el orden recibido (primera foto del par como Antes, segunda como Después), reemplazando la suposición anterior sobre el primer par. Sin nombres aportados, se muestran solo las semanas de proceso: **7, 11, 5, 4, 8 y 4**.
+
+Los 12 PNG recibidos se conservan sin modificar en `outputs/fotos-resultados/originales/` del workspace, con inventario y huellas en `work/results-photos-inventory.json`. Se publican WebP de **540 × 960 px**, con escalado proporcional `contain` y relleno cálido, sin recorte ni deformación. Nitidez tradicional uniforme en ambas fases: máscara gaussiana sigma 0,45, m1 0,4, m2 1, máximos de aclarado/oscurecido 5/8. Calidad WebP 94. Sin IA generativa, reconstrucción facial, cambios de contorno, borrado de marcas o retoques selectivos.
+
+Peso combinado: **2.529.322 → 531.684 bytes**, cerca de 79 % menos. Los archivos de `pagina/assets/resultados/` siguen el patrón `caso-NN-W-semanas-{antes,despues}.webp`; número del caso de 01 a 06 y semanas 7/11/5/4/8/4. Inventario completo de las fuentes y exportaciones en [fotos-resultados-2026-10-13.json](fotos-resultados-2026-10-13.json). Vista final conservada en `outputs/fotos-resultados/revision-mejoradas.html` y `.png` del workspace.
+
 ### Galería mixta de resultados (2026-10-13)
 
-Santiago pidió una sola sección horizontal para mezclar videos y fotos estáticas con comparación al tocar, como los platos. Se implementó la fila y el comportamiento del comparador. Por ahora solo se publican los dos videos autorizados de Pame y Lu: **no se recibieron pares de fotos nuevos**. Para incorporarlos faltan los originales antes/después, nombre, tiempo, programa y autorización de cada caso.
+Santiago pidió una sola sección horizontal para mezclar videos y fotos estáticas con comparación al tocar, como los platos. La primera publicación contenía solo Pame y Lu; ahora incorpora además los seis pares descritos arriba. Los comparadores cambian al tocar y detienen la fila mientras se miran. No se inventan nombres o resultados.
 
 [Plantilla interna del comparador](plantilla-comparador-resultados.html): no se sirve en el sitio y sus marcadores no son casos reales. Mantiene ambas imágenes sin recortar el cuerpo, muestra una a la vez, cambia Antes/Después al tocar y sincroniza la copia del bucle. La interacción se probó localmente con dos imágenes de colores neutros; esas pruebas no se publicaron ni se presentan como resultados.
 

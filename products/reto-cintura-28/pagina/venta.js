@@ -177,6 +177,7 @@
       var width = originals.reduce(function (sum, card) { return sum + card.offsetWidth; }, 0) + gap * Math.max(0, originals.length - 1);
       var available = carousel.clientWidth - parseFloat(styles.paddingLeft) - parseFloat(styles.paddingRight);
       var overflow = width > available + 1;
+      carousel.style.setProperty('--results-loop-duration', ((width + gap) / 22) + 's');
       carousel.classList.toggle('is-overflowing', overflow); pause.hidden = !overflow || motion.matches;
       if (!overflow) carousel.scrollLeft = 0;
     }
