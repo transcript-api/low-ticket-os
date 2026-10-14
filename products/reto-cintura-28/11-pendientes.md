@@ -38,6 +38,7 @@
 | ~~Clarity~~ Hecho: ID cargado y verificado que carga | — |
 | **Publicar el arreglo de la app (letras ilegibles en modo oscuro)**: está en la carpeta de publicación, falta subirlo a Vercel | Santiago |
 | **Entrega de semanas 6 y 7:** Santiago confirmó que el regalo cubre semanas 5, 6 y 7 y pidió restaurarlo en la página. Los archivos de la app conservados solo contienen hasta el día 35; asegurar la entrega de las semanas 6 y 7 y sincronizarla con esta oferta | Santiago |
+| ~~Crear píxel~~ Hecho 2026-10-14: ID `1308540268017846` cargado en `landing-config.json` (falta publicar). Resta cargarlo en Hotmart | Claude (con Santiago logueado) |
 | Pasar el ID del píxel de Meta (`metaPixelId`) y cargarlo también en Hotmart (Herramientas → Píxel) para que Meta vea checkout y compra | Santiago + Claude |
 | Configurar Utmify (script, `utmifyScript: true`, probar que conserve `offDiscount=` y las UTMs) | Claude, guiando |
 | Decidir fecha real de fin del lanzamiento; cambiar en Hotmart precio base a US$ 45,43, cupón a 65 % y fin del cupón; recién ahí cargar `launchEndsAt` | Santiago (+ Claude con OK) |

@@ -2,6 +2,13 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-14 · Medición: píxel de Meta creado, Utmify revisado
+
+- Santiago no tenía píxel de Meta y sí cuenta en Utmify. Entró él a Meta y a Utmify en ventanas de Chrome abiertas por Claude (la sesión de Hotmart se cerró al apagarse la PC y hay que volver a entrar).
+- **Meta:** en la cuenta publicitaria `534109209670477` se creó el conjunto de datos/píxel **"Reto Cintura 28", ID `1308540268017846`** (había otros tres sin actividad: n8n, wpp test, test 2). Cargado en `pagina/landing-config.json` (`metaPixelId`). Falta publicar la página.
+- **Utmify:** ya existía un webhook de Hotmart "Ativado" (URL con id, sin token); no se tocó. Pestaña Pixel vacía. Anúncios sin cuentas conectadas. El dashboard dice "configuración incompleta".
+- **Pendiente:** entrar a Hotmart y revisar si ya hay un webhook a Utmify y el píxel; cargar el píxel en Hotmart; conectar Meta Ads en Utmify (autoriza Santiago); crear en Utmify el píxel solo para Purchase (Initiate Checkout y Lead deshabilitados para no duplicar los de la página); plantilla de UTM para los anuncios; dominio propio verificado; compra de prueba.
+
 ## 2026-10-13 — Fotos reales mejoradas e incorporadas al carrusel
 - Santiago confirmó autorización y versión online de los seis casos, presentación Antes→Después y nitidez. Se respeta el orden recibido y se muestran tiempos 7/11/5/4/8/4 semanas, sin inventar nombres.
 - Doce fotos de 540 × 960 px, con escalado proporcional completo y nitidez suave no generativa. Se conservan rostros, cuerpos, marcas y fuentes; no se reconstruyen detalles ni se recortan los cuerpos. Peso combinado de 2,53 MB a 0,53 MB (79 % menos), WebP 94. Inventario/huellas y vistas de revisión registrados.
