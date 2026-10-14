@@ -69,3 +69,6 @@ Página publicada, con eventos verificados, compra de prueba pasando por ella, y
 6. **Sin cifras de contenido como argumento** ("128 páginas" asusta). Se vende la transformación y la facilidad de empezar; los bonus van en letra chica dentro de la tarjeta de precio.
 7. Botones que bajan directo al precio para quien ya quiere comprar.
 8. Código de la página guardado en `products/<producto>/pagina/` y publicado con `vercel deploy --prod`.
+
+## Coherencia de oferta y calidad · 2026-10-14
+Revisar el [contrato de oferta y los criterios editoriales](11-calidad-editorial-y-aprendizaje.md) entre anuncio, página, checkout y entrega. Las funciones, inclusiones y bonos deben existir y corresponder al plan ofrecido. Una demostración puede dar claridad sin inventar prueba social. Este método candidato no cambia estructura, producto ni publicación actual; verificar contra datos del caso.
