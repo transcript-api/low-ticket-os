@@ -59,3 +59,6 @@ Antes de subir: `compliance/checklist-previa.md`.
 ## Criterio de salida
 
 Lote 1 con 6 ángulos distintos, copy listo para Meta y revisión de políticas aprobada.
+
+## Revisión editorial y aprendizaje · 2026-10-14
+Aplicar [la revisión de calidad](11-calidad-editorial-y-aprendizaje.md) antes de producir variantes: distinguir conceptos de cambios cosméticos, usar demostraciones reales, cumplir el gancho y registrar correcciones como casos de regresión. Este agregado es un método candidato; no valida los ángulos anteriores como ganadores ni cambia reglas de publicación.
