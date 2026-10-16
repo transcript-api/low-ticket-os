@@ -2,6 +2,28 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-16 · Base de conocimiento, skills de copy/oferta/tráfico y equipo Hermes
+
+**Hecho**
+- Procesadas las transcripciones que pasó Santiago (8 archivos, 16 videos: 9 de Víctor Heras/Viralidad y 7 operadores brasileños de low ticket). Las transcripciones de Gemini venían mezcladas (dos respuestas intercaladas), con tramos resumidos y cifras que no cierran; quedó todo señalado en `conocimiento/criterio/fuentes.md`.
+- `conocimiento/`: fuentes crudas, 764 afirmaciones con ID, 327 principios por dominio con confianza (copy, oferta y tráfico, orgánico y producción), 32 banderas rojas, contradicciones resueltas y protocolo de ingesta con un prompt mejorado para Google AI Studio.
+- Skills nuevas: `copy-humanizada` (rúbrica de ganchos, estructuras de 15/25/40/60 s, anti-IA, chequeo de políticas), `ingesta-transcripciones`, `oferta-low-ticket`, `trafico-meta-low-ticket`, `contenido-organico-ig`. Mejoradas: `copy-marketing`, `crear-infoproducto`, `edicion-premium` (checklist de 15 puntos para anuncios), `plan-carrusel`, `realismo-cinematico-ia`. Cada una trae su conocimiento en `references/` (`npm run skills:sync`).
+- `hermes/`: 7 perfiles (director, investigador, estratega-oferta, copywriter, productor-creativo, media-buyer, auditor), flujos, contratos de entrega y aprobaciones; instalación en Windows.
+- Playbook: lote 1 de 8 a 10 conceptos (no 6 ángulos), diagnóstico por capa antes de apagar, excepción de corte con IC ≥ 2, escala por tramos, puja y contingencia de cuentas legítima. Hipótesis EXP-006 a EXP-013 en `metrics/experimentos.csv`.
+
+**Decisiones y opinión de Claude**
+- Lo de Víctor Heras cuenta como **una sola fuente** aunque sean 9 videos. Sus "leyes" de cuenta (ITV 5 %/30 %, "los anuncios intoxican", R.I.) quedaron descartadas por falta de sustento; su método de ideas y guiones (embudo dentro del video, filtro 5/50, espectadora cero, fotocopiadora) sí entró.
+- Del compilado brasileño entró la operación (ARPU, bumps, lotes diversos, corte y escala) y quedó afuera lo que es engaño o elusión (clonar ofertas traducidas, "experto" con IA, multilogin, cuentas de repuesto).
+- Conflicto clave resuelto: en orgánico se abre "ancho"; en pago con segmentación amplia el creativo segmenta, así que el gancho va **ancho dentro del público** y siempre con dolor o pregunta (regla de Santiago).
+- El "ROI" de los cursos brasileños es ROAS: no compararlo con nuestro CPA sin traducirlo.
+
+**Falta**
+- Push a GitHub desde la PC de Santiago (el entorno de Claude no tiene credenciales válidas).
+- Re-transcribir los tramos dudosos con el prompt nuevo (`conocimiento/criterio/fuentes.md` §7).
+- Instalar el equipo en Hermes (`hermes/README.md`) y probar el flujo B con el lote 2.
+
+**Mejora propuesta:** cada vez que cierre un test, que el `media-buyer` y el `investigador` actualicen la confianza del principio testeado; en un mes la base va a tener datos propios en vez de solo cursos.
+
 ## 2026-10-14 · Medición: píxel de Meta creado, Utmify revisado
 
 - Santiago no tenía píxel de Meta y sí cuenta en Utmify. Entró él a Meta y a Utmify en ventanas de Chrome abiertas por Claude (la sesión de Hotmart se cerró al apagarse la PC y hay que volver a entrar).

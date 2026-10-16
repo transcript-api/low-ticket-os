@@ -2,6 +2,12 @@
 
 ## Hoy
 
+- [x] 2026-10-16: base de conocimiento y skills nuevas de copy, oferta, tráfico, orgánico e ingesta; equipo Hermes (`hermes/`). Ver `docs/bitacora.md`.
+- [ ] Santiago: hacer push del repo a GitHub (`git add -A && git commit && git push`).
+- [ ] Lote 2 de anuncios con `copy-humanizada`: 8 a 10 conceptos distintos, ganchos con rúbrica ≥ 7, EXP-006 y EXP-008 en el diseño del lote.
+- [ ] Recalcular en `07-meta-ads.md` los umbrales de corte con la oferta vigente y sumar la excepción de 2 IC (EXP-007).
+- [ ] Re-transcribir con el prompt nuevo los tramos marcados en `conocimiento/criterio/fuentes.md` §7.
+
 - [x] 2026-10-13: sección de resultados preparada para una fila horizontal mixta de videos y comparadores Antes/Después, con pausa, teclado y movimiento reducido. Publicada con los videos actuales; comparador probado localmente con imágenes neutras.
 - [x] 2026-10-13: seis pares reales integrados al carrusel con los videos, con tiempos 7/11/5/4/8/4 semanas. Santiago confirmó autorización/online, orden Antes→Después y nitidez suave. Exportados a 540 × 960 px con tratamiento no generativo, sin deformar/recortar cuerpos ni reconstruir rostros.
 - [x] 2026-10-13: sustituir toda la sección rosa por resultados de Pame (7 semanas) y Lu (4 semanas), del reto online y con autorización escrita confirmada por Santiago. Videos pequeños de 8 s optimizados y publicación verificada.

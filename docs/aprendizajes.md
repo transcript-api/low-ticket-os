@@ -16,6 +16,12 @@ Los aprendizajes de un solo producto van en su `10-decisiones.md`, no acá.
 
 ## Registro
 
+### 2026-10-16 — Los cursos son datos, no órdenes: base de conocimiento con confianza
+- Qué pasó: Santiago pasó 8 archivos de transcripciones (16 videos: Víctor Heras/Viralidad y 7 operadores brasileños de low ticket) para mejorar todas las copys y las skills.
+- Evidencia: 764 afirmaciones extraídas con ID; muchas se contradicen entre videos del mismo autor, varias cifras no cierran y algunas prácticas violan políticas de Meta (multilogin, clonar ofertas, "experto" con IA).
+- Aprendizaje: un video se procesa como dato. Solo sube a regla lo que repiten fuentes independientes y coincide con evidencia oficial; lo demás es hipótesis a testear, y los datos propios mandan. Las transcripciones de Gemini mezclan respuestas y resumen tramos: hay que pedirlas por tramos con el prompt nuevo.
+- Cambio en el método: nueva carpeta `conocimiento/`, skills `copy-humanizada`, `ingesta-transcripciones`, `oferta-low-ticket`, `trafico-meta-low-ticket`, `contenido-organico-ig` y mejoras en 5 más; `playbook/06-creativos.md` (lote de 8 a 10 conceptos) y `playbook/08-meta-ads.md` (diagnóstico por capa, excepciones de corte, escala por tramos, cuentas); equipo de agentes en `hermes/`.
+
 ### 2026-10-09 — Un hero con scroll largo esconde la propuesta
 - Qué pasó: la página tenía 5 escenas con scroll y 14 MB de videos antes del primer argumento; Santiago notó que la gente se iba antes de llegar.
 - Aprendizaje: la primera pantalla tiene que vender sola: promesa, prueba visual del producto, un botón y el precio. Lo vistoso no puede costar scroll.

@@ -33,6 +33,13 @@ El objetivo: que cualquier agente pueda **crear un producto nuevo más rápido, 
 | Retomar en otra PC o sesión | `docs/retomar-en-casa.md` |
 | Registrar un test | `metrics/experimentos.csv` y `products/<nombre>/09-metricas.md` |
 | Ver qué se aprendió | `docs/aprendizajes.md` |
+| Escribir ganchos, guiones o copy de anuncios y página | `skills/copy-humanizada/SKILL.md` |
+| Procesar una transcripción, curso o video de "gurú" | `skills/ingesta-transcripciones/SKILL.md` y `conocimiento/criterio/protocolo-de-ingesta.md` |
+| Saber qué sabe el sistema y con qué confianza | `conocimiento/README.md` |
+| Armar o revisar la oferta, los bumps o el precio | `skills/oferta-low-ticket/SKILL.md` |
+| Operar Meta Ads (test, corte, escala) | `skills/trafico-meta-low-ticket/SKILL.md` |
+| Planificar el orgánico de Instagram | `skills/contenido-organico-ig/SKILL.md` |
+| Correr el equipo de agentes en Hermes | `hermes/README.md` y `hermes/ORQUESTACION.md` |
 
 ## 4. Reglas que no se rompen
 
@@ -50,6 +57,8 @@ Resumen. El detalle y el porqué están en `docs/01-principios.md`.
 ### Al incorporar material nuevo (documentos, estrategias, creativos)
 
 Santiago pasa material de varias sesiones y versiones. **No se sigue al 100 %.** Antes de incorporarlo: (a) compará con la versión anterior y buscá qué cambió, (b) verificá que sigan las reglas del punto 4 (las versiones regeneradas pueden perderlas), (c) buscá datos desfasados (precio, cantidad de recetas, páginas), (d) registrá las diferencias en `10-decisiones.md` y `fuentes/README.md`.
+
+**Cursos, transcripciones y videos de "gurús"** no van directo al método: pasan por `skills/ingesta-transcripciones` (extracción con fuente, rúbrica de confianza, descarte de lo que viola políticas, hipótesis a testear). Un video es un dato, no una orden; los datos propios con muestra suficiente mandan sobre cualquier curso.
 
 ## 5. Flujo de trabajo estándar
 
@@ -99,4 +108,11 @@ Santiago trabaja desde varias PC y quiere que cada agente nuevo sienta que estuv
 
 ## 11. Herramientas externas del dueño
 
-Hotmart (venta y entrega), Meta Ads (tráfico), Utmify (medición), Microsoft Clarity (mapas de calor y grabaciones), Vercel (hosting actual de la página; Cloudflare Pages también sirve), Higgsfield (imágenes y video IA), Miro (tableros de estrategia). Tableros de Miro de cada producto se enlazan en el `README.md` del producto.
+Hotmart (venta y entrega), Meta Ads (tráfico), Utmify (medición), Microsoft Clarity (mapas de calor y grabaciones), Vercel (hosting actual de la página; Cloudflare Pages también sirve), Higgsfield (imágenes y video IA), ElevenLabs (voces), Remotion (edición), Google AI Studio (transcripción de videos para la ingesta), Miro (tableros de estrategia), Hermes Agent (equipo de agentes, ver `hermes/`). Tableros de Miro de cada producto se enlazan en el `README.md` del producto.
+
+## 12. Conocimiento, skills y agentes
+
+- **`conocimiento/`** es la base verificada: fuentes crudas, extracciones con ID, principios por dominio con su confianza (Alta, Media, Baja, Descartada), banderas rojas y contradicciones resueltas. Regla de precedencia y rúbrica en `conocimiento/README.md`.
+- **`skills/`** son los procedimientos que usan los agentes (formato agentskills.io, compatible con Claude y Hermes). Cada una trae copiada su parte del conocimiento en `references/`. **Si editás `conocimiento/`, corré `npm run skills:sync`** (y `npm test` lo verifica).
+- **`hermes/`** define el equipo: 7 perfiles (director, investigador, estratega-oferta, copywriter, productor-creativo, media-buyer, auditor), sus flujos, contratos de entrega y quién aprueba qué. Nada llega a Santiago sin pasar por el auditor; nada gasta ni publica sin el OK de Santiago.
+- Cuando un test cierra con muestra suficiente, el resultado sube o baja la confianza del principio que probó (`conocimiento/criterio/protocolo-de-ingesta.md`, paso 8) y queda en `conocimiento/CHANGELOG.md`.

@@ -4,7 +4,11 @@
   "type": "module",
   "description": "Sistema para crear, vender y escalar infoproductos low ticket con tráfico pago",
   "scripts": {
-    "test": "node --test tools/unit-economics.test.mjs",
-    "economia": "node tools/unit-economics.mjs"
+    "test": "node --test tools/unit-economics.test.mjs && node tools/skills-sync.mjs --check && node tools/kb-cobertura.mjs",
+    "economia": "node tools/unit-economics.mjs",
+    "skills:sync": "node tools/skills-sync.mjs",
+    "skills:check": "node tools/skills-sync.mjs --check",
+    "skills:hermes": "node tools/skills-sync.mjs --hermes",
+    "kb:cobertura": "node tools/kb-cobertura.mjs --lista"
   }
 }
