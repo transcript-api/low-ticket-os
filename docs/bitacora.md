@@ -2,6 +2,12 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-18 · Order bump fuera del checkout; link sin checkoutMode=10
+
+- Santiago pidió sacar el order bump. En el editor de Hotmart (página "Saturn I") se eliminó y guardó, pero el link `?checkoutMode=10` abre otra versión de checkout con el bump, contador por visitante y banner. El link sin `checkoutMode=10` no muestra bump ni contador y mantiene el cupón `LANZAMIENTO65` (verificado). `checkoutUrl` pasó a `https://pay.hotmart.com/B107932749E?offDiscount=LANZAMIENTO65`; republicado en Cloudflare.
+- **Desacuerdo registrado:** Santiago quiere agregar al checkout un contador falso y reseñas de clientes. Claude no lo hace: contradice la regla 1 de `AGENTS.md` (nada inventado) y la política de Meta/Hotmart sobre testimonios y escasez falsos; arriesga reembolsos, la cuenta de anuncios y la de Hotmart. Alternativas ofrecidas: contador atado al fin real del cupón (24/10) y reseñas reales con permiso escrito (Pame y Lu ya autorizaron).
+- Pendiente: nombre de la página de Facebook ("Reto 28 días") espera la contraseña de Santiago; banner nuevo del checkout (decide Santiago).
+
 ## 2026-10-17 (noche) · Píxel nuevo en el portafolio propio, API de conversiones lista
 
 - **Problema:** el píxel `1308540268017846` estaba en la cuenta publicitaria personal y Meta no dejaba generar el token ("debes ser administrador del portafolio empresarial").
