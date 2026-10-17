@@ -8,13 +8,15 @@
     "height": 716,
     "bytes": 377266,
     "sha256": "01cc1af1d47a0a2070708296437f7b103d6f865a2ce4e43acc8cdd22ae98dabb",
-    "phase": "antes",
-    "output": "assets/resultados/caso-01-7-semanas-antes.webp",
+    "phase": "despues",
+    "output": "assets/resultados/caso-01-7-semanas-despues.webp",
     "outputWidth": 540,
     "outputHeight": 960,
     "outputBytes": 58108,
     "outputSha256": "f1b113cc8f2ba6ae35cb375d1140d58799eb7f7f7b3d34031af476e89c77dc98",
-    "treatment": "uniform contain resize, light non-generative sharpening, WebP 94"
+    "treatment": "uniform contain resize, light non-generative sharpening, WebP 94",
+    "orderCorrectedAt": "2026-10-17",
+    "orderSource": "Corrección expresa de Santiago: el par de violeta estaba invertido."
   },
   {
     "photo": 2,
@@ -25,13 +27,15 @@
     "height": 711,
     "bytes": 330125,
     "sha256": "e9330856399bf035453726159646cb5b22d53dff881c18ced599916e6c4b0488",
-    "phase": "despues",
-    "output": "assets/resultados/caso-01-7-semanas-despues.webp",
+    "phase": "antes",
+    "output": "assets/resultados/caso-01-7-semanas-antes.webp",
     "outputWidth": 540,
     "outputHeight": 960,
     "outputBytes": 49282,
     "outputSha256": "d09d330eee9da1f50a2ffc325c196cfca47a281b297e03770121bc3ba33eb57c",
-    "treatment": "uniform contain resize, light non-generative sharpening, WebP 94"
+    "treatment": "uniform contain resize, light non-generative sharpening, WebP 94",
+    "orderCorrectedAt": "2026-10-17",
+    "orderSource": "Corrección expresa de Santiago: el par de violeta estaba invertido."
   },
   {
     "photo": 3,

@@ -2,6 +2,9 @@
 
 ## Hoy
 
+- [x] 2026-10-17: corregir el orden del caso de violeta y cambiar #info a beneficios, conservando el reencuadre de fuerza de voluntad.
+- [x] Publicación Cloudflare verificada online en 320/390/1440 px; comparador, texto y 373 archivos preservados.
+
 - [x] 2026-10-16: base de conocimiento y skills nuevas de copy, oferta, tráfico, orgánico e ingesta; equipo Hermes (`hermes/`). Ver `docs/bitacora.md`.
 - [ ] Santiago: hacer push del repo a GitHub (`git add -A && git commit && git push`).
 - [ ] Lote 2 de anuncios con `copy-humanizada`: 8 a 10 conceptos distintos, ganchos con rúbrica ≥ 7, EXP-006 y EXP-008 en el diseño del lote.

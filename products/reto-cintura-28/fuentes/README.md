@@ -2,9 +2,13 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Corrección de orden y referencia de beneficios (2026-10-17)
+
+Santiago identifica que el caso de violeta está invertido. Para ese par (caso 1, 7 semanas), la segunda imagen recibida pasa a Antes y la primera pasa a Después. Se intercambian las exportaciones existentes, sin nuevo retoque, y se corrige su inventario. El orden de los otros cinco pares queda igual. La captura del 17/10 inspira el bloque de beneficios; se adapta a los entregables reales sin copiar resultados físicos garantizados, frecuencia de tres entrenos ni credenciales no verificadas.
+
 ### Seis pares de fotos publicados (2026-10-13)
 
-Santiago confirmó que los seis casos están autorizados y son online; pidió que todos se presenten Antes→Después y aceptó mejorar nitidez. Se respeta el orden recibido (primera foto del par como Antes, segunda como Después), reemplazando la suposición anterior sobre el primer par. Sin nombres aportados, se muestran solo las semanas de proceso: **7, 11, 5, 4, 8 y 4**.
+Santiago confirmó que los seis casos están autorizados y son online; pidió que todos se presenten Antes→Después y aceptó mejorar nitidez. En la publicación inicial se respetó el orden recibido; la corrección expresa del 17/10 invierte únicamente el primer par (ver arriba). Sin nombres aportados, se muestran solo las semanas de proceso: **7, 11, 5, 4, 8 y 4**.
 
 Los 12 PNG recibidos se conservan sin modificar en `outputs/fotos-resultados/originales/` del workspace, con inventario y huellas en `work/results-photos-inventory.json`. Se publican WebP de **540 × 960 px**, con escalado proporcional `contain` y relleno cálido, sin recorte ni deformación. Nitidez tradicional uniforme en ambas fases: máscara gaussiana sigma 0,45, m1 0,4, m2 1, máximos de aclarado/oscurecido 5/8. Calidad WebP 94. Sin IA generativa, reconstrucción facial, cambios de contorno, borrado de marcas o retoques selectivos.
 

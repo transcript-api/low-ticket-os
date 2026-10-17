@@ -2,6 +2,8 @@
 
 ## Estado
 
+- **Ajuste 2026-10-17:** #info presenta «Lo que vas a lograr en estos 28 días» con cinco beneficios; frase de fuerza de voluntad intacta. Orden Antes/Después del caso de violeta corregido por Santiago. Hosting vigente: Cloudflare Pages; publicación y controles en bitácora.
+
 - **Fase del flujo:** 03 Oferta (vigente definida por Santiago el 2026-10-08) y 05 Página (cambios pendientes: Santiago tiene una lista). Producto, creativos y videos ya producidos. Sin ventas ni gasto en anuncios según el dato de Santiago del **2026-10-08** (**no verificado en Hotmart**, no hubo acceso); no se cuenta con una actualización de métricas comerciales.
 - **Último cambio:** 2026-10-08. Se incorporó el material completo (sitio, creativos, guía, hojas, menú, portadas y banners), los datos vigentes de oferta y una revisión crítica. Detalle en [10-decisiones.md](10-decisiones.md).
 - **Actualización 2026-10-09:** página v3 online (https://reto-cintura-28.vercel.app). Lo vigente y lo que falta: [INFORME.md](INFORME.md) (empezar por "Dónde paramos").

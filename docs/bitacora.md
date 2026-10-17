@@ -1,5 +1,15 @@
 # Bitácora de trabajo
 
+## 2026-10-17 · Beneficios en #info y corrección del caso de violeta
+
+- Pedido de Santiago: invertir únicamente el antes/después del caso de violeta (7 semanas) y cambiar la parte superior de #info por «Lo que vas a lograr en estos 28 días», conservando literalmente «No te falta fuerza de voluntad» y su continuación. Autorización vigente del chat para editar/publicar.
+- Se sustituyen las cinco frases de dolor por beneficios del programa: fortalecer zona media/cuerpo, entrenar al nivel en 20–30 minutos, comida equilibrada, Plan B de 8 minutos y hábitos con acompañamiento. Misma composición, carrusel vertical y CTA.
+- Las referencias son inspiración de contenido; no se importan reducción garantizada de celulitis/flacidez, credenciales de nutricionista ni tres entrenos semanales: no están respaldados por el producto actual (cuatro entrenos). Se aplica skills/copy-humanizada.
+- Se intercambian los bytes de las dos fotos del caso 1 sin reprocesarlas. Nombres Antes/Después e inventario corregidos; versión en URL para evitar la caché anterior. Los otros cinco pares y videos quedan intactos. Esta corrección explícita sustituye el orden indicado el 13/10 para el primer par.
+- Publicación: Cloudflare Pages, conservando todos los archivos de la publicación actual, incluidos app, gracias, medición y checkout sin bump. Publicado y verificado en https://reto-cintura-28.pages.dev (despliegue 1e197a2a-4959-4bff-afa6-e62c97f4bc73). Pruebas locales y online en 320/390/1440 px: cinco beneficios, frase preservada, comparación reversible, sin desbordes ni errores JS. Los otros 373 archivos mantienen sus identificadores de contenido; app/gracias devuelven 200 con noindex. HTML y ambas fotos servidos coinciden byte a byte con lo preparado.
+- Mejora propuesta: observar lectura del bloque e inicio del test con tráfico real antes de atribuirle una mejora de conversión; no se afirma un aumento sin datos.
+
+
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
 ## 2026-10-18 · Order bump fuera del checkout; link sin checkoutMode=10
