@@ -40,6 +40,20 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-18 (tarde) · Soporte por WhatsApp y página de gracias en Hotmart
+
+- Número de soporte de Santiago: **+598 99 098 325** (WhatsApp). Cargado en `landing-config.json` (`soporte`, `soporteTexto`; aparece en el pie de la página) y en la página de gracias.
+- Página de gracias (no está en el repo; vive en la carpeta publicada): se sacó la frase del Menú/bump, "Guía en PDF" pasó a "Guía completa" y se sumó un aviso con el WhatsApp de soporte. Republicado en Cloudflare.
+- **Hotmart (Configuraciones de la página de pago), verificado al recargar:** "Página externa" con URL de compras aprobadas `https://reto-cintura-28.pages.dev/gracias-fn61bl91/`; soporte por WhatsApp para pagos rechazados habilitado con el número 59899098325. Compras pendientes y análisis de crédito quedan con la página de Hotmart.
+- Pendiente: los 7 emails de acompañamiento (con link de la app y WhatsApp) se cargan en Hotmart a mano; contador real hasta el 24/10 (lo configura Santiago en el editor); nombre de la página de Facebook.
+
+## 2026-10-17 · Ingesta de la charla de Leandro Ladeira (ángulos de estáticos)
+
+- Santiago pasó la transcripción de la charla de Leandro Ladeira en Hotmart FIRE y 5 capturas de los 15 "ângulos de criativos" hechos con IA. Pidió estáticos para anunciar y que se actualice la base.
+- **Hecho:** crudo + extracción (LD01–LD37, grupo G9) y principios nuevos ID-27 (estático por ángulo visual), HK-23 (quiebre de patrón), OF-42 (tipo de página), FE-49 (sketch o parodia) y BR-33 (formatos que en pérdida de peso chocan con las políticas). OF-18 sube a Media. Banco de los 15 ángulos adaptados a RC28 en `conocimiento/copy/ideas-y-angulos.md` §7 bis. Hipótesis EXP-014 a EXP-016. Detalle en `conocimiento/CHANGELOG.md`.
+- **Opinión de Claude:** lo valioso es el catálogo de ángulos visuales (cada uno es un concepto distinto para Andromeda) y la anatomía del estático. Cuatro de los ejemplos no se pueden copiar en un producto de cintura tal como están (zoom al abdomen, atribuir una condición de salud, cifras sin fuente, UGC en primera persona); quedaron reformulados.
+- **Falta:** nada de sync: las `references/` de las skills ya se copiaron igual que `npm run skills:sync` (verificable con `node tools/skills-sync.mjs --check`); generar las imágenes del lote de estáticos (P1 del banco) cuando Santiago elija con qué herramienta.
+
 ## 2026-10-18 · Order bump fuera del checkout; link sin checkoutMode=10
 
 - Santiago pidió sacar el order bump. En el editor de Hotmart (página "Saturn I") se eliminó y guardó, pero el link `?checkoutMode=10` abre otra versión de checkout con el bump, contador por visitante y banner. El link sin `checkoutMode=10` no muestra bump ni contador y mantiene el cupón `LANZAMIENTO65` (verificado). `checkoutUrl` pasó a `https://pay.hotmart.com/B107932749E?offDiscount=LANZAMIENTO65`; republicado en Cloudflare.
