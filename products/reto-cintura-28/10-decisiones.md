@@ -1,5 +1,13 @@
 # 10 · Decisiones
 
+## 2026-10-17 · Checkout sin bumps; imagen y reseñas pendientes de acceso
+
+- Instrucción explícita de Santiago: no volver a poner order bumps. Sustituye las decisiones históricas sobre menú y extras cobrados. El checkout público vigente aplica el cupón y muestra solo el producto principal.
+- Se revisan tanto el enlace de landing sin checkoutMode como el antiguo abierto con checkoutMode=10: ambos sin bump. No se modifican precio, cupón ni medición.
+- La administración pide iniciar sesión. No se guarda ningún cambio de apariencia ni se afirma reparada la actualización de foto. Se deja la pestaña para que Santiago entre y se consulta ubicación de la imagen nueva y de reseñas escritas reales.
+- Se identifica un banner antiguo en Descargas y un creativo reciente para anuncios; no se decide que cualquiera sea la foto solicitada. No se inventan comentarios a partir de las fotos Antes/Después ya autorizadas.
+- Mejora propuesta: registrar la apariencia vinculada al enlace público y guardar prueba visual después de publicar cambios del checkout.
+
 ## 2026-10-17 · Cinco anuncios cargados en Meta como borradores
 
 - Santiago pidió usar sus cinco MP4 y la transcripción audiovisual de Guilherme Ferreira para preparar anuncios con descripciones diferentes, sin activar gasto. Se aplican las skills de tráfico y copy del repo; la transcripción se conserva y evalúa en fuentes/. No se crean imágenes o testimonios inventados para completar diez anuncios.

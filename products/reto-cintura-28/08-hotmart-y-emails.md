@@ -1,5 +1,18 @@
 # 08 · Hotmart y emails
 
+## Estado vigente del checkout · 2026-10-17
+
+- **Sin order bump.** Santiago confirmó que lo sacó y pidió expresamente no volver a ponerlo. Esto reemplaza las recomendaciones históricas de este documento sobre menú y extras cobrados en el checkout.
+- Enlace vigente de la landing: `https://pay.hotmart.com/B107932749E?offDiscount=LANZAMIENTO65`. No agregar `checkoutMode=10` para intentar recuperar un diseño antiguo.
+- Verificación pública en esta fecha, desde Uruguay: cupón 65 % aplicado, producto UYU 1.930, descuento UYU 1.254,50 y total UYU 675,50. Solo aparece Reto Cintura 28; sin menú ni otro extra. No se ingresaron datos personales o de pago ni se hizo una compra. El enlace anterior abierto con `checkoutMode=10` también se muestra sin bump.
+- Apariencia pública actual: formulario básico con miniatura del producto, sin banner ni reseñas laterales. No se verificó la causa de que no deje actualizar la imagen: el panel `app.hotmart.com` redirige al inicio de sesión. Pestaña de Hotmart abierta para que Santiago entre; no se cambian credenciales.
+- Se buscaron imágenes en Descargas, incluyendo subcarpetas. Banner identificado: `C:/Users/USUARIO/Downloads/reto-cintura-28-banner-checkout.jpg`, 2400 × 1440, 501.341 bytes, del 7/10. Dice Semana 5 de regalo; es material antiguo y no se subió como si fuera el nuevo. Las dos PNG recientes del 17/10 son copias del creativo «El lunes no te cambia. Lo que hacés hoy, sí». Pendiente que Santiago identifique la foto deseada.
+- No se localizaron comentarios escritos de clientas en las fuentes del producto. Los casos reales autorizados de la landing son evidencia visual; no permiten inventar frases o estrellas atribuidas. Se pidió ubicación de los mensajes/capturas reales para el lateral.
+- Próximo paso al tener sesión: abrir la apariencia asociada al enlace utilizado, identificar el archivo nuevo, revisar la validación de carga/guardado, añadir solo testimonios aportados y comprobar el checkout publicado en celular/escritorio. Conservar precio, cupón, medición y ausencia de bumps.
+- Mejora propuesta: documentar cuál apariencia está asociada al enlace público y verificarla tras cada publicación para evitar que editar una plantilla distinta parezca un fallo de actualización.
+
+Lo que sigue conserva revisiones anteriores; no es autorización para reactivar los bumps.
+
 ## Estado real en Hotmart (revisado el 2026-10-08, solo lectura salvo el nombre)
 
 | Dato | Valor visto | Comentario |

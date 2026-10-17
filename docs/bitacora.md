@@ -1,5 +1,12 @@
 # Bitácora de trabajo
 
+## 2026-10-17 · Revisión del checkout sin order bump
+
+- Santiago pide reparar la actualización de la foto, sumar reseñas reales al costado y no volver a poner order bump. Se verifica el checkout público actual con cupón y el enlace antiguo: no aparecen bumps; solo el producto principal. Sin compra ni cambios de precio/cupón/medición.
+- La apariencia pública es el formulario básico. El panel de administración redirige al login; se deja pestaña abierta y se solicita que Santiago entre. No se afirma corregida la imagen ni publicadas reseñas.
+- Búsqueda acotada en Descargas/fuentes: banner del 7/10 encontrado, dos PNG recientes corresponden a un creativo de anuncios, sin reseñas escritas localizadas. Se pide identificar imagen y mensajes reales antes de subirlos. No se inventan citas de las clientas que aportaron fotos.
+- Actualizados README, decisiones, pendientes y estado de Hotmart para que las instrucciones históricas de bumps no se reintroduzcan. Mejora propuesta: registrar plantilla asociada al enlace usado y verificar su apariencia publicada.
+
 ## 2026-10-17 · Cinco anuncios cargados en Meta como borradores
 
 - Santiago pidió usar sus cinco MP4 y la transcripción audiovisual de Guilherme Ferreira para preparar anuncios con descripciones diferentes, sin activar gasto. Se aplican las skills de tráfico y copy del repo; la transcripción se conserva y evalúa en fuentes/. No se crean imágenes o testimonios inventados para completar diez anuncios.

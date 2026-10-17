@@ -2,6 +2,9 @@
 
 ## Hoy
 
+- [x] 2026-10-17: verificar checkout público con `LANZAMIENTO65`, sin order bump. Santiago pide no volver a usar bumps; las tareas históricas de crearlos o corregir su copy quedan sin efecto.
+- [ ] Checkout: Santiago debe iniciar sesión en la pestaña de Hotmart abierta. Falta identificar foto nueva y mensajes/capturas reales de clientas; luego resolver carga, incorporar reseñas donde permita la plantilla y comprobar publicación. Detalle al inicio de `08-hotmart-y-emails.md`.
+
 - [x] 2026-10-17: texto literal de las capturas, manteniendo fuerza de voluntad; quiz corregido contra doble toque, navegación pendiente y desborde en 320 px. Publicado y probado online.
 - [ ] Contrastar con Santiago los tres entrenos semanales y el diseño por nutricionista que pide copiar de su informe; la app conservada tiene cuatro entrenos. No volver a reescribir su bloque sin instrucción.
 - [x] Cinco anuncios guardados en Meta como borradores, cada video con texto/título/descripción diferentes, CTA Más información y UTM. Campaña desactivada.

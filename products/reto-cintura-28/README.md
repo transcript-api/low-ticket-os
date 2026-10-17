@@ -2,6 +2,8 @@
 
 ## Estado
 
+- **Checkout 2026-10-17:** Santiago confirma que eliminó el order bump y pide no volver a usarlo. El enlace público actual aplica `LANZAMIENTO65` y solo muestra el reto, sin extras. Foto nueva y reseñas laterales pendientes: Hotmart pide iniciar sesión y falta identificar los archivos/textos exactos. Ver estado vigente al inicio de `08-hotmart-y-emails.md`; las menciones anteriores a bumps son históricas.
+
 - **Meta preparado 2026-10-17:** cinco videos cargados y cinco anuncios con copy propio en una campaña CBO desactivada, sin publicar ni gastar. Detalles en [16-borradores-meta-2026-10-17.md](16-borradores-meta-2026-10-17.md). Antes de activar falta habilitar el píxel nuevo en esta cuenta; el selector solo ofrece el viejo.
 
 - **Último ajuste 2026-10-17:** bloque #info con el texto literal del informe de Santiago; «No te falta fuerza de voluntad» intacto. Quiz reparado: el doble toque saltaba preguntas y rompía el resultado. Publicado en Cloudflare y comprobado local/online en 320/390/1440 px, con cierre, vuelta atrás y reinicio.
