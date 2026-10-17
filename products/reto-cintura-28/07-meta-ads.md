@@ -64,3 +64,14 @@ El reto habla con voseo. En México y Colombia probar el mismo creativo con el t
 | Fecha | Acción | Dato | Regla aplicada |
 |---|---|---|---|
 | | (sin gasto todavía) | | |
+
+## Parámetros de URL para los anuncios (Utmify, 2026-10-17)
+
+Pegar este texto en el campo **Parámetros de URL** de cada anuncio de Meta (sección "Seguimiento"). Es la plantilla que da Utmify para Hotmart; sin ella Utmify no puede asignar cada venta a su anuncio.
+
+```
+utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}&xcod=FBhQwK21wXxR{{campaign.name}}|{{campaign.id}}hQwK21wXxR{{adset.name}}|{{adset.id}}hQwK21wXxR{{ad.name}}|{{ad.id}}hQwK21wXxR{{placement}}
+```
+
+- La página ya carga el script de UTMs de Utmify y lo agrega al botón de compra (verificado en el sitio publicado).
+- El anuncio apunta a la página (no directo a Hotmart). El destino es `https://reto-cintura-28.pages.dev` (o el dominio propio).

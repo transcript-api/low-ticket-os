@@ -2,6 +2,12 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-17 (tarde) · Utmify: asistente casi completo
+
+- Asistente de Utmify: Meta conectada y cuenta publicitaria "Santi Machado" elegida; plataforma de ventas Hotmart; script de UTMs ya instalado en la página (verificado: agrega `utm_*` al botón de compra). Paso "UTMs de la Meta": se copió la plantilla de Hotmart y quedó guardada en `07-meta-ads.md`. La casilla "ya puse las UTMs en mis anuncios" se marcó solo para poder avanzar: **todavía no hay anuncios**.
+- Se salteó el "diagnóstico" de UTMs (revisaría campañas viejas de otros productos).
+- **No se pudo completar el píxel en Utmify:** pide el token de la API de conversiones de Meta, el mismo que falta para Hotmart. Claude Code bloqueó generarlo (credencial). Lo genera Santiago.
+
 ## 2026-10-17 · Hosting: la página pasa a Cloudflare Pages
 
 - **Motivo:** el plan gratis de Vercel (Hobby) es solo para uso personal; vender con anuncios es uso comercial y puede suspender el proyecto. Cloudflare Pages gratis permite uso comercial.
