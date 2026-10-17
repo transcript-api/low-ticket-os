@@ -1,0 +1,80 @@
+{
+  "literalBenefits": 5,
+  "reframePreserved": true,
+  "release": {
+    "deployment": "a6c30839-22a5-48e8-b7b1-8e441db5e0cc",
+    "kept": 373,
+    "total": 376,
+    "exactServedFiles": [
+      "/index.html",
+      "/quiz.js",
+      "/apertura.css"
+    ]
+  },
+  "liveQuiz": {
+    "base": "https://reto-cintura-28.pages.dev",
+    "baseline": null,
+    "flows": [
+      {
+        "width": 320,
+        "run": 0,
+        "rapid": false,
+        "result": true
+      },
+      {
+        "width": 320,
+        "run": 1,
+        "rapid": true,
+        "result": true
+      },
+      {
+        "width": 320,
+        "run": 2,
+        "rapid": true,
+        "result": true
+      },
+      {
+        "width": 390,
+        "run": 0,
+        "rapid": false,
+        "result": true
+      },
+      {
+        "width": 390,
+        "run": 1,
+        "rapid": true,
+        "result": true
+      },
+      {
+        "width": 390,
+        "run": 2,
+        "rapid": true,
+        "result": true
+      },
+      {
+        "width": 1440,
+        "run": 0,
+        "rapid": false,
+        "result": true
+      },
+      {
+        "width": 1440,
+        "run": 1,
+        "rapid": true,
+        "result": true
+      },
+      {
+        "width": 1440,
+        "run": 2,
+        "rapid": true,
+        "result": true
+      }
+    ],
+    "errors": []
+  },
+  "legacyReproduction": {
+    "reproduced": true,
+    "trigger": "Dos clics en una opción antes de 240ms omiten una pregunta",
+    "error": "Cannot read properties of undefined (reading 't')"
+  }
+}

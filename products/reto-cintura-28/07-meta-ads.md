@@ -2,11 +2,16 @@
 
 Método general: `playbook/08-meta-ads.md`. Acá, los números de este producto.
 
+## Preparación vigente 2026-10-17
+
+Cinco borradores en campaña CBO desactivada, sin gasto: [estado, IDs y textos](16-borradores-meta-2026-10-17.md). El checkout actual no tiene bump. Cálculo con precio US$15,90 sin bump: CPA equilibrio US$13,23, objetivo US$8,60 y corte sin ventas US$19,85. Comisión/reserva son supuestos (9,9% + US$0,10;7%), no tasas verificadas del producto. La tabla siguiente conserva escenarios históricos. No activar mientras esta cuenta siga apuntando al píxel viejo.
+
 ## Números por oferta (de [02-oferta.md](02-oferta.md))
 
 | Oferta | CPA equilibrio | CPA objetivo (escalar) | Apagar sin ventas desde |
 |---|---|---|---|
-| **VIGENTE: 15,90 + Menú Acelerador 4,90 (25 %)** | **US$ 14,26** | **US$ 9,27** | **US$ 21,38** |
+| **VIGENTE: 15,90 sin bump (tasas supuestas)** | **US$ 13,23** | **US$ 8,60** | **US$ 19,85** |
+| Anterior: 15,90 + Menú Acelerador 4,90 (25 %) | US$ 14,26 | US$ 9,27 | US$ 21,38 |
 | A: 9,90 + menú 4,90 | US$ 9,23 | US$ 6,00 | US$ 13,84 (el centro de mando usa 13,50) |
 | B: 15 + 3 + 5 | US$ 14,40 | US$ 9,36 | US$ 21,60 |
 | C1: 14,90 + 3 + 5 | US$ 14,32 | US$ 9,31 | US$ 21,48 |

@@ -7,6 +7,7 @@
   'use strict';
   var W = window, D = document;
   var CFG = null, TIMER = null, answers = {}, step = 0, started = false, lastFocus = null;
+  var PICK_TIMER = null, resultObserver = null, completed = false;
   var params = new URLSearchParams(W.location.search);
 
   function all(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }
@@ -162,7 +163,7 @@
       else if (a === 'back') { if (step > 0) { step--; render(); } else close(); }
       else if (a === 'opt') pick(+b.getAttribute('data-i'));
       else if (a === 'info') { close(); var t = D.getElementById('precio'); if (t) t.scrollIntoView({ behavior: 'smooth' }); }
-      else if (a === 'redo') { answers = {}; step = 0; render(); }
+      else if (a === 'redo') { answers = {}; step = 0; completed = false; render(); }
     });
     D.addEventListener('keydown', function (e) { if (e.key === 'Escape' && root && !root.hidden) close(); });
   }
@@ -170,15 +171,28 @@
     build(); lastFocus = D.activeElement;
     root.setAttribute('data-theme', theme()); root.hidden = false; D.documentElement.classList.add('qz-lock');
     if (!started) { started = true; track('QuizStart'); }
-    answers = {}; step = 0; render();
+    answers = {}; step = 0; completed = false; render();
+  }
+  function cancelPick() {
+    if (PICK_TIMER !== null) { W.clearTimeout(PICK_TIMER); PICK_TIMER = null; }
   }
   function close() {
+    cancelPick();
+    if (resultObserver) { resultObserver.disconnect(); resultObserver = null; }
     if (!root) return; root.hidden = true; D.documentElement.classList.remove('qz-lock');
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
   function setBar(f) { var i = root.querySelector('.qz-bar i'); if (i) i.style.width = Math.round(f * 100) + '%'; }
   function render() {
+    cancelPick();
+    if (resultObserver) { resultObserver.disconnect(); resultObserver = null; }
     var body = root.querySelector('.qz-body'), top = root.querySelector('.qz-top');
+    /* Nunca armar un resultado con respuestas faltantes. */
+    if (step >= QS.length) {
+      for (var n = 0; n < QS.length; n++) {
+        if (!QS[n].ops[answers[QS[n].id]]) { step = n; break; }
+      }
+    }
     if (step >= QS.length) { top.hidden = false; setBar(1); return result(body); }
     var q = QS[step], sel = answers[q.id];
     /* Solo Clarity y sin respuestas: muestra en qué pregunta abandonan. */
@@ -192,16 +206,26 @@
     root.scrollTop = 0; body.scrollTop = 0;
   }
   function pick(i) {
-    var q = QS[step]; answers[q.id] = i;
-    var btns = all('.qz-op', root); btns.forEach(function (b, j) { b.classList.toggle('is-sel', j === i); });
-    W.setTimeout(function () { step++; render(); }, 240);
+    /* Dos toques rápidos antes saltaban preguntas y rompían el resultado. */
+    if (PICK_TIMER !== null || !root || root.hidden) return;
+    var pickedStep = step, q = QS[pickedStep];
+    if (!q || i % 1 !== 0 || !q.ops[i]) return;
+    answers[q.id] = i;
+    var btns = all('.qz-op', root); btns.forEach(function (b, j) { b.classList.toggle('is-sel', j === i); b.disabled = true; });
+    PICK_TIMER = W.setTimeout(function () {
+      PICK_TIMER = null;
+      if (root.hidden || step !== pickedStep) return;
+      step = pickedStep + 1; render();
+    }, 240);
   }
   function key(id) { var q = QS.filter(function (x) { return x.id === id; })[0]; return q.ops[answers[id]].k; }
   function text(id) { var q = QS.filter(function (x) { return x.id === id; })[0]; return q.ops[answers[id]].t; }
 
   function result(body) {
-    track('QuizComplete');
-    if (W.fbq) { try { W.fbq('track', 'ViewContent', { content_name: 'Reto Cintura 28 · resultado' }); } catch (e) {} }
+    if (!completed) {
+      completed = true; track('QuizComplete');
+      if (W.fbq) { try { W.fbq('track', 'ViewContent', { content_name: 'Reto Cintura 28 · resultado' }); } catch (e) {} }
+    }
     var buy = (CFG && CFG.checkoutUrl) ? CFG.checkoutUrl : '#precio';
     var chips = [text('pasado'), text('tiempo'), text('meta')];
     body.innerHTML = '<div class="qz-res">' +
@@ -225,7 +249,10 @@
       '<div class="qz-fix is-off"><a class="qz-buy" data-buy href="' + esc(buy) + '">Empezar · <s data-list-price hidden></s> <span data-cfg="price"></span></a></div></div>';
     paintPrices(); root.scrollTop = 0; body.scrollTop = 0;
     var fix = body.querySelector('.qz-fix'), main = body.querySelector('.qz-offer .qz-buy');
-    if (fix && main && 'IntersectionObserver' in W) new IntersectionObserver(function (es) { fix.classList.toggle('is-off', es[0].isIntersecting); }, { root: root, threshold: 0.6 }).observe(main);
+    if (fix && main && 'IntersectionObserver' in W) {
+      resultObserver = new IntersectionObserver(function (es) { fix.classList.toggle('is-off', es[0].isIntersecting); }, { root: root, threshold: 0.6 });
+      resultObserver.observe(main);
+    }
     else if (fix) fix.classList.remove('is-off');
   }
 

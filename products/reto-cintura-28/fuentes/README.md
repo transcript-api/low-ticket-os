@@ -2,6 +2,12 @@
 
 Material de origen de Reto Cintura 28. Los archivos pesados **no están en el repo** (`.gitignore` los excluye). Acá se anota qué es cada uno, de dónde baja y cómo reconocer la versión correcta con su huella SHA-256 (primeros 16 caracteres).
 
+### Aclaración posterior: texto literal y campaña (2026-10-17)
+
+Santiago pide explícitamente copiar las cinco frases exactas del informe mostrado en sus capturas, en lugar de nuestra adaptación. Se conservan sus palabras sobre celulitis, flacidez, tres veces por semana y nutricionista; estos extremos proceden de su material y no son verificaciones nuevas del agente. Frase de fuerza de voluntad intacta. La transcripción audiovisual de Guilherme Ferreira recibida después está en guilherme-ferreira-transcripcion-aportada-2026-10-17.md; se usa para preparar borradores, no como autorización de gasto ni para copiar reseñas/escasez.
+
+Lectura aplicada del informe en [lectura-informe-guilherme-2026-10-17.md](lectura-informe-guilherme-2026-10-17.md). Inventario de los cinco MP4, textos y IDs de los anuncios realmente guardados en [anuncios-preparados-2026-10-17.json](anuncios-preparados-2026-10-17.json); estado de activación y pendientes en [16-borradores-meta-2026-10-17.md](../16-borradores-meta-2026-10-17.md). Evidencia de la corrección del quiz y texto literal publicado en [quiz-verificacion-2026-10-17.json](quiz-verificacion-2026-10-17.json).
+
 ### Corrección de orden y referencia de beneficios (2026-10-17)
 
 Santiago identifica que el caso de violeta está invertido. Para ese par (caso 1, 7 semanas), la segunda imagen recibida pasa a Antes y la primera pasa a Después. Se intercambian las exportaciones existentes, sin nuevo retoque, y se corrige su inventario. El orden de los otros cinco pares queda igual. La captura del 17/10 inspira el bloque de beneficios; se adapta a los entregables reales sin copiar resultados físicos garantizados, frecuencia de tres entrenos ni credenciales no verificadas.

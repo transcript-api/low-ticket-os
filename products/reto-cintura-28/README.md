@@ -2,6 +2,10 @@
 
 ## Estado
 
+- **Meta preparado 2026-10-17:** cinco videos cargados y cinco anuncios con copy propio en una campaña CBO desactivada, sin publicar ni gastar. Detalles en [16-borradores-meta-2026-10-17.md](16-borradores-meta-2026-10-17.md). Antes de activar falta habilitar el píxel nuevo en esta cuenta; el selector solo ofrece el viejo.
+
+- **Último ajuste 2026-10-17:** bloque #info con el texto literal del informe de Santiago; «No te falta fuerza de voluntad» intacto. Quiz reparado: el doble toque saltaba preguntas y rompía el resultado. Publicado en Cloudflare y comprobado local/online en 320/390/1440 px, con cierre, vuelta atrás y reinicio.
+
 - **Ajuste 2026-10-17:** #info presenta «Lo que vas a lograr en estos 28 días» con cinco beneficios; frase de fuerza de voluntad intacta. Orden Antes/Después del caso de violeta corregido por Santiago. Hosting vigente: Cloudflare Pages; publicación y controles en bitácora.
 
 - **Fase del flujo:** 03 Oferta (vigente definida por Santiago el 2026-10-08) y 05 Página (cambios pendientes: Santiago tiene una lista). Producto, creativos y videos ya producidos. Sin ventas ni gasto en anuncios según el dato de Santiago del **2026-10-08** (**no verificado en Hotmart**, no hubo acceso); no se cuenta con una actualización de métricas comerciales.

@@ -7,3 +7,6 @@ node_modules/
 .env
 .DS_Store
 Thumbs.db
+
+# Caché local del publicador de Cloudflare
+.wrangler/

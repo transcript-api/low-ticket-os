@@ -1,5 +1,26 @@
 # 10 · Decisiones
 
+## 2026-10-17 · Cinco anuncios cargados en Meta como borradores
+
+- Santiago pidió usar sus cinco MP4 y la transcripción audiovisual de Guilherme Ferreira para preparar anuncios con descripciones diferentes, sin activar gasto. Se aplican las skills de tráfico y copy del repo; la transcripción se conserva y evalúa en fuentes/. No se crean imágenes o testimonios inventados para completar diez anuncios.
+- Campaña R28 | BORRADOR | CBO 1-1-5 | 2026-10-17, ID 120248048809930571; conjunto 120248048809940571; cuenta 534109209670477, UYU. Videos subidos en su formato original, cada uno asignado a su anuncio. Cinco textos principales, títulos y descripciones distintos. CTA Más información y UTM de Utmify para Hotmart. V1/V2/V3 son variantes del mismo concepto.
+- Se verifican nombres, medios, textos, títulos, descripciones y CTA en edición masiva; después de guardar se recarga el editor: persisten los cinco anuncios y la campaña está desactivada. Presupuesto de UYU250/día propuesto por defecto, pendiente de decisión; sin saldo, pago, publicación ni activación.
+- Bloqueo real de lanzamiento: solo aparece el dataset viejo 1308540268017846; la landing y Hotmart usan 2531706673989847. Hace falta vincular el nuevo a la cuenta antes de activar. No se agregan permisos ni se trasladan cuentas entre portafolios por cuenta propia. Identidad actual ofrecida: Facebook Reto 28 días / Instagram nitrixmind. El editor pidió confirmar información de cuenta antes de publicar.
+- Público: nueve países LATAM del repo; mínimo25 como control y mujeres25–55 como sugerencia Advantage+ (puede expandirse). Compra, sitio web y volumen más alto. Edad desconocida de WhatsApp excluida. Detalles e IDs en 16-borradores-meta-2026-10-17.md; evidencia en outputs/preparacion-anuncios/cinco-borradores-meta.jpg del workspace.
+- Observaciones materiales: V1/V2/V3 muestran +70 recetas frente a las32 de la landing/app conservadas; el motion tiene antes/después y cifra social pendiente de respaldo. Se conserva lo aportado, se preparan borradores y se anotan estos puntos para la revisión previa a gastar.
+- Mejora propuesta: completar esa coherencia y una compra de prueba con atribución antes de financiar el test. Sin datos comerciales nuevos. CPA recalculado sin bump: equilibrio13,23, objetivo8,60 y corte19,85 USD, con tasas supuestas del calculador; no usar14,26 del escenario anterior con bump.
+
+
+## 2026-10-17 · Texto literal de Santiago y bloqueo final del quiz corregido
+
+- Santiago aclaró que el bloque debía copiar literalmente las cinco frases de sus capturas. Se restauran «Lo que vas a lograr es...» y sus textos exactos, conservando intactos el reencuadre de fuerza de voluntad y el diseño/movimiento. Esta instrucción explícita reemplaza la adaptación editorial anterior. Las referencias a tres veces por semana y nutricionista provienen del informe del dueño; no se verificaron credenciales ni se modificó el programa de cuatro entrenos para hacerlas coincidir. Se registra el desfasaje, sin sustituir otra vez el texto pedido.
+- Bug reproducido en el código previo: dos clics antes del timeout de 240 ms adelantaban dos pasos, omitían una respuesta y causaban «Cannot read properties of undefined (reading 't')» al terminar. Ahora hay un solo avance pendiente, opciones deshabilitadas tras elegir, cancelación al cerrar/volver/reiniciar y comprobación de respuestas completas antes del resultado. Se libera el observador del resultado y se evita duplicar QuizComplete al volver a la última pregunta.
+- También corregido el desborde horizontal del precio fijo del quiz en 320 px. Sin cambios en precio, cupón, píxel o checkout. Versionadas las URLs de quiz.js y apertura.css para no reutilizar el código cacheado.
+- Pruebas locales y online en 320/390/1440 px: 9 recorridos completos más cierres/reaperturas y volver durante el avance (12 resultados por entorno), toques repetidos, precio y evento único por intento. Sin errores JS ni desbordes en el código nuevo. No se envían respuestas al píxel.
+- Publicado en Cloudflare: a6c30839-22a5-48e8-b7b1-8e441db5e0cc. Se conservaron 373 de los 376 archivos sin cambios; solo index.html, quiz.js y apertura.css cambian. Bytes servidos verificados.
+- Mejora propuesta: revisar QuizComplete/QuizStart con visitas reales; los recorridos sintéticos prueban funcionamiento, no conversión comercial.
+
+
 ## 2026-10-17 · Beneficios en #info y corrección del caso de violeta
 
 - Pedido de Santiago: invertir únicamente el antes/después del caso de violeta (7 semanas) y cambiar la parte superior de #info por «Lo que vas a lograr en estos 28 días», conservando literalmente «No te falta fuerza de voluntad» y su continuación. Autorización vigente del chat para editar/publicar.

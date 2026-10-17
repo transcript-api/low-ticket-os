@@ -2,6 +2,11 @@
 
 ## Hoy
 
+- [x] 2026-10-17: texto literal de las capturas, manteniendo fuerza de voluntad; quiz corregido contra doble toque, navegación pendiente y desborde en 320 px. Publicado y probado online.
+- [ ] Contrastar con Santiago los tres entrenos semanales y el diseño por nutricionista que pide copiar de su informe; la app conservada tiene cuatro entrenos. No volver a reescribir su bloque sin instrucción.
+- [x] Cinco anuncios guardados en Meta como borradores, cada video con texto/título/descripción diferentes, CTA Más información y UTM. Campaña desactivada.
+- [ ] Antes de activar: habilitar para la cuenta el píxel nuevo 2531706673989847, confirmar datos de cuenta/medio de pago, importe e inicio; revisar +70 recetas de los videos vs32 en el producto, identidad de Instagram y respaldo de cifras del motion. Estado exacto e IDs en 16-borradores-meta-2026-10-17.md.
+
 - [x] 2026-10-17: corregir el orden del caso de violeta y cambiar #info a beneficios, conservando el reencuadre de fuerza de voluntad.
 - [x] Publicación Cloudflare verificada online en 320/390/1440 px; comparador, texto y 373 archivos preservados.
 
