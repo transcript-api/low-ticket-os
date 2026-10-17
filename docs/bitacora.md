@@ -2,6 +2,15 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-17 (noche) · Píxel nuevo en el portafolio propio, API de conversiones lista
+
+- **Problema:** el píxel `1308540268017846` estaba en la cuenta publicitaria personal y Meta no dejaba generar el token ("debes ser administrador del portafolio empresarial").
+- **Solución (camino A):** Santiago es administrador (acceso total) de "Nitrix Automarizaciones". Se creó ahí el conjunto de datos/píxel **"Reto Cintura 28", ID `2531706673989847`**, sin marcar la opción que conecta todos los conjuntos del portafolio a la API de conversiones. Santiago generó el token de acceso y se lo pasó a Claude en el chat (**no está guardado en el repo**; si se filtra, se revoca y se genera otro en Configuración del píxel).
+- **Hotmart:** se eliminó el píxel viejo del producto y se cargó el nuevo con envío **vía WEB y vía API de conversiones**; el token se verificó ("Token configurado"). Eventos: ventas realizadas y visitas a la página de pago.
+- **Página:** `metaPixelId` pasó a `2531706673989847`; republicada en Cloudflare Pages y verificada (carga `signals/config/2531706673989847`, sin errores).
+- **Utmify:** su píxel propio pide el mismo token, pero se decidió **no cargarlo** para no duplicar el evento de compra (Hotmart ya envía la compra por WEB y API). Utmify sigue midiendo las ventas por el webhook.
+- **Pendiente:** dominio propio; mover la cuenta publicitaria al portafolio "Nitrix"; compra de prueba (confirmar compra en Meta y en Utmify); píxel viejo `1308540268017846` sin uso (se puede borrar).
+
 ## 2026-10-17 (tarde) · Utmify: asistente casi completo
 
 - Asistente de Utmify: Meta conectada y cuenta publicitaria "Santi Machado" elegida; plataforma de ventas Hotmart; script de UTMs ya instalado en la página (verificado: agrega `utm_*` al botón de compra). Paso "UTMs de la Meta": se copió la plantilla de Hotmart y quedó guardada en `07-meta-ads.md`. La casilla "ya puse las UTMs en mis anuncios" se marcó solo para poder avanzar: **todavía no hay anuncios**.
