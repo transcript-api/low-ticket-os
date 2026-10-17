@@ -1,0 +1,8 @@
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/mi-reto-tausu9m6/*
+  X-Robots-Tag: noindex, nofollow
+
+/gracias-fn61bl91/*
+  X-Robots-Tag: noindex, nofollow

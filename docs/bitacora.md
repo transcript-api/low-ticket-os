@@ -2,6 +2,28 @@
 
 Registro cronológico de lo que se hizo, se decidió y se opinó, **lo más nuevo arriba**. Un agente nuevo lo lee junto con `AGENTS.md` y siente que estuvo en las sesiones anteriores. **Regla: al terminar cada tramo de trabajo, agregá una entrada acá** (qué se hizo, qué se decidió, qué opinás, qué falta). Los detalles viven en cada producto (`10-decisiones.md`, `11-pendientes.md`).
 
+## 2026-10-17 · Hosting: la página pasa a Cloudflare Pages
+
+- **Motivo:** el plan gratis de Vercel (Hobby) es solo para uso personal; vender con anuncios es uso comercial y puede suspender el proyecto. Cloudflare Pages gratis permite uso comercial.
+- **Hecho:** Santiago entró a Cloudflare (cuenta `01santiago.ia@gmail.com`, contraseña compartida en el chat: **cambiarla**) y autorizó a wrangler. Se creó el proyecto `reto-cintura-28` (modo clásico de Pages con `--force`, porque la cuenta nueva pedía registrar un subdominio workers.dev y el nombre automático no estaba disponible) y se publicó la carpeta completa (376 archivos): página con lo último de Codex, app y gracias bajadas de Vercel, `landing-config.json` con píxel de Meta y script de Utmify, y `_headers` (noindex en rutas privadas, caché en `assets/`).
+- **URL nueva:** https://reto-cintura-28.pages.dev (la de Vercel sigue activa como respaldo). Verificado: página, app, gracias y PDF 200; `X-Robots-Tag: noindex` en rutas privadas; píxel `1308540268017846`, Clarity y Utmify cargados; sin errores de consola.
+- **Cómo republicar:** armar una carpeta con la página (`pagina/`) más `mi-reto-…/` y `gracias-…/` (no están en el repo) y correr `npx wrangler pages deploy <carpeta> --project-name=reto-cintura-28 --branch=main`. Se puede bajar la copia actual de las rutas privadas desde el sitio publicado.
+- **Pendiente:** dominio propio (verificar en Meta y conectar en Cloudflare); apuntar los anuncios y la página de gracias de Hotmart a la URL nueva; cambiar contraseña de Cloudflare; token de la API de conversiones.
+
+## 2026-10-16 · Video Project 2 (3 versiones) y Creativo B
+
+**Hecho**
+- VP2, tres versiones que solo cambian el gancho: V1 "Si hacés dieta y te morís de hambre, la vas a dejar.", V2 "¿Por qué casi todas las dietas se dejan al tercer día?" y V3 "Esto no es comida de dieta. Y está en el plan.". Misma escena del original con la modelo terracota (Omni 1.1 en Flow), voz del clon de Higgsfield, contador "+70 recetas", grilla de 28 días, la app del día y CTA. Los MP4 están en `Descargas\VP2`.
+- Creativo B: C8, C9 y C10 hechos en Wan 3.0, C2 rehecho con una expresión más natural y voz unificada con el clon en los 10 clips.
+
+**Decidido**
+- Tarjetas de clientas en C8: testimonio sin cuerpo (Pame, 7 semanas; Lu, 4 semanas), sin antes/después.
+
+**Falta**
+- Unificar el número de recetas ("más de 70" contra 32).
+- Música con licencia para pauta.
+- Edición del Creativo B.
+
 ## 2026-10-16 · Base de conocimiento, skills de copy/oferta/tráfico y equipo Hermes
 
 **Hecho**

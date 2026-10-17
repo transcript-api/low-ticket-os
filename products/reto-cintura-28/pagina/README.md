@@ -60,5 +60,7 @@ Las 6 respuestas se usan: el titular repite la meta (`META`), las tarjetas respo
 - Actualizar la captura `app-hoy.webp` ("12 de 31") a "12 de 28".
 
 ## Publicación
+**Desde 2026-10-17 el sitio está en Cloudflare Pages: https://reto-cintura-28.pages.dev** (proyecto `reto-cintura-28`, cuenta de Santiago). Los encabezados están en `_headers`. Se publica con `npx wrangler pages deploy <carpeta> --project-name=reto-cintura-28 --branch=main`. La carpeta debe incluir la app y la página de gracias (no están en el repo). Vercel queda como respaldo; `vercel.json` se conserva.
+
 Online en Vercel (cuenta de Santiago, proyecto `reto-cintura-28`): https://reto-cintura-28.vercel.app . Se sube con `vercel deploy --prod` desde la carpeta del sitio (sin `assets/world`, con `vercel.json`). Cada cambio de la página se republica así.
 **Ojo:** la publicación tiene que incluir `mi-reto-…/` (app, 270 archivos) y `gracias-…/`, que no están en el repo. Si se publica solo esta carpeta, se borran la app y la página de gracias para quien ya compró. Si no tenés el ZIP del sitio a mano, se pueden bajar de la publicación anterior con la API de Vercel (`GET /v6/deployments/{id}/files` y `/v8/deployments/{id}/files/{uid}`).
